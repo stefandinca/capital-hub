@@ -30,6 +30,184 @@
         .smooth-scroll {
             scroll-behavior: smooth;
         }
+
+        /* Button Animations */
+        .btn-primary {
+            position: relative;
+            overflow: hidden;
+            transform: translateY(0);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        /* Ripple Effect */
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-primary:active::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Card Hover Effects */
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        /* Stats Counter Animation */
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        /* Pulse Animation */
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        /* Mobile Menu Animation */
+        .mobile-menu-enter {
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Icon Hover */
+        .icon-hover {
+            transition: transform 0.3s ease;
+        }
+
+        .icon-hover:hover {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        /* Link Underline Animation */
+        .link-hover {
+            position: relative;
+        }
+
+        .link-hover::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: currentColor;
+            transition: width 0.3s ease;
+        }
+
+        .link-hover:hover::after {
+            width: 100%;
+        }
+
+        /* Improved Mobile Touch Targets */
+        @media (max-width: 768px) {
+            .touch-target {
+                min-height: 44px;
+                min-width: 44px;
+            }
+
+            /* Better mobile spacing */
+            .mobile-spacing {
+                padding: 1rem;
+            }
+
+            /* Larger mobile text */
+            .mobile-text-lg {
+                font-size: 1.125rem;
+            }
+        }
+
+        /* Image Zoom on Hover */
+        .img-zoom {
+            overflow: hidden;
+        }
+
+        .img-zoom img {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .img-zoom:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Shadow Hover */
+        .shadow-hover {
+            transition: box-shadow 0.3s ease;
+        }
+
+        .shadow-hover:hover {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
     </style>
 </head>
 <body class="antialiased smooth-scroll">
@@ -45,17 +223,17 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-primary transition">Services</a>
-                    <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
-                    <a href="#team" class="text-gray-700 hover:text-primary transition">Team</a>
-                    <a href="#faq" class="text-gray-700 hover:text-primary transition">FAQ</a>
-                    <a href="#contact" class="bg-accent text-white px-6 py-2 rounded-full hover:bg-green-600 transition">Contact Us</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-all duration-300 link-hover">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-all duration-300 link-hover">About</a>
+                    <a href="#team" class="text-gray-700 hover:text-primary transition-all duration-300 link-hover">Team</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition-all duration-300 link-hover">FAQ</a>
+                    <a href="#contact" class="btn-primary bg-accent text-white px-6 py-2 rounded-full hover:bg-green-600">Contact Us</a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none touch-target transition-transform duration-300 hover:scale-110">
+                        <i class="fas fa-bars text-2xl icon-hover"></i>
                     </button>
                 </div>
             </div>
@@ -74,24 +252,24 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-16 bg-gradient-to-br from-gray-50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+    <section class="pt-16 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-28">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="space-y-4 sm:space-y-6 fade-in-up">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                         Grow with <span class="text-primary">confidence</span><br>
-                        Grow with <span class="text-accent">purpose</span>
+                        Grow with <span class="text-accent pulse-slow">purpose</span>
                     </h1>
-                    <p class="text-lg text-gray-600">
+                    <p class="text-base sm:text-lg text-gray-600">
                         Strategic financial planning and advisory services tailored to your unique goals and aspirations.
                     </p>
-                    <div>
-                        <a href="#contact" class="inline-block bg-accent text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transition shadow-lg hover:shadow-xl">
+                    <div class="pt-2">
+                        <a href="#contact" class="btn-primary inline-block bg-accent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-green-600 shadow-lg touch-target">
                             Schedule a Consultation
                         </a>
                     </div>
                 </div>
-                <div class="relative">
+                <div class="relative img-zoom order-first lg:order-last">
                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Professional consultation"
                          class="rounded-2xl shadow-2xl w-full h-auto object-cover">
@@ -101,77 +279,81 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-white">
+    <section class="py-12 sm:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                    We Champion the Bold to<br>Build the Best
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+                    We Champion the Bold to<br class="hidden sm:block">Build the Best
                 </h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
+                <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto px-4">
                     Helping individuals and businesses achieve their financial goals with personalized strategies and expert guidance.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition">
-                    <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                         alt="Building wealth"
-                         class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Building Your Future</h3>
-                    <p class="text-gray-600">Strategic planning for long-term financial success and wealth preservation.</p>
-                </div>
-
-                <div class="bg-primary-dark p-8 rounded-xl text-center text-white hover:shadow-lg transition">
-                    <div class="mb-4">
-                        <i class="fas fa-chart-line text-5xl text-accent"></i>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                <div class="bg-gray-50 p-6 sm:p-8 rounded-xl text-center card-hover shadow-hover">
+                    <div class="img-zoom rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                             alt="Building wealth"
+                             class="w-full h-40 sm:h-48 object-cover rounded-lg">
                     </div>
-                    <h3 class="text-2xl font-bold mb-2">Growing Your Wealth</h3>
-                    <p class="text-blue-100">Investment strategies tailored to your risk tolerance and financial objectives.</p>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Building Your Future</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Strategic planning for long-term financial success and wealth preservation.</p>
                 </div>
 
-                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                         alt="Team collaboration"
-                         class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Expert Guidance</h3>
-                    <p class="text-gray-600">Professional advisors dedicated to your financial success and peace of mind.</p>
+                <div class="bg-primary-dark p-6 sm:p-8 rounded-xl text-center text-white card-hover shadow-hover">
+                    <div class="mb-4">
+                        <i class="fas fa-chart-line text-4xl sm:text-5xl text-accent icon-hover inline-block"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-2">Growing Your Wealth</h3>
+                    <p class="text-sm sm:text-base text-blue-100">Investment strategies tailored to your risk tolerance and financial objectives.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 sm:p-8 rounded-xl text-center card-hover shadow-hover sm:col-span-2 md:col-span-1">
+                    <div class="img-zoom rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                             alt="Team collaboration"
+                             class="w-full h-40 sm:h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Expert Guidance</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Professional advisors dedicated to your financial success and peace of mind.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Strategic Program Section -->
-    <section id="services" class="py-16 bg-gray-50">
+    <section id="services" class="py-12 sm:py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="hero-gradient rounded-3xl p-8 lg:p-12 text-white">
-                <div class="grid lg:grid-cols-2 gap-8 items-center">
+            <div class="hero-gradient rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 text-white shadow-2xl">
+                <div class="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
                     <div>
-                        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
                             Strategic, Relationship-First Transitions for Charity Business Program
                         </h2>
-                        <p class="text-blue-100 mb-8">
+                        <p class="text-sm sm:text-base text-blue-100 mb-6 sm:mb-8">
                             Our comprehensive approach ensures seamless transitions and sustainable growth for charitable organizations and businesses alike.
                         </p>
-                        <a href="#contact" class="inline-block bg-accent text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition">
+                        <a href="#contact" class="btn-primary inline-block bg-accent text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 touch-target">
                             Learn More
                         </a>
                     </div>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                            <div class="text-4xl font-bold mb-2">600+</div>
-                            <div class="text-blue-100">Clients Served</div>
+                    <div class="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
+                        <div class="stat-card bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 cursor-pointer">
+                            <div class="text-3xl sm:text-4xl font-bold mb-1 sm:mb-2">600+</div>
+                            <div class="text-xs sm:text-sm text-blue-100">Clients Served</div>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                            <div class="text-4xl font-bold mb-2">22</div>
-                            <div class="text-blue-100">Years Experience</div>
+                        <div class="stat-card bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 cursor-pointer">
+                            <div class="text-3xl sm:text-4xl font-bold mb-1 sm:mb-2">22</div>
+                            <div class="text-xs sm:text-sm text-blue-100">Years Experience</div>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                            <div class="text-4xl font-bold mb-2">100+</div>
-                            <div class="text-blue-100">Team Members</div>
+                        <div class="stat-card bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 cursor-pointer">
+                            <div class="text-3xl sm:text-4xl font-bold mb-1 sm:mb-2">100+</div>
+                            <div class="text-xs sm:text-sm text-blue-100">Team Members</div>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                            <div class="text-4xl font-bold mb-2">$2B+</div>
-                            <div class="text-blue-100">Assets Managed</div>
+                        <div class="stat-card bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 cursor-pointer">
+                            <div class="text-3xl sm:text-4xl font-bold mb-1 sm:mb-2">$2B+</div>
+                            <div class="text-xs sm:text-sm text-blue-100">Assets Managed</div>
                         </div>
                     </div>
                 </div>
@@ -260,65 +442,65 @@
                 </p>
             </div>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                <div class="bg-white rounded-xl p-4 sm:p-6 text-center shadow-sm card-hover shadow-hover">
                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
                          alt="Team member"
-                         class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="font-semibold text-gray-900">Michael Chen</h3>
-                    <p class="text-sm text-gray-600 mb-3">Senior Financial Advisor</p>
-                    <a href="#" class="inline-flex items-center justify-center w-10 h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition">
-                        <i class="fab fa-linkedin-in"></i>
+                         class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 object-cover ring-2 ring-offset-2 ring-transparent hover:ring-primary transition-all">
+                    <h3 class="font-semibold text-gray-900 text-sm sm:text-base">Michael Chen</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">Senior Financial Advisor</p>
+                    <a href="#" class="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition-all duration-300 hover:scale-110 touch-target">
+                        <i class="fab fa-linkedin-in text-sm"></i>
                     </a>
                 </div>
 
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition">
+                <div class="bg-white rounded-xl p-4 sm:p-6 text-center shadow-sm card-hover shadow-hover">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
                          alt="Team member"
-                         class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="font-semibold text-gray-900">Emily Rodriguez</h3>
-                    <p class="text-sm text-gray-600 mb-3">Investment Strategist</p>
-                    <a href="#" class="inline-flex items-center justify-center w-10 h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition">
-                        <i class="fab fa-linkedin-in"></i>
+                         class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 object-cover ring-2 ring-offset-2 ring-transparent hover:ring-primary transition-all">
+                    <h3 class="font-semibold text-gray-900 text-sm sm:text-base">Emily Rodriguez</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">Investment Strategist</p>
+                    <a href="#" class="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition-all duration-300 hover:scale-110 touch-target">
+                        <i class="fab fa-linkedin-in text-sm"></i>
                     </a>
                 </div>
 
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition">
+                <div class="bg-white rounded-xl p-4 sm:p-6 text-center shadow-sm card-hover shadow-hover">
                     <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
                          alt="Team member"
-                         class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="font-semibold text-gray-900">David Thompson</h3>
-                    <p class="text-sm text-gray-600 mb-3">Wealth Manager</p>
-                    <a href="#" class="inline-flex items-center justify-center w-10 h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition">
-                        <i class="fab fa-linkedin-in"></i>
+                         class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 object-cover ring-2 ring-offset-2 ring-transparent hover:ring-primary transition-all">
+                    <h3 class="font-semibold text-gray-900 text-sm sm:text-base">David Thompson</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">Wealth Manager</p>
+                    <a href="#" class="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition-all duration-300 hover:scale-110 touch-target">
+                        <i class="fab fa-linkedin-in text-sm"></i>
                     </a>
                 </div>
 
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition">
+                <div class="bg-white rounded-xl p-4 sm:p-6 text-center shadow-sm card-hover shadow-hover">
                     <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
                          alt="Team member"
-                         class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="font-semibold text-gray-900">Jessica Williams</h3>
-                    <p class="text-sm text-gray-600 mb-3">Retirement Specialist</p>
-                    <a href="#" class="inline-flex items-center justify-center w-10 h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition">
-                        <i class="fab fa-linkedin-in"></i>
+                         class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 object-cover ring-2 ring-offset-2 ring-transparent hover:ring-primary transition-all">
+                    <h3 class="font-semibold text-gray-900 text-sm sm:text-base">Jessica Williams</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">Retirement Specialist</p>
+                    <a href="#" class="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition-all duration-300 hover:scale-110 touch-target">
+                        <i class="fab fa-linkedin-in text-sm"></i>
                     </a>
                 </div>
 
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition">
+                <div class="bg-white rounded-xl p-4 sm:p-6 text-center shadow-sm card-hover shadow-hover col-span-2 sm:col-span-1">
                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
                          alt="Team member"
-                         class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="font-semibold text-gray-900">James Martinez</h3>
-                    <p class="text-sm text-gray-600 mb-3">Tax Advisor</p>
-                    <a href="#" class="inline-flex items-center justify-center w-10 h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition">
-                        <i class="fab fa-linkedin-in"></i>
+                         class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 object-cover ring-2 ring-offset-2 ring-transparent hover:ring-primary transition-all">
+                    <h3 class="font-semibold text-gray-900 text-sm sm:text-base">James Martinez</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">Tax Advisor</p>
+                    <a href="#" class="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 bg-primary rounded-full text-white hover:bg-primary-dark transition-all duration-300 hover:scale-110 touch-target">
+                        <i class="fab fa-linkedin-in text-sm"></i>
                     </a>
                 </div>
             </div>
 
             <div class="text-center">
-                <a href="#contact" class="inline-block bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition">
+                <a href="#contact" class="btn-primary inline-block bg-accent text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-green-600 touch-target">
                     Join Our Team
                 </a>
             </div>
@@ -418,7 +600,7 @@
                             <p class="text-blue-100 mb-6">
                                 Stay informed with our latest articles, market insights, and financial planning tips.
                             </p>
-                            <a href="#" class="inline-block bg-accent text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition">
+                            <a href="#" class="btn-primary inline-block bg-accent text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 touch-target">
                                 Read Our Blog
                             </a>
                         </div>
@@ -480,7 +662,7 @@
 
                     <div>
                         <button type="submit"
-                                class="w-full bg-accent text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transition shadow-lg hover:shadow-xl">
+                                class="btn-primary w-full bg-accent text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 shadow-lg cursor-pointer touch-target">
                             Send Message
                         </button>
                     </div>
@@ -523,16 +705,16 @@
                 <div>
                     <h4 class="font-semibold mb-4">Connect</h4>
                     <div class="flex space-x-4 mb-4">
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:scale-110 touch-target">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:scale-110 touch-target">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:scale-110 touch-target">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:scale-110 touch-target">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -554,18 +736,31 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="fixed bottom-8 right-8 bg-accent text-white w-12 h-12 rounded-full shadow-lg hover:bg-green-600 transition opacity-0 invisible">
-        <i class="fas fa-arrow-up"></i>
+    <button id="scrollToTop" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 bg-accent text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 opacity-0 invisible hover:scale-110 z-40 touch-target">
+        <i class="fas fa-arrow-up text-lg"></i>
     </button>
 
     <!-- JavaScript -->
     <script>
-        // Mobile Menu Toggle
+        // Mobile Menu Toggle with Animation
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuButton.querySelector('i');
 
         mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.contains('hidden');
+
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('mobile-menu-enter');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('mobile-menu-enter');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
         });
 
         // Close mobile menu when clicking on a link
@@ -573,6 +768,9 @@
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('mobile-menu-enter');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
             });
         });
 
@@ -672,6 +870,93 @@
             }
 
             lastScroll = currentScroll;
+        });
+
+        // Scroll-triggered Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all card elements for animation
+        document.querySelectorAll('.card-hover, .stat-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Counter Animation for Stats
+        const animateCounter = (element, target, duration = 2000) => {
+            let current = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        };
+
+        // Observe stat cards for counter animation
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statElement = entry.target.querySelector('div:first-child');
+                    const text = statElement.textContent;
+                    const number = parseInt(text.replace(/\D/g, ''));
+
+                    if (number && !isNaN(number)) {
+                        statElement.textContent = '0';
+                        setTimeout(() => {
+                            animateCounter(statElement, number, 1500);
+                            // Add back the + or other characters
+                            setTimeout(() => {
+                                statElement.textContent = text;
+                            }, 1500);
+                        }, 200);
+                    }
+                    statObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-card').forEach(card => {
+            statObserver.observe(card);
+        });
+
+        // Add smooth hover effect to all links
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-1px)';
+            });
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Prevent body scroll when mobile menu is open
+        mobileMenuButton.addEventListener('click', () => {
+            if (!mobileMenu.classList.contains('hidden')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.style.overflow = 'auto';
+            });
         });
     </script>
 </body>
