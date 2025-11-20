@@ -14,440 +14,450 @@
   <!-- HEADER-->
 
 <!-- Navbar -->
-<div class="lg:hidden flex w-full justify-between bg-(--royal-blue) lg:justify-between items-center px-4 py-2 lg:bg-(--royal-blue)/0 fixed lg:px-32 lg:pt-6 ">
+<div class="lg:hidden flex w-full justify-between bg-royal-blue items-center px-6 py-4 fixed z-50 shadow-lg">
   <!-- Logo -->
-  <a href="#home" class="flex">
-    <img class="max-w-12 lg:max-w-12  mr-2" src="img/capital_hub_logo.png" /><p class="font-bold text-md lg:text-xl text-white mt-2 lg:mt-2">CAPITAL HUB</p>
+  <a href="#home" class="flex items-center">
+    <img class="w-10 h-10 mr-2" src="img/capital_hub_logo.png" /><p class="font-bold text-base text-white">CAPITAL HUB</p>
   </a>
 
- 
-
-
-  
-
   <!-- Hamburger / Close Icon -->
-  <div id="menu-btn" class="flex mr-2 lg:hidden cursor-pointer fill-white">
+  <div id="menu-btn" class="flex cursor-pointer fill-white">
     <!-- Hamburger -->
-    <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-list block" viewBox="0 0 16 16">
+    <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="block" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
     </svg>
     <!-- X (Close) -->
-    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="hidden" viewBox="0 0 16 16">
+    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="hidden" viewBox="0 0 16 16">
       <path d="M4.646 4.646a.5.5 0 011 0L8 6.293l2.354-2.647a.5.5 0 11.708.708L8.707 7l2.647 2.354a.5.5 0 11-.708.708L8 7.707l-2.354 2.647a.5.5 0 11-.708-.708L7.293 7 4.646 4.646a.5.5 0 010-.708z"/>
     </svg>
   </div>
 </div>
 
 <!-- Overlay (hidden by default) -->
-<div id="menu-overlay" class="fixed inset-0 bg-(--royal-blue)/50 hidden z-20"></div>
+<div id="menu-overlay" class="fixed inset-0 bg-royal-blue/50 hidden z-40"></div>
 
 <!-- Mobile Menu -->
-<div id="mobile-menu" 
-  class="fixed top-[57px] left-0 w-full 
-         bg-(--royal-blue-2) backdrop-blur-xl 
-         flex flex-col items-center lg:hidden 
-         transform scale-y-0 origin-top 
-         transition-transform duration-300 ease-out z-50">
-  <a href="#about" class="block w-full text-center py-4  text-amber-50 font-semibold">Home</a>
-  <a href="#mobile-projects" class="block w-full text-center py-4   text-amber-50 font-semibold">Services</a>
-  <a href="#mobile-projects" class="block w-full text-center py-4   text-amber-50 font-semibold">Blog</a>
-  <a href="#mobile-projects" class="block w-full text-center py-4   text-amber-50 font-semibold">F.A.Q.</a>
-  <a href="#mobile-projects" class="block w-full text-center py-4   text-amber-50 font-semibold bg-(--cta-teal)">Contact</a>
-  
+<div id="mobile-menu"
+  class="fixed top-[64px] left-0 w-full
+         bg-royal-blue-2 backdrop-blur-xl
+         flex flex-col items-center lg:hidden
+         transform scale-y-0 origin-top
+         transition-transform duration-300 ease-out z-50 shadow-xl">
+  <a href="#about" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Home</a>
+  <a href="#services" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Services</a>
+  <a href="#blog" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Blog</a>
+  <a href="#faq" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">F.A.Q.</a>
+  <a href="#contact" class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">Contact</a>
 </div>
 
 
 <!--- Desktop HERO-->
-  <div class="hidden lg:flex lg:bg-[url(img/hero_bg.png)] bg-cover bg-center rounded-3xl m-6 flex-col">
-    <div class="flex p-4 justify-between ">
+  <div class="hidden lg:flex lg:bg-[url(img/hero_bg.png)] bg-cover bg-center rounded-2xl m-6 flex-col">
+    <div class="flex p-6 justify-between items-center">
       <!--- Desktop MENU-->
       <div>
-        <a href="#home" class="flex">
-          <img class="max-w-12 lg:max-w-12  mr-2" src="img/capital_hub_logo.png" /><p class="font-bold text-md lg:text-xl text-white mt-2 lg:mt-2">CAPITAL HUB</p>
+        <a href="#home" class="flex items-center">
+          <img class="w-12 h-12 mr-2" src="img/capital_hub_logo.png" /><p class="font-bold text-xl text-white">CAPITAL HUB</p>
         </a>
-        
       </div>
 
-      <div class="flex">
+      <div class="flex items-center gap-2">
         <a href="#about" class="scroll-smooth">
-          <button class=" py-2 px-4 m-2 rounded-lg text-amber-50 font-semibold text-sm duration-300 ease-in-out hover:text-(--cta-teal) ">Home</button>
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">Home</button>
         </a>
-        
+
         <a href="#services" class="scroll-smooth">
-          <button class=" py-2 px-4 m-2 rounded-lg text-amber-50 font-semibold text-sm transition duration-300 ease-in-out hover:text-(--cta-teal) ">Services</button>
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">Services</button>
         </a>
-        
+
         <a href="#blog" class="scroll-smooth">
-          <button class=" py-2 px-4 m-2 rounded-lg text-amber-50 font-semibold  text-sm transition duration-300 ease-in-out hover:text-(--cta-teal)">Blog</button>
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">Blog</button>
         </a>
-        
+
         <a href="#faq" class="scroll-smooth">
-          <button class=" py-2 px-4 m-2 rounded-lg text-amber-50 font-semibold text-sm transition duration-300 ease-in-out hover:text-(--cta-teal)">F.A.Q.</button>
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">F.A.Q.</button>
         </a>
       </div>
 
-      <div class="flex">
-        <a href="#faq" class="scroll-smooth ">
-          <button class="flex items-center py-2 px-4 m-2 rounded-lg text-amber-50 font-semibold text-sm transition duration-300 ease-in-out hover:text-(--cta-teal)"><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>EN</button>
+      <div class="flex items-center gap-2">
+        <a href="#faq" class="scroll-smooth">
+          <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal"><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>EN</button>
         </a>
         <a href="#contact" class="scroll-smooth">
-          <button class=" py-2 px-4 m-2 rounded-full text-amber-50 font-semibold  text-sm transition duration-300 ease-in-out bg-(--cta-teal) hover:bg-(--royal-blue)">Contact</button>
+          <button class="py-3 px-6 rounded-full text-white font-semibold text-sm transition duration-300 ease-in-out bg-cta-teal hover:bg-royal-blue shadow-lg">Contact</button>
         </a>
       </div>
 
       <!---DESKTOP MENU-->
-      
-    </div>
-    
 
-    <div class="p-28">
-      <p class="text-3xl text-white text-shadow-lg/30">Invest with confidence</p>
-      <p class="text-5xl text-white font-bold text-shadow-lg/30">Grow with purpouse</p>
-      <p class="mt-12 text-md text-white text-shadow-lg/30">CapitalHub helps small businesses secure the funding they need to grow and thrive.</p>
-      <div class="flex">
-        <button class="flex items-center bg-(--cta-teal) py-1 pl-6 pr-2 mr-2 mt-4 h-10 rounded-full text-white text-sm  transition ease-in-out duration-300 hover:bg-(--warm-gold)">Learn more<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/></svg></button>
-        <button class="bg-(--royal-blue) py-1 px-6 mt-4 rounded-full text-white text-sm transition ease-in-out duration-300 hover:bg-(--warm-gold)">Schedule a call</button>
+    </div>
+
+
+    <div class="px-12 py-24 lg:px-24">
+      <p class="text-2xl text-white">Invest with confidence</p>
+      <p class="text-5xl lg:text-6xl text-white font-bold mt-2">Grow with purpose</p>
+      <p class="mt-8 text-lg text-white max-w-2xl">CapitalHub helps small businesses secure the funding they need to grow and thrive.</p>
+      <div class="flex gap-4 mt-8">
+        <button class="flex items-center bg-cta-teal py-3 px-6 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-warm-gold shadow-lg">Learn more<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/></svg></button>
+        <button class="bg-royal-blue py-3 px-6 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-warm-gold shadow-lg">Schedule a call</button>
       </div>
     </div>
   </div>
 <!---END DESKTOP HERO-->
  
 <!--- MOBILE HERO-->
-  <div class="lg:hidden flex flex-wrap justify-start items-center">
-    <div class="px-6 pt-20">
-      <p class="text-5xl text-(--royal-blue) font-light">Invest with confidence</p>
-      <p class="text-7xl text-(--warm-gold) font-bold ">Grow with purpouse</p>
-      <p class="mt-12 text-md text-(--royal-blue)">CapitalHub helps small businesses secure the funding they need to grow and thrive.</p>
-      <div class="flex">
-        <button class="flex items-center bg-(--cta-teal) py-1 pl-6 pr-2 mr-2 mt-4 h-10 rounded-full text-white text-sm">Learn more<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/></svg></button>
-        <button class="bg-(--royal-blue) py-1 px-6 mt-4 rounded-full text-white text-sm">Schedule a call</button>
+  <div class="lg:hidden flex flex-col px-6 pt-20 pb-12">
+    <div>
+      <p class="text-2xl text-royal-blue font-light">Invest with confidence</p>
+      <p class="text-4xl text-warm-gold font-bold mt-2">Grow with purpose</p>
+      <p class="mt-8 text-base text-royal-blue">CapitalHub helps small businesses secure the funding they need to grow and thrive.</p>
+      <div class="flex gap-4 mt-8">
+        <button class="flex items-center bg-cta-teal py-3 px-6 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-warm-gold shadow-lg">Learn more<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/></svg></button>
+        <button class="bg-royal-blue py-3 px-6 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-warm-gold shadow-lg">Schedule a call</button>
       </div>
-      
     </div>
-    <div class="my-6 bg-cover">
-        <img class="bg-cover min-w-40" src="img/hero_bg.png"/>
+    <div class="mt-8">
+        <img class="w-full rounded-2xl" src="img/hero_bg.png"/>
     </div>
   </div>
 <!---END MOBILE HERO-->
 
 <!--- CHAMPION-->
-<div class="flex justify-center my-4">
-  <div id="services" class="px-6 border-1 border-(--gray)/10 rounded-full p-2 text-xs text-(--royal-blue)">
-    <p>SERVICES</p>
+<div class="py-16 lg:py-24 px-6">
+  <div class="flex justify-center mb-6">
+    <div id="services" class="px-6 py-2 border border-gray-400/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider">
+      <p>SERVICES</p>
+    </div>
+  </div>
+  <div class="flex justify-center mb-16">
+    <h2 class="text-3xl lg:text-4xl text-center text-royal-blue font-bold max-w-3xl px-6">We Champion the Bold to Achieve the Extraordinary</h2>
+  </div>
+
+  <div class="flex flex-wrap items-center justify-center gap-8">
+    <div class="p-8 w-80 h-80 bg-off-off-white rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center">
+      <p class="text-xl text-royal-blue font-semibold">Interactive Planning</p>
+    </div>
+    <div class="p-8 w-80 h-80 bg-off-off-white rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center">
+      <p class="text-xl text-royal-blue font-semibold">Leading Provider</p>
+    </div>
+    <div class="p-8 w-80 h-80 bg-off-off-white rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center">
+      <p class="text-xl text-royal-blue font-semibold">Achieving Excellence</p>
+    </div>
   </div>
 </div>
-  <div id="services" class=" flex justify-center my-12 text-center text-3xl text-(--royal-blue)">
-    <p class="px-6">We Champion the Bold to Achieve the Extraordinary</p>
-  </div>
-
-<div class="flex flex-wrap items-center justify-center text-center">
-    <div class="m-6 p-4 w-80 h-80  bg-(--off-off-white) rounded-2xl">
-      Interactive Planning
-    </div>
-    <div class="m-6 p-4 w-80 h-80  bg-(--off-off-white) rounded-2xl">
-      Leading Provider
-    </div>
-    <div class="m-6 p-4 w-80 h-80  bg-(--off-off-white) rounded-2xl">
-      Achieving stuff
-    </div>
-  </div>
-
 
 <!--- END CHAMPION-->
 
 <!---PHILOSOPHY-->
-<div class="flex-col lg:m-4 bg-(--royal-blue) rounded-b-3xl lg:rounded-3xl p-6">
-  
-  <div id="philosophy" class="px-6 lg:ml-6 my-6 w-40 border-1 border-white/10 rounded-full p-2 text-xs text-white/20">
-    <p>OUR PHILOSOPHY</p>
+<div class="bg-royal-blue rounded-b-2xl lg:rounded-2xl lg:mx-6 px-6 lg:px-12 py-16 lg:py-24">
+
+  <div class="mb-8">
+    <div id="philosophy" class="inline-block px-6 py-2 border border-white/20 rounded-full text-xs font-semibold text-white/60 uppercase tracking-wider">
+      <p>OUR PHILOSOPHY</p>
+    </div>
   </div>
-  <div  class="px-6   my-6">
-    <p class="text-2xl lg:text-4xl lg:max-w-1/2 text-white font-normal">Strategic Interventions that <span class="text-(--warm-gold)">Transform</span> our Clients' Business Trajectory</p>
+  <div class="mb-16">
+    <h2 class="text-3xl lg:text-4xl text-white font-bold max-w-3xl">Strategic Interventions that <span class="text-warm-gold">Transform</span> our Clients' Business Trajectory</h2>
   </div>
-  <div class="flex lg:px-16 justify-between flex-wrap text-center">
-    <div class="min-w-32 flex items-center p-4 m-4 bg-(--royal-blue-2) rounded-2xl">
-      <div class="text-4xl text-white font-bold">600<span class="text-(--cta-teal)">+</span></div>
-      <div class="text-left text-white px-4 text-md">SATISFIED <br/>CLIENTS</div>
+  <div class="flex flex-wrap justify-center gap-6">
+    <div class="flex items-center gap-4 p-6 bg-royal-blue-2 rounded-2xl shadow-lg min-w-64">
+      <div class="text-4xl text-white font-bold">600<span class="text-cta-teal">+</span></div>
+      <div class="text-left text-white text-sm font-semibold">SATISFIED <br/>CLIENTS</div>
     </div>
 
-    <div class="min-w-32 flex items-center p-4 m-4 bg-(--royal-blue-2) rounded-2xl">
-      <div class="text-4xl text-white font-bold"><span class="text-(--cta-teal)">$</span>5mil</div>
-      <div class="text-left text-white px-4 text-md">ATTRACTED EU <br/>FUNDS</div>
+    <div class="flex items-center gap-4 p-6 bg-royal-blue-2 rounded-2xl shadow-lg min-w-64">
+      <div class="text-4xl text-white font-bold"><span class="text-cta-teal">$</span>5mil</div>
+      <div class="text-left text-white text-sm font-semibold">ATTRACTED EU <br/>FUNDS</div>
     </div>
 
-    <div class="min-w-32 flex items-center p-4 m-4 bg-(--royal-blue-2) rounded-2xl">
-      <div class="text-4xl text-white font-bold">80<span class="text-(--cta-teal)">%</span></div>
-      <div class="text-left text-white px-4 text-md">SUCCESS <br/>RATE</div>
+    <div class="flex items-center gap-4 p-6 bg-royal-blue-2 rounded-2xl shadow-lg min-w-64">
+      <div class="text-4xl text-white font-bold">80<span class="text-cta-teal">%</span></div>
+      <div class="text-left text-white text-sm font-semibold">SUCCESS <br/>RATE</div>
     </div>
 
-    <div class="min-w-32 flex items-center p-4 m-4 bg-(--royal-blue-2) rounded-2xl">
-      <div class="text-4xl text-white font-bold"><span class="text-(--cta-teal)">></span>100</div>
-      <div class="text-left text-white px-4 text-md">REPEAT <br/>CLIENTS</div>
+    <div class="flex items-center gap-4 p-6 bg-royal-blue-2 rounded-2xl shadow-lg min-w-64">
+      <div class="text-4xl text-white font-bold"><span class="text-cta-teal">></span>100</div>
+      <div class="text-left text-white text-sm font-semibold">REPEAT <br/>CLIENTS</div>
     </div>
-   
+
   </div>
-  
+
 </div>
 
 
 <!---END PHILOSOPHY-->
 
 <!--TESTIES-->
-<div class="flex my-14 flex-wrap justify-center gap-32">
-  <div class="flex-col lg:max-w-1/3 ">
-    <div id="testimonials" class="px-6 ml-6 lg:ml-16 w-40 border-1 border-(--gray)/10 rounded-full p-2 text-xs text-center text-(--royal-blue)">
-      <p>TESTIMONIALS</p>
-    </div>
-    <div class="px-6 lg:ml-12 my-12">
-      <p class="text-(--royal-blue) text-4xl">Client <span class="text-(--warm-gold)">Experiences</span> That Speak for Themselves</p>
-    </div>
-    <div class="flex ml-6 lg:ml-18 my-4">
-      <button class="px-4 py-2 text-sm text-white bg-(--royal-blue) rounded-full">Read All Testimonials</button>
-      <div class="flex items-center ml-4">
-        <img class="max-h-8"src="img/google-reviews.png"/>
-        <div class="ml-2">
-        <p class="font-bold text-sm">4.9</p>
-        <p class="text-xs">GOOGLE REVIEWS</p>
+<div class="py-16 lg:py-24 px-6">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-16">
+    <div class="flex-col max-w-md">
+      <div class="mb-8">
+        <div id="testimonials" class="inline-block px-6 py-2 border border-gray-400/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider">
+          <p>TESTIMONIALS</p>
+        </div>
+      </div>
+      <div class="mb-8">
+        <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold">Client <span class="text-warm-gold">Experiences</span> That Speak for Themselves</h2>
+      </div>
+      <div class="flex flex-wrap gap-4 items-center">
+        <button class="px-6 py-3 text-sm font-semibold text-white bg-royal-blue rounded-full transition duration-300 hover:bg-warm-gold shadow-lg">Read All Testimonials</button>
+        <div class="flex items-center gap-3">
+          <img class="h-8" src="img/google-reviews.png"/>
+          <div>
+            <p class="font-bold text-sm text-royal-blue">4.9</p>
+            <p class="text-xs text-gray-600">GOOGLE REVIEWS</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="flex-col lg:max-w-1/3 bg-(--off-off-white) rounded-2xl p-6 m-2 ">
-    <div>
-      <p class="text-(--royal-blue) text-xl h-46">“Partnering with CapitalHub was a game-changer for us. They took the time to understand our challenges and helped us streamline our operations for success.”</p>
-    </div>
+    <div class="flex-col max-w-md bg-off-off-white rounded-2xl p-8 shadow-sm">
+      <div class="mb-8">
+        <p class="text-royal-blue text-lg leading-relaxed">"Partnering with CapitalHub was a game-changer for us. They took the time to understand our challenges and helped us streamline our operations for success."</p>
+      </div>
 
-    <div class="flex justify-between my-4">
-      
-      <div class="flex items-center ml-4">
-        <img class="max-h-16"src="img/testimonial.png"/>
-        <div class="ml-2">
-        <p class="font-bold text-sm">4.9</p>
-        <p class="text-xs">GOOGLE REVIEWS</p>
+      <div class="flex justify-between items-center">
+
+        <div class="flex items-center gap-3">
+          <img class="h-16 w-16 rounded-full" src="img/testimonial.png"/>
+          <div>
+            <p class="font-bold text-sm text-royal-blue">John Smith</p>
+            <p class="text-xs text-gray-600">CEO, TechCorp</p>
+          </div>
         </div>
-      </div>
 
-      <div class="flex">
-        <button class="fill-(--royal-blue) mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"  class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/></svg></button>
-        <button class="fill-(--royal-blue) mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"  class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg></button>
+        <div class="flex gap-2">
+          <button class="fill-royal-blue hover:fill-cta-teal transition duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/></svg></button>
+          <button class="fill-royal-blue hover:fill-cta-teal transition duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg></button>
+        </div>
+
       </div>
 
     </div>
 
   </div>
-
 </div>
 <!--- END TESTIES-->
 
 <!--- TRUSTED PARTNER-->
-<div class="flex my-14 flex-wrap justify-center gap-6 ">
-  
+<div class="py-16 lg:py-24 px-6">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-8">
 
-  <div class="flex-col lg:max-w-[600px] m-2 ">
-    <img class="rounded-2xl" src="img/partner.png"/>
-  </div>
-
-  <div class="flex-col lg:max-w-[420px] bg-(--royal-blue) rounded-2xl p-6 m-2 items-center justify-center">
-    <div id="testimonials" class="px-6 w-46   border-1 border-white/30 rounded-full p-2 text-xs text-center text-white/50">
-      <p>TRUSTED PARTNER</p>
+    <div class="flex-col max-w-xl">
+      <img class="rounded-2xl w-full shadow-lg" src="img/partner.png"/>
     </div>
-    <p class="text-3xl text-(--warm-gold) my-3">Registered Investor Advisor</p>
-    <p class="text-white my-3">We help you achieve your vision and cultivate confidence and peace of mind across your financial journey.</p>
-    <button class="rounded-full bg-(--cta-teal) px-4 py-2 my-3 text-white transition duration-300 ease-in-out hover:bg-(--warm-gold)">Free Consultation</button>
-  </div>
 
+    <div class="flex-col max-w-md bg-royal-blue rounded-2xl p-8 lg:p-12 shadow-xl">
+      <div class="mb-6">
+        <div id="trusted" class="inline-block px-6 py-2 border border-white/30 rounded-full text-xs font-semibold text-white/70 uppercase tracking-wider">
+          <p>TRUSTED PARTNER</p>
+        </div>
+      </div>
+      <h2 class="text-3xl lg:text-4xl text-warm-gold font-bold mb-6">Registered Investor Advisor</h2>
+      <p class="text-white text-base leading-relaxed mb-8">We help you achieve your vision and cultivate confidence and peace of mind across your financial journey.</p>
+      <button class="rounded-full bg-cta-teal px-6 py-3 text-white text-sm font-semibold transition duration-300 ease-in-out hover:bg-warm-gold shadow-lg">Free Consultation</button>
+    </div>
+
+  </div>
 </div>
 <!--- END TRUSTED PARTNER-->
 
 <!---TEAM -->
 
-
-<div class="flex flex-wrap justify-center gap-8 mt-12 max-w-7xl px-6 mx-auto mb-20">
-    <div class="flex flex-col items-center group cursor-pointer">
-      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300" src="https://i.pravatar.cc/150?img=1" alt="Julia Reed">
+<div class="py-16 lg:py-24 px-6">
+  <div class="flex flex-wrap justify-center gap-12 max-w-7xl mx-auto">
+    <div class="flex flex-col items-center group cursor-pointer transition duration-300 hover:-translate-y-2">
+      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300 shadow-md" src="https://i.pravatar.cc/150?img=1" alt="Julia Reed">
       <div class="flex items-center gap-2">
-        <div class="text-left">
-          <p class="font-bold text-(--royal-blue) text-sm">Julia Reed</p>
-          <p class="text-xs text-gray-500">Chief Executive</p>
+        <div class="text-center">
+          <p class="font-bold text-royal-blue text-base">Julia Reed</p>
+          <p class="text-sm text-gray-600">Chief Executive</p>
         </div>
-        <div class="bg-(--royal-blue) rounded-full p-1">
+        <div class="bg-royal-blue rounded-full p-1.5 group-hover:bg-cta-teal transition duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/></svg>
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center group cursor-pointer">
-      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300" src="https://i.pravatar.cc/150?img=11" alt="Marco Pera">
+    <div class="flex flex-col items-center group cursor-pointer transition duration-300 hover:-translate-y-2">
+      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300 shadow-md" src="https://i.pravatar.cc/150?img=11" alt="Marco Pera">
       <div class="flex items-center gap-2">
-        <div class="text-left">
-          <p class="font-bold text-(--royal-blue) text-sm">Marco Pera</p>
-          <p class="text-xs text-gray-500">Senior Manager</p>
+        <div class="text-center">
+          <p class="font-bold text-royal-blue text-base">Marco Pera</p>
+          <p class="text-sm text-gray-600">Senior Manager</p>
         </div>
-        <div class="bg-(--royal-blue) rounded-full p-1">
+        <div class="bg-royal-blue rounded-full p-1.5 group-hover:bg-cta-teal transition duration-300">
            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/></svg>
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center group cursor-pointer">
-      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300" src="https://i.pravatar.cc/150?img=5" alt="Alessia Fox">
+    <div class="flex flex-col items-center group cursor-pointer transition duration-300 hover:-translate-y-2">
+      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300 shadow-md" src="https://i.pravatar.cc/150?img=5" alt="Alessia Fox">
       <div class="flex items-center gap-2">
-        <div class="text-left">
-          <p class="font-bold text-(--royal-blue) text-sm">Alessia Fox</p>
-          <p class="text-xs text-gray-500">Analyst Manager</p>
+        <div class="text-center">
+          <p class="font-bold text-royal-blue text-base">Alessia Fox</p>
+          <p class="text-sm text-gray-600">Analyst Manager</p>
         </div>
-         <div class="bg-(--royal-blue) rounded-full p-1">
+         <div class="bg-royal-blue rounded-full p-1.5 group-hover:bg-cta-teal transition duration-300">
            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/></svg>
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center group cursor-pointer">
-      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300" src="https://i.pravatar.cc/150?img=8" alt="Pedro Diaz">
+    <div class="flex flex-col items-center group cursor-pointer transition duration-300 hover:-translate-y-2">
+      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300 shadow-md" src="https://i.pravatar.cc/150?img=8" alt="Pedro Diaz">
       <div class="flex items-center gap-2">
-        <div class="text-left">
-          <p class="font-bold text-(--royal-blue) text-sm">Pedro Diaz</p>
-          <p class="text-xs text-gray-500">Financial Analyst</p>
+        <div class="text-center">
+          <p class="font-bold text-royal-blue text-base">Pedro Diaz</p>
+          <p class="text-sm text-gray-600">Financial Analyst</p>
         </div>
-         <div class="bg-(--royal-blue) rounded-full p-1">
+         <div class="bg-royal-blue rounded-full p-1.5 group-hover:bg-cta-teal transition duration-300">
            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/></svg>
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center group cursor-pointer">
-      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300" src="https://i.pravatar.cc/150?img=3" alt="Alex Tedis">
+    <div class="flex flex-col items-center group cursor-pointer transition duration-300 hover:-translate-y-2">
+      <img class="w-32 h-32 rounded-full object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-300 shadow-md" src="https://i.pravatar.cc/150?img=3" alt="Alex Tedis">
       <div class="flex items-center gap-2">
-        <div class="text-left">
-          <p class="font-bold text-(--royal-blue) text-sm">Alex Tedis</p>
-          <p class="text-xs text-gray-500">CFO & Co-Founder</p>
+        <div class="text-center">
+          <p class="font-bold text-royal-blue text-base">Alex Tedis</p>
+          <p class="text-sm text-gray-600">CFO & Co-Founder</p>
         </div>
-         <div class="bg-(--royal-blue) rounded-full p-1">
+         <div class="bg-royal-blue rounded-full p-1.5 group-hover:bg-cta-teal transition duration-300">
            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/></svg>
         </div>
       </div>
     </div>
   </div>
-  <div class="bg-(--off-off-white) py-12 my-14 w-full">
+</div>
+
+  <div class="bg-off-off-white py-16 w-full">
     <div class="flex flex-wrap justify-center items-center gap-12 px-6 opacity-60 grayscale">
-      <p class="font-bold text-xl">WestBank</p>
-      <p class="font-bold text-xl">RIDGEROCK</p>
-      <p class="font-bold text-xl">NORTHSTAR</p>
-      <p class="font-bold text-xl text-green-600">sportify</p>
-      <p class="font-bold text-xl text-orange-500">LUCA</p>
-      <p class="font-bold text-xl text-blue-600">Decathlon</p>
+      <p class="font-bold text-xl text-gray-800">WestBank</p>
+      <p class="font-bold text-xl text-gray-800">RIDGEROCK</p>
+      <p class="font-bold text-xl text-gray-800">NORTHSTAR</p>
+      <p class="font-bold text-xl text-gray-800">sportify</p>
+      <p class="font-bold text-xl text-gray-800">LUCA</p>
+      <p class="font-bold text-xl text-gray-800">Decathlon</p>
     </div>
   </div>
 
-  <div id="faq" class="flex flex-col lg:flex-row justify-center gap-16 my-20 px-6 max-w-7xl mx-auto">
-    <div class="lg:w-1/3">
-      <div class="w-20 border-1 border-(--gray)/10 rounded-full p-2 text-xs text-center text-(--royal-blue) mb-6">
-        <p>FAQ</p>
+  <div id="faq" class="py-16 lg:py-24 px-6">
+    <div class="flex flex-col lg:flex-row justify-center gap-16 max-w-7xl mx-auto">
+      <div class="lg:w-1/3">
+        <div class="mb-6">
+          <div class="inline-block px-6 py-2 border border-gray-400/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider">
+            <p>FAQ</p>
+          </div>
+        </div>
+        <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold mb-6">Financial Planning FAQ's</h2>
+        <p class="text-gray-600 mb-8 text-base leading-relaxed">Comprehensive answers to financial planning and fund raising services.</p>
+        <button class="bg-royal-blue text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-warm-gold transition duration-300 shadow-lg">Ask Us</button>
       </div>
-      <h2 class="text-4xl text-(--royal-blue) mb-6">Financial Planning FAQ's</h2>
-      <p class="text-gray-600 mb-8 text-sm">Comprehensive answers to financial planning and fund raising services.</p>
-      <button class="bg-(--royal-blue) text-white px-8 py-3 rounded-full text-sm hover:bg-(--warm-gold) transition duration-300">Ask Us</button>
-    </div>
 
-    <div class="lg:w-1/2 space-y-4">
-      <div class="bg-(--off-off-white) p-4 rounded-lg flex justify-between items-center cursor-pointer hover:bg-gray-100 transition">
-        <p class="text-xs font-semibold text-(--royal-blue)">What documents do I need to apply?</p>
-        <div class="bg-(--royal-blue) rounded-full p-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+      <div class="lg:w-1/2 space-y-4">
+        <div class="bg-off-off-white p-6 rounded-xl flex justify-between items-center cursor-pointer hover:shadow-md transition duration-300">
+          <p class="text-sm font-semibold text-royal-blue">What documents do I need to apply?</p>
+          <div class="bg-royal-blue rounded-full p-2 hover:bg-cta-teal transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
         </div>
-      </div>
-      <div class="bg-(--off-off-white) p-4 rounded-lg flex justify-between items-center cursor-pointer hover:bg-gray-100 transition">
-        <p class="text-xs font-semibold text-(--royal-blue)">Will there be a dedicated advisor?</p>
-        <div class="bg-(--royal-blue) rounded-full p-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+        <div class="bg-off-off-white p-6 rounded-xl flex justify-between items-center cursor-pointer hover:shadow-md transition duration-300">
+          <p class="text-sm font-semibold text-royal-blue">Will there be a dedicated advisor?</p>
+          <div class="bg-royal-blue rounded-full p-2 hover:bg-cta-teal transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
         </div>
-      </div>
-      <div class="bg-(--off-off-white) p-4 rounded-lg flex justify-between items-center cursor-pointer hover:bg-gray-100 transition">
-        <p class="text-xs font-semibold text-(--royal-blue)">Can you help us structure future plans?</p>
-        <div class="bg-(--royal-blue) rounded-full p-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+        <div class="bg-off-off-white p-6 rounded-xl flex justify-between items-center cursor-pointer hover:shadow-md transition duration-300">
+          <p class="text-sm font-semibold text-royal-blue">Can you help us structure future plans?</p>
+          <div class="bg-royal-blue rounded-full p-2 hover:bg-cta-teal transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
         </div>
-      </div>
-      <div class="bg-(--off-off-white) p-4 rounded-lg flex justify-between items-center cursor-pointer hover:bg-gray-100 transition">
-        <p class="text-xs font-semibold text-(--royal-blue)">What are the fees and commission?</p>
-        <div class="bg-(--royal-blue) rounded-full p-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+        <div class="bg-off-off-white p-6 rounded-xl flex justify-between items-center cursor-pointer hover:shadow-md transition duration-300">
+          <p class="text-sm font-semibold text-royal-blue">What are the fees and commission?</p>
+          <div class="bg-royal-blue rounded-full p-2 hover:bg-cta-teal transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="flex flex-col lg:flex-row h-auto lg:h-[400px] w-full mb-0">
-    <div class="bg-(--royal-blue) flex-1 p-12 flex flex-col justify-center">
+  <div class="flex flex-col lg:flex-row h-auto lg:h-[400px] w-full">
+    <div class="bg-royal-blue flex-1 p-12 lg:p-16 flex flex-col justify-center">
       <div class="max-w-md mx-auto lg:mx-0">
-        <p class="text-white font-bold text-xl mb-1">Latest News &</p>
-        <p class="text-(--warm-gold) font-bold text-xl mb-8">Resources</p>
-        
-        <div class="flex bg-white rounded-full p-1">
-          <input type="email" placeholder="Email" class="bg-transparent outline-none px-4 py-2 flex-1 text-gray-700 placeholder-gray-400">
-          <button class="bg-(--cta-teal) text-white px-6 py-2 rounded-full text-sm hover:bg-(--royal-blue-2) transition">Subscribe</button>
+        <h2 class="text-3xl lg:text-4xl text-white font-bold mb-2">Latest News &</h2>
+        <p class="text-3xl lg:text-4xl text-warm-gold font-bold mb-8">Resources</p>
+
+        <div class="flex bg-white rounded-full p-1.5 shadow-lg">
+          <input type="email" placeholder="Enter your email" class="bg-transparent outline-none px-6 py-3 flex-1 text-gray-700 placeholder-gray-400 text-sm">
+          <button class="bg-cta-teal text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-warm-gold transition duration-300">Subscribe</button>
         </div>
       </div>
     </div>
-    
-    <div class="flex-1 relative bg-gray-200">
+
+    <div class="flex-1 relative bg-gray-200 min-h-80 lg:min-h-0">
       <img src="img/hero_bg.png" class="w-full h-full object-cover" alt="Meeting">
     </div>
   </div>
 
-  <div id="contact" class="bg-(--off-off-white) pt-16 pb-8 px-6 lg:px-32">
-    <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16">
-      <div class="max-w-md">
-        <a href="#home" class="flex items-center mb-6">
-          <img class="max-w-12 lg:max-w-12 mr-2" src="img/capital_hub_logo.png" />
-          <p class="font-bold text-(--royal-blue) text-md lg:text-xl mt-2">CAPITAL HUB</p>
-        </a>
-        <p class="text-(--royal-blue) text-3xl lg:text-4xl mb-8 leading-tight">
-          <span class="text-(--cta-teal)">Ready</span> to Take Control of your Finances?
-        </p>
-        <button class="bg-(--cta-teal) text-white px-8 py-3 rounded-full text-sm hover:bg-(--royal-blue) transition duration-300 shadow-lg">
-          Free Consultation
-        </button>
+  <div id="contact" class="bg-off-off-white py-16 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row justify-between items-start gap-16 mb-12">
+        <div class="max-w-md">
+          <a href="#home" class="flex items-center mb-8">
+            <img class="w-12 h-12 mr-3" src="img/capital_hub_logo.png" />
+            <p class="font-bold text-royal-blue text-xl">CAPITAL HUB</p>
+          </a>
+          <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold mb-8 leading-tight">
+            <span class="text-cta-teal">Ready</span> to Take Control of your Finances?
+          </h2>
+          <button class="bg-cta-teal text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-royal-blue transition duration-300 shadow-lg">
+            Free Consultation
+          </button>
+        </div>
+
+        <div class="flex flex-wrap gap-16 text-sm text-royal-blue">
+          <div>
+            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Contact Us</p>
+            <ul class="space-y-3">
+              <li class="font-semibold">Phone</li>
+              <li class="text-gray-600">+40 746 000 033</li>
+              <li class="font-semibold mt-6">Email</li>
+              <li class="text-gray-600">office@capitalhub.finance</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Main Menu</p>
+            <ul class="space-y-3 text-gray-600">
+              <li><a href="#about" class="hover:text-cta-teal transition duration-300">About Us</a></li>
+              <li><a href="#services" class="hover:text-cta-teal transition duration-300">Services</a></li>
+              <li><a href="#blog" class="hover:text-cta-teal transition duration-300">Blog</a></li>
+              <li><a href="#faq" class="hover:text-cta-teal transition duration-300">F.A.Q.</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Visit Us</p>
+            <ul class="space-y-3 text-gray-600">
+              <li>Sos. Unirii nr 55A,</li>
+              <li>Bucharest, Romania</li>
+              <li class="font-semibold mt-6 text-royal-blue">Open Sat-Sun</li>
+              <li>09:00 - 18:00</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="flex gap-16 lg:gap-32 text-xs text-(--royal-blue)">
-        <div>
-          <p class="font-bold mb-4 uppercase text-gray-400 text-[10px]">Contact Us</p>
-          <ul class="space-y-3">
-            <li>Phone</li>
-            <li>+40 746 000 033</li>
-            <li class="mt-4">Email</li>
-            <li>office@capitalhub.finance</li>
-          </ul>
+      <div class="border-t border-gray-300 pt-8 flex flex-col lg:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <p>© 2025 CapitalHub. All Rights Reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-royal-blue transition duration-300">Terms & Conditions</a>
+          <a href="#" class="hover:text-royal-blue transition duration-300">Privacy Policy</a>
         </div>
-        <div>
-          <p class="font-bold mb-4 uppercase text-gray-400 text-[10px]">Main Menu</p>
-          <ul class="space-y-3">
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Blog</li>
-            <li>F.A.Q.</li>
-          </ul>
+        <div class="flex gap-4">
+          <a href="#" class="text-royal-blue hover:text-cta-teal transition duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+          <a href="#" class="text-royal-blue hover:text-cta-teal transition duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+          <a href="#" class="text-royal-blue hover:text-cta-teal transition duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
         </div>
-        <div>
-          <p class="font-bold mb-4 uppercase text-gray-400 text-[10px]">Visit Us</p>
-          <ul class="space-y-3">
-            <li>Sos. Unirii nr 55A,</li>
-            <li>Bucharest, Romania</li>
-            <li class="mt-4">Open Sat-Sun</li>
-            <li>09:00 - 18:00</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="border-t border-gray-200 pt-8 flex flex-col lg:flex-row justify-between items-center text-[10px] text-gray-400">
-      <p>© 2025 CapitalHub. All Rights Reserved.</p>
-      <div class="flex gap-6 mt-4 lg:mt-0">
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
-      </div>
-      <div class="flex gap-4 mt-4 lg:mt-0">
-        <a href="#" class="text-(--royal-blue)"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-        <a href="#" class="text-(--royal-blue)"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
-        <a href="#" class="text-(--royal-blue)"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
       </div>
     </div>
   </div>

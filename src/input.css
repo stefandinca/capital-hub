@@ -16,6 +16,18 @@
   --font-sans: "Work Sans", sans-serif;
 }
 
+/* Add this :root block to make 'bg-(--royal-blue)' work */
+:root {
+  --royal-blue: var(--color-royal-blue);
+  --royal-blue-2: var(--color-royal-blue-2);
+  --warm-gold: var(--color-warm-gold);
+  --off-white: var(--color-off-white);
+  --off-off-white: var(--color-off-off-white);
+  --gray: var(--color-gray-base); /* Note: HTML uses 'gray', CSS has 'gray-base' */
+  --cta-teal: var(--color-cta-teal);
+  --off-blue: var(--color-off-blue);
+}
+
 /* Optional: Custom global styles */
 html, body {
   height: 100%;
