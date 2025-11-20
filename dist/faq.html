@@ -1,0 +1,459 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>FAQ - Capital Hub</title>
+  <style>
+    /* Simple utility for accordion animation */
+    .accordion-content {
+      transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+    .accordion-content.open {
+      opacity: 1;
+    }
+    .accordion-icon {
+      transition: transform 0.3s ease-in-out;
+    }
+    .accordion-btn[aria-expanded="true"] .accordion-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-white justify-center 2xl:px-96">
+  
+<div class="lg:hidden flex w-full justify-between bg-royal-blue items-center px-6 py-4 fixed z-50 shadow-lg">
+  <a href="index.html" class="flex items-center">
+    <img class="w-10 h-10 mr-2" src="img/capital_hub_logo.png" alt="Logo"/><p class="font-bold text-base text-white">CAPITAL HUB</p>
+  </a>
+
+  <div id="menu-btn" class="flex cursor-pointer fill-white">
+    <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="block" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="hidden" viewBox="0 0 16 16">
+      <path d="M4.646 4.646a.5.5 0 011 0L8 6.293l2.354-2.647a.5.5 0 11.708.708L8.707 7l2.647 2.354a.5.5 0 11-.708.708L8 7.707l-2.354 2.647a.5.5 0 11-.708-.708L7.293 7 4.646 4.646a.5.5 0 010-.708z"/>
+    </svg>
+  </div>
+</div>
+
+<div id="menu-overlay" class="fixed inset-0 bg-royal-blue/50 hidden z-40"></div>
+
+<div id="mobile-menu"
+  class="fixed top-[64px] left-0 w-full
+         bg-royal-blue-2 backdrop-blur-xl
+         flex flex-col items-center lg:hidden
+         transform scale-y-0 origin-top
+         transition-transform duration-300 ease-out z-50 shadow-xl">
+  <a href="index.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Home</a>
+  <a href="services.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Services</a>
+  <a href="#" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Blog</a>
+  <a href="faq.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">F.A.Q.</a>
+  <a href="#contact" class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">Contact</a>
+</div>
+
+
+<div class="hidden lg:block relative overflow-hidden m-6 rounded-3xl">
+  <div class="absolute inset-0">
+    <img src="img/faq.avif" class="w-full h-full object-cover" />
+  </div>
+
+  <div class="absolute inset-0 bg-gradient-to-br from-royal-blue/90 via-royal-blue-2/85 to-royal-blue/90"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-royal-blue/50 to-transparent"></div>
+
+  <div class="absolute top-20 right-20 w-96 h-96 bg-warm-gold/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+  <div class="relative flex flex-col">
+    <div class="flex p-6 justify-between items-center">
+      <div>
+        <a href="index.html" class="flex items-center group">
+          <div class="w-12 h-12 mr-3 rounded-xl bg-white/10 backdrop-blur-sm p-2 group-hover:bg-white/20 transition duration-300">
+            <img class="w-full h-full" src="img/capital_hub_logo.png" />
+          </div>
+          <p class="font-bold text-xl text-white">CAPITAL HUB</p>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="scroll-smooth">
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Home</button>
+        </a>
+        <a href="services.html" class="scroll-smooth">
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Services</button>
+        </a>
+        <a href="#" class="scroll-smooth">
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Blog</button>
+        </a>
+        <a href="faq.html" class="scroll-smooth">
+          <button class="py-2 px-4 rounded-lg text-warm-gold font-semibold text-sm transition duration-300 ease-in-out">F.A.Q.</button>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="#" class="scroll-smooth">
+          <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">
+            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>EN
+          </button>
+        </a>
+        <a href="#contact" class="scroll-smooth">
+          <button class="py-3 px-6 rounded-full text-white font-semibold text-sm transition duration-300 ease-in-out bg-gradient-to-r from-cta-teal to-cta-teal/80 hover:from-warm-gold hover:to-warm-gold shadow-lg">Contact</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="px-12 py-24 lg:px-24 text-center">
+      <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-6">
+        <p>Support Center</p>
+      </div>
+      <h1 class="text-5xl lg:text-6xl text-white font-bold leading-tight max-w-4xl mx-auto">Frequently Asked <span class="text-warm-gold">Questions</span></h1>
+      <p class="mt-8 text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">Everything you need to know about our financing solutions, eligibility criteria, and application process. Can't find what you're looking for? Our team is here to help.</p>
+    </div>
+  </div>
+</div>
+
+<div class="lg:hidden relative overflow-hidden px-6 pt-24 pb-12 bg-gradient-to-br from-off-off-white to-white">
+    <div class="absolute top-0 right-0 w-48 h-48 bg-warm-gold/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-royal-blue/5 rounded-full blur-3xl"></div>
+
+    <div class="relative text-center">
+      <div class="inline-block px-6 py-2 bg-gradient-to-r from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-4">
+        <p>Help & Support</p>
+      </div>
+      <h1 class="text-4xl text-royal-blue font-bold leading-tight">Frequently Asked <span class="text-warm-gold">Questions</span></h1>
+      <p class="mt-6 text-base text-gray-600 leading-relaxed">Find quick answers to common questions about Capital Hub's services.</p>
+    </div>
+</div>
+
+<div class="relative py-16 lg:py-24 px-6 bg-white">
+  <div class="absolute top-1/3 left-0 w-96 h-96 bg-cta-teal/5 rounded-full blur-3xl"></div>
+  
+  <div class="relative max-w-4xl mx-auto">
+    
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <button class="px-6 py-2 bg-royal-blue text-white rounded-full text-sm font-semibold shadow-lg transition transform hover:scale-105">All Questions</button>
+      <button class="px-6 py-2 bg-off-white text-gray-600 hover:text-royal-blue border border-gray-200 rounded-full text-sm font-semibold transition hover:bg-white">Funding</button>
+      <button class="px-6 py-2 bg-off-white text-gray-600 hover:text-royal-blue border border-gray-200 rounded-full text-sm font-semibold transition hover:bg-white">Process</button>
+      <button class="px-6 py-2 bg-off-white text-gray-600 hover:text-royal-blue border border-gray-200 rounded-full text-sm font-semibold transition hover:bg-white">Eligibility</button>
+    </div>
+
+    <div class="space-y-4">
+      
+      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+        <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">What types of financing does Capital Hub offer?</span>
+          <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
+            <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </button>
+        <div class="accordion-content px-6 text-gray-600 leading-relaxed">
+          <div class="pb-6">
+            We provide a comprehensive range of financial solutions tailored to your business needs. This includes short-term options like factoring and working capital lines, medium-to-long term solutions like equipment leasing and investment loans, as well as access to non-reimbursable funds (EU grants, PNRR) and alternative financing through fintechs and private investors.
+          </div>
+        </div>
+      </div>
+
+      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+        <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">What are the eligibility requirements?</span>
+          <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
+            <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </button>
+        <div class="accordion-content px-6 text-gray-600 leading-relaxed">
+          <div class="pb-6">
+            Eligibility varies depending on the specific financial product. Generally, for bank financing, we look for companies with at least 12 months of activity and positive financial results. However, for startups and early-stage companies, we have specific solutions like grants, micro-loans, or angel investment opportunities that have different criteria focused on innovation and growth potential.
+          </div>
+        </div>
+      </div>
+
+      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+        <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">How long does the funding process take?</span>
+          <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
+            <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </button>
+        <div class="accordion-content px-6 text-gray-600 leading-relaxed">
+          <div class="pb-6">
+            The timeline depends on the complexity of the request and the type of financing. Simple working capital lines or factoring can often be arranged within 1-2 weeks. More complex investment loans or EU grant applications may take 1-3 months. Our role is to expedite this process by ensuring all documentation is perfect before submission.
+          </div>
+        </div>
+      </div>
+
+      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+        <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Do you charge upfront fees?</span>
+          <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
+            <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </button>
+        <div class="accordion-content px-6 text-gray-600 leading-relaxed">
+          <div class="pb-6">
+            We believe in a success-based partnership. For most intermediation services, our fees are success-based, meaning we only get paid when you secure your funding. For complex consultancy projects requiring extensive preparation (like EU grants or business restructuring), we may have a transparent fee structure that includes a small retainer, which will be clearly discussed upfront.
+          </div>
+        </div>
+      </div>
+
+      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+        <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Can you help if my application was previously rejected?</span>
+          <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
+            <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </button>
+        <div class="accordion-content px-6 text-gray-600 leading-relaxed">
+          <div class="pb-6">
+            Yes, absolutely. Often, applications are rejected due to incomplete documentation or poor presentation rather than the business's actual viability. We perform a deep diagnostic of your financial health, identify the reasons for rejection, and help restructure your application or find alternative funding partners better suited to your risk profile.
+          </div>
+        </div>
+      </div>
+
+       <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+        <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">What industries do you work with?</span>
+          <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
+            <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </button>
+        <div class="accordion-content px-6 text-gray-600 leading-relaxed">
+          <div class="pb-6">
+            We are industry-agnostic and have successfully helped clients in Manufacturing, Construction, IT & Tech, Retail, Transport, and Agriculture. Our team includes specialists who understand the specific financial cycles and capital needs of different market sectors.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="relative overflow-hidden py-16 bg-off-off-white">
+  <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+    <div class="inline-block mb-6">
+      <div class="w-16 h-16 bg-gradient-to-br from-cta-teal to-cta-teal/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/></svg>
+      </div>
+    </div>
+    <h2 class="text-3xl font-bold text-royal-blue mb-4">Still have questions?</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-8">Can’t find the answer you’re looking for? Our financial experts are available to chat and guide you to the right solution.</p>
+    <div class="flex justify-center gap-4">
+      <a href="#contact">
+        <button class="bg-royal-blue text-white px-8 py-3 rounded-full font-semibold hover:bg-cta-teal transition duration-300 shadow-lg">Contact Support</button>
+      </a>
+      <a href="tel:+40746000033">
+        <button class="bg-white text-royal-blue border border-gray-200 px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition duration-300">Call Us Now</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="relative overflow-hidden bg-gradient-to-br from-off-off-white via-white to-off-off-white py-16 px-6 lg:px-12">
+  <div class="absolute top-0 right-0 w-96 h-96 bg-warm-gold/5 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-royal-blue/5 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto">
+    <div class="flex flex-col lg:flex-row justify-between items-start gap-16 mb-16">
+      <div class="max-w-md">
+        <a href="index.html" class="flex items-center mb-8 group">
+          <div class="w-12 h-12 mr-3 rounded-xl bg-gradient-to-br from-royal-blue to-royal-blue-2 p-2 group-hover:scale-110 transition duration-300">
+            <img class="w-full h-full" src="img/capital_hub_logo.png" />
+          </div>
+          <p class="font-bold text-royal-blue text-xl">CAPITAL HUB</p>
+        </a>
+
+        <div class="bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-3xl p-8 shadow-2xl mb-8">
+          <h2 class="text-2xl lg:text-3xl text-white font-bold mb-2 leading-tight">
+            <span class="text-warm-gold">Ready</span> to Take Control
+          </h2>
+          <h2 class="text-2xl lg:text-3xl text-white font-bold mb-4 leading-tight">
+            of your Finances?
+          </h2>
+          <p class="text-white/80 text-sm mb-6">Schedule your free consultation today and discover how we can help you achieve your financial goals.</p>
+          <button class="w-full bg-white text-royal-blue px-8 py-4 rounded-full text-sm font-semibold hover:bg-warm-gold hover:text-white transition duration-300 shadow-lg group">
+            <span class="flex items-center justify-center gap-2">
+              Free Consultation
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="group-hover:translate-x-1 transition duration-300">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+          <div class="text-center">
+            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-xl flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2CA58D" viewBox="0 0 16 16"><path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z"/></svg>
+            </div>
+            <p class="text-xs text-gray-600 font-semibold">Secure</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-warm-gold/10 to-transparent border border-warm-gold/20 rounded-xl flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#CFAE55" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+            </div>
+            <p class="text-xs text-gray-600 font-semibold">Trusted</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-royal-blue/10 to-transparent border border-royal-blue/20 rounded-xl flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#1A3C6E" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>
+            </div>
+            <p class="text-xs text-gray-600 font-semibold">Expert</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-12 lg:gap-16 text-sm">
+        <div>
+          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Contact Us</p>
+          <ul class="space-y-3">
+            <li class="font-semibold text-royal-blue">Phone</li>
+            <li class="text-gray-600 hover:text-cta-teal transition duration-300"><a href="tel:+40746000033">+40 746 000 033</a></li>
+            <li class="font-semibold text-royal-blue mt-6">Email</li>
+            <li class="text-gray-600 hover:text-cta-teal transition duration-300"><a href="mailto:office@capitalhub.finance">office@capitalhub.finance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Main Menu</p>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="index.html" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+              <span>Home</span>
+            </a></li>
+            <li><a href="services.html" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+              <span>Services</span>
+            </a></li>
+            <li><a href="#" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+              <span>Blog</span>
+            </a></li>
+            <li><a href="faq.html" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+              <span>F.A.Q.</span>
+            </a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Visit Us</p>
+          <ul class="space-y-3 text-gray-600">
+            <li>Sos. Unirii nr 55A,</li>
+            <li>Bucharest, Romania</li>
+            <li class="font-semibold mt-6 text-royal-blue">Open Sat-Sun</li>
+            <li>09:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-300 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6 text-xs text-gray-500">
+      <p>© 2025 CapitalHub. All Rights Reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Terms & Conditions</a>
+        <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Privacy Policy</a>
+      </div>
+      <div class="flex gap-4">
+        <a href="#" class="w-8 h-8 bg-royal-blue hover:bg-cta-teal text-white rounded-full flex items-center justify-center transition duration-300 hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+        </a>
+        <a href="#" class="w-8 h-8 bg-royal-blue hover:bg-cta-teal text-white rounded-full flex items-center justify-center transition duration-300 hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+        </a>
+        <a href="#" class="w-8 h-8 bg-royal-blue hover:bg-cta-teal text-white rounded-full flex items-center justify-center transition duration-300 hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Mobile Menu Logic
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeIcon = document.getElementById("close-icon");
+  const menuOverlay = document.getElementById("menu-overlay");
+
+  function openMenu() {
+    mobileMenu.classList.remove("scale-y-0");
+    mobileMenu.classList.add("scale-y-100");
+    hamburgerIcon.classList.add("hidden");
+    closeIcon.classList.remove("hidden");
+    menuOverlay.classList.remove("hidden");
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.remove("scale-y-100");
+    mobileMenu.classList.add("scale-y-0");
+    hamburgerIcon.classList.remove("hidden");
+    closeIcon.classList.add("hidden");
+    menuOverlay.classList.add("hidden");
+  }
+
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (mobileMenu.classList.contains("scale-y-0")) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
+  });
+
+  // Close when clicking overlay
+  menuOverlay.addEventListener("click", closeMenu);
+
+  // Close when clicking a link inside the mobile menu
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  // Accordion Logic
+  const accordions = document.querySelectorAll('.accordion-btn');
+
+  accordions.forEach(acc => {
+    acc.addEventListener('click', function() {
+      const content = this.nextElementSibling;
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      // Close all other accordions (optional - standard behavior often keeps them open)
+      // accordions.forEach(otherAcc => {
+      //   if (otherAcc !== this) {
+      //     otherAcc.setAttribute('aria-expanded', 'false');
+      //     otherAcc.nextElementSibling.style.maxHeight = null;
+      //     otherAcc.nextElementSibling.classList.remove('open');
+      //   }
+      // });
+
+      // Toggle current
+      this.setAttribute('aria-expanded', !isExpanded);
+      content.classList.toggle('open');
+
+      if (!isExpanded) {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = null;
+      }
+    });
+  });
+</script>
+</body>
+</html>
