@@ -1,25 +1,22 @@
 @import "tailwindcss";
 
-@import "tailwindcss/preflight";
-@import "tailwindcss/theme";
-@import "tailwindcss/utilities";
-
 /* Optional: your custom CSS below */
 html, body {
   height: 100%;
 }
 
+/* Define your variables here for v4 compatibility */
+:root {
+  --royal-blue: #1A3C6E;    /*Main blue color*/
+  --warm-gold: #CFAE55;     /*Titles*/
+  --off-white: #F4F4F4;     /*Off white*/
+  --off-off-white: #F6F5F2; /*Off white*/
+  --gray: #333333;          /*Gray*/
+  --cta-teal: #2CA58D;      /*CTA*/
+  --off-blue: #98B0D4;      /*Off blue*/
+  --royal-blue-2: #112F5A;  /*royal blue 2*/
+}
 
-:root{
-      --royal-blue:#1A3C6E;    /*Main blue color*/
-      --warm-gold:#CFAE55;     /*Titles*/
-      --off-white:#F4F4F4;     /*Off white*/
-      --off-off-white:#F6F5F2; /*Off white*/
-      --gray:#333333;          /*Gray*/
-      --cta-teal:#2CA58D;      /*CTA*/
-      --off-blue:#98B0D4;     /*Off blue*/
-      --royal-blue-2:#112F5A; /*royal blue 2*/
-    }
 body {
     font-family: "Work Sans", sans-serif;
 }
