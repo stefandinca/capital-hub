@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CapitaHub - Home</title>
+  <link href="style.css" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    });
+  </script>
+</head>
+<body class="font-sans text-gray-base bg-off-off-white">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-4 md:px-8">
+      <a href="index.html" class="flex items-center space-x-2">
+        <div class="bg-royal-blue text-white px-2 py-1 font-bold">CHF</div>
+        <span class="font-semibold text-royal-blue">CAPITAHUB</span>
+      </a>
+      <nav class="hidden md:flex space-x-6 text-royal-blue">
+        <a href="about.html" class="hover:text-warm-gold">About</a>
+        <a href="services.html" class="hover:text-warm-gold">Services</a>
+        <a href="blog.html" class="hover:text-warm-gold">Blog</a>
+        <a href="faq.html" class="hover:text-warm-gold">FAQ</a>
+        <a href="contact.html" class="hover:text-warm-gold">Contact</a>
+      </nav>
+      <div class="hidden md:block">
+        <a href="contact.html" class="bg-cta-teal text-white px-4 py-2 rounded hover:bg-royal-blue">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden focus:outline-none text-royal-blue">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 bg-white">
+      <nav class="flex flex-col space-y-2 text-royal-blue">
+        <a href="about.html" class="hover:text-warm-gold">About</a>
+        <a href="services.html" class="hover:text-warm-gold">Services</a>
+        <a href="blog.html" class="hover:text-warm-gold">Blog</a>
+        <a href="faq.html" class="hover:text-warm-gold">FAQ</a>
+        <a href="contact.html" class="hover:text-warm-gold">Contact</a>
+        <a href="contact.html" class="bg-cta-teal text-white px-4 py-2 rounded text-center hover:bg-royal-blue">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-off-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <h1 class="text-3xl md:text-5xl font-bold text-royal-blue mb-4">Invest with confidence.<br><span class="text-warm-gold">Grow with purpose</span></h1>
+        <p class="mb-6 text-gray-base">CapitaHub empowers small businesses to secure the funding they need to thrive and grow.</p>
+        <div class="space-x-4">
+          <a href="#" class="bg-cta-teal text-white px-4 py-2 rounded hover:bg-royal-blue">Learn more</a>
+          <a href="#" class="border border-cta-teal text-cta-teal px-4 py-2 rounded hover:bg-cta-teal hover:text-white">Schedule a call</a>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img src="assets/images/hero.jpg" alt="Hero" class="rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <h2 class="text-3xl font-bold text-center text-royal-blue mb-12">Why Choose CapitaHub</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-off-off-white p-6 rounded-lg shadow text-center">
+          <img src="assets/images/icon1.svg" alt="icon" class="mx-auto mb-4 w-12 h-12">
+          <h3 class="font-semibold text-warm-gold mb-2">Trusted Expertise</h3>
+          <p>Our financial experts have decades of experience helping businesses secure growth funding.</p>
+        </div>
+        <div class="bg-off-off-white p-6 rounded-lg shadow text-center">
+          <img src="assets/images/icon2.svg" alt="icon" class="mx-auto mb-4 w-12 h-12">
+          <h3 class="font-semibold text-warm-gold mb-2">Tailored Strategies</h3>
+          <p>We understand every business is unique. Our approach adapts to your goals and needs.</p>
+        </div>
+        <div class="bg-off-off-white p-6 rounded-lg shadow text-center">
+          <img src="assets/images/icon3.svg" alt="icon" class="mx-auto mb-4 w-12 h-12">
+          <h3 class="font-semibold text-warm-gold mb-2">Long-Term Partnership</h3>
+          <p>We’re not just here for the deal — we’re here for your growth journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Mission -->
+  <section class="py-16 bg-off-off-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <img src="assets/images/about.jpg" alt="About" class="rounded-lg shadow-md">
+      </div>
+      <div class="flex-1">
+        <h2 class="text-3xl font-bold text-royal-blue mb-4">Our Mission</h2>
+        <p class="mb-4">CapitaHub exists to connect ambitious entrepreneurs with the capital they need to grow sustainably. Our mission is to simplify funding and build lasting relationships.</p>
+        <a href="about.html" class="bg-cta-teal text-white px-4 py-2 rounded hover:bg-royal-blue">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / Steps -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <h2 class="text-3xl font-bold text-center text-royal-blue mb-12">How It Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-warm-gold mb-2">1</div>
+          <h3 class="font-semibold mb-2">Initial Consultation</h3>
+          <p>We meet to understand your business needs and funding goals.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-warm-gold mb-2">2</div>
+          <h3 class="font-semibold mb-2">Tailored Strategy</h3>
+          <p>Our experts design a custom plan to secure the right funding.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-warm-gold mb-2">3</div>
+          <h3 class="font-semibold mb-2">Funding & Growth</h3>
+          <p>We help you access capital and support your growth journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-off-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+      <h2 class="text-3xl font-bold text-royal-blue mb-12">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="mb-4 italic">“CapitaHub made securing funding effortless. Their team truly cared about our business.”</p>
+          <h4 class="font-semibold text-warm-gold">— Ana Popescu</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="mb-4 italic">“Professional, responsive, and strategic. We couldn’t have scaled without them.”</p>
+          <h4 class="font-semibold text-warm-gold">— Mihai Ionescu</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="mb-4 italic">“They became a true partner in our growth journey. Highly recommended!”</p>
+          <h4 class="font-semibold text-warm-gold">— Elena Radu</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 md:px-8">
+      <h2 class="text-3xl font-bold text-center text-royal-blue mb-8">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <div class="border-b pb-4">
+          <h3 class="font-semibold text-warm-gold mb-2">How quickly can I get funding?</h3>
+          <p>Most of our clients receive funding offers within 2–4 weeks of starting the process.</p>
+        </div>
+        <div class="border-b pb-4">
+          <h3 class="font-semibold text-warm-gold mb-2">Do you work with startups?</h3>
+          <p>Yes. We help early-stage businesses access the right type of capital for their growth stage.</p>
+        </div>
+        <div class="border-b pb-4">
+          <h3 class="font-semibold text-warm-gold mb-2">What industries do you support?</h3>
+          <p>We work across multiple sectors including tech, retail, manufacturing, and services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-16 bg-royal-blue text-white text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">Stay Informed</h2>
+      <p class="mb-6 text-off-blue">Subscribe to get the latest funding tips and updates from CapitaHub.</p>
+      <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded text-gray-base" required>
+        <button type="submit" class="bg-cta-teal px-6 py-2 rounded hover:bg-warm-gold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-royal-blue-2 text-off-blue">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <div class="bg-white text-royal-blue px-2 py-1 font-bold">CHF</div>
+          <span class="font-semibold text-white">CAPITAHUB</span>
+        </div>
+        <p>Ready to take control of your finances?</p>
+        <a href="contact.html" class="inline-block mt-4 bg-cta-teal text-white px-4 py-2 rounded hover:bg-warm-gold">Free Consultation</a>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="about.html" class="hover:text-warm-gold">About</a></li>
+          <li><a href="services.html" class="hover:text-warm-gold">Services</a></li>
+          <li><a href="blog.html" class="hover:text-warm-gold">Blog</a></li>
+          <li><a href="faq.html" class="hover:text-warm-gold">FAQ</a></li>
+          <li><a href="contact.html" class="hover:text-warm-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4">Contact</h4>
+        <p>Phone: +40 746 000 033</p>
+        <p>Email: office@capitalhub.finance</p>
+        <p class="mt-2">Sos. Unirii nr 55A, Bucharest, Romania</p>
+      </div>
+    </div>
+    <div class="border-t border-off-blue py-4 text-center text-sm">
+      © 2025 CapitaHub. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+</html>
