@@ -1,13 +1,9 @@
 @import "tailwindcss";
 
-/* Optional: your custom CSS below */
-html, body {
-  height: 100%;
-}
-
-/* Define your variables here for v4 compatibility */
-:root {
- --color-royal-blue: #1A3C6E;
+@theme {
+  /* Define custom colors here. 
+     Tailwind will automatically generate classes like 'bg-royal-blue', 'text-warm-gold', etc. */
+  --color-royal-blue: #1A3C6E;
   --color-royal-blue-2: #112F5A;
   --color-warm-gold: #CFAE55;
   --color-off-white: #F4F4F4;
@@ -15,8 +11,16 @@ html, body {
   --color-gray-base: #333333;
   --color-cta-teal: #2CA58D;
   --color-off-blue: #98B0D4;
+
+  /* Define fonts */
+  --font-sans: "Work Sans", sans-serif;
+}
+
+/* Optional: Custom global styles */
+html, body {
+  height: 100%;
 }
 
 body {
-    font-family: "Work Sans", sans-serif;
+  font-family: var(--font-sans);
 }
