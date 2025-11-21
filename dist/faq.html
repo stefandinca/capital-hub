@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>FAQ - Capital Hub</title>
+  <title>Întrebări Frecvente - Capital Hub</title>
   <style>
-    /* Simple utility for accordion animation */
+    /* Utilitar simplu pentru animația acordeonului */
     .accordion-content {
       transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
       max-height: 0;
@@ -24,6 +24,17 @@
     }
     .accordion-btn[aria-expanded="true"] .accordion-icon {
       transform: rotate(180deg);
+    }
+    /* Stiluri pentru butoanele de filtrare active/inactive */
+    .filter-btn.active {
+      background-color: #1a3c6e; /* royal-blue approx */
+      color: white;
+      border-color: transparent;
+    }
+    .filter-btn.inactive {
+      background-color: #f9fafb; /* off-white approx */
+      color: #4b5563; /* gray-600 */
+      border-color: #e5e7eb;
     }
   </style>
 </head>
@@ -52,10 +63,10 @@
          flex flex-col items-center lg:hidden
          transform scale-y-0 origin-top
          transition-transform duration-300 ease-out z-50 shadow-xl">
-  <a href="index.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Home</a>
-  <a href="services.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Services</a>
+  <a href="index.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Acasă</a>
+  <a href="services.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Servicii</a>
   <a href="#" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Blog</a>
-  <a href="faq.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">F.A.Q.</a>
+  <a href="faq.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Întrebări Frecvente</a>
   <a href="#contact" class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">Contact</a>
 </div>
 
@@ -84,10 +95,10 @@
 
       <div class="flex items-center gap-2">
         <a href="index.html" class="scroll-smooth">
-          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Home</button>
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Acasă</button>
         </a>
         <a href="services.html" class="scroll-smooth">
-          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Services</button>
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Servicii</button>
         </a>
         <a href="#" class="scroll-smooth">
           <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Blog</button>
@@ -102,7 +113,7 @@
           <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">
             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-            </svg>EN
+            </svg>RO
           </button>
         </a>
         <a href="#contact" class="scroll-smooth">
@@ -113,10 +124,10 @@
 
     <div class="px-12 py-24 lg:px-24 text-center">
       <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-6">
-        <p>Support Center</p>
+        <p>Centru de Suport</p>
       </div>
-      <h1 class="text-5xl lg:text-6xl text-white font-bold leading-tight max-w-4xl mx-auto">Frequently Asked <span class="text-warm-gold">Questions</span></h1>
-      <p class="mt-8 text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">Everything you need to know about our financing solutions, eligibility criteria, and application process. Can't find what you're looking for? Our team is here to help.</p>
+      <h1 class="text-5xl lg:text-6xl text-white font-bold leading-tight max-w-4xl mx-auto">Întrebări <span class="text-warm-gold">Frecvente</span></h1>
+      <p class="mt-8 text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">Tot ce trebuie să știi despre soluțiile noastre de finanțare, criteriile de eligibilitate și procesul de aplicare. Nu găsești ce cauți? Echipa noastră este aici să te ajute.</p>
     </div>
   </div>
 </div>
@@ -127,10 +138,10 @@
 
     <div class="relative text-center">
       <div class="inline-block px-6 py-2 bg-gradient-to-r from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-4">
-        <p>Help & Support</p>
+        <p>Ajutor & Suport</p>
       </div>
-      <h1 class="text-4xl text-royal-blue font-bold leading-tight">Frequently Asked <span class="text-warm-gold">Questions</span></h1>
-      <p class="mt-6 text-base text-gray-600 leading-relaxed">Find quick answers to common questions about Capital Hub's services.</p>
+      <h1 class="text-4xl text-royal-blue font-bold leading-tight">Întrebări <span class="text-warm-gold">Frecvente</span></h1>
+      <p class="mt-6 text-base text-gray-600 leading-relaxed">Găsește răspunsuri rapide la întrebările comune despre serviciile Capital Hub.</p>
     </div>
 </div>
 
@@ -140,94 +151,94 @@
   <div class="relative max-w-4xl mx-auto">
     
     <div class="flex flex-wrap justify-center gap-3 mb-12">
-      <button class="px-6 py-2 bg-royal-blue text-white rounded-full text-sm font-semibold shadow-lg transition transform hover:scale-105">All Questions</button>
-      <button class="px-6 py-2 bg-off-white text-gray-600 hover:text-royal-blue border border-gray-200 rounded-full text-sm font-semibold transition hover:bg-white">Funding</button>
-      <button class="px-6 py-2 bg-off-white text-gray-600 hover:text-royal-blue border border-gray-200 rounded-full text-sm font-semibold transition hover:bg-white">Process</button>
-      <button class="px-6 py-2 bg-off-white text-gray-600 hover:text-royal-blue border border-gray-200 rounded-full text-sm font-semibold transition hover:bg-white">Eligibility</button>
+      <button class="filter-btn active px-6 py-2 rounded-full text-sm font-semibold shadow-lg transition transform hover:scale-105 border" data-filter="all">Toate Întrebările</button>
+      <button class="filter-btn inactive px-6 py-2 rounded-full text-sm font-semibold transition hover:bg-white border" data-filter="funding">Finanțare</button>
+      <button class="filter-btn inactive px-6 py-2 rounded-full text-sm font-semibold transition hover:bg-white border" data-filter="process">Proces</button>
+      <button class="filter-btn inactive px-6 py-2 rounded-full text-sm font-semibold transition hover:bg-white border" data-filter="eligibility">Eligibilitate</button>
     </div>
 
-    <div class="space-y-4">
+    <div class="space-y-4" id="faq-container">
       
-      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+      <div class="faq-item group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300" data-category="funding">
         <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
-          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">What types of financing does Capital Hub offer?</span>
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Ce tipuri de finanțare oferă Capital Hub?</span>
           <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
             <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </div>
         </button>
         <div class="accordion-content px-6 text-gray-600 leading-relaxed">
           <div class="pb-6">
-            We provide a comprehensive range of financial solutions tailored to your business needs. This includes short-term options like factoring and working capital lines, medium-to-long term solutions like equipment leasing and investment loans, as well as access to non-reimbursable funds (EU grants, PNRR) and alternative financing through fintechs and private investors.
+            Oferim o gamă completă de soluții financiare adaptate nevoilor afacerii tale. Aceasta include opțiuni pe termen scurt, precum factoring și linii de capital de lucru, soluții pe termen mediu și lung, cum ar fi leasing de echipamente și credite de investiții, precum și acces la fonduri nerambursabile (granturi UE, PNRR) și finanțare alternativă prin fintech-uri și investitori privați.
           </div>
         </div>
       </div>
 
-      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+      <div class="faq-item group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300" data-category="eligibility">
         <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
-          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">What are the eligibility requirements?</span>
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Care sunt cerințele de eligibilitate?</span>
           <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
             <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </div>
         </button>
         <div class="accordion-content px-6 text-gray-600 leading-relaxed">
           <div class="pb-6">
-            Eligibility varies depending on the specific financial product. Generally, for bank financing, we look for companies with at least 12 months of activity and positive financial results. However, for startups and early-stage companies, we have specific solutions like grants, micro-loans, or angel investment opportunities that have different criteria focused on innovation and growth potential.
+            Eligibilitatea variază în funcție de produsul financiar specific. În general, pentru finanțarea bancară, căutăm companii cu cel puțin 12 luni de activitate și rezultate financiare pozitive. Cu toate acestea, pentru startup-uri și companii la început de drum, avem soluții specifice precum granturi, micro-credite sau oportunități de investiții de tip angel, care au criterii diferite axate pe inovație și potențial de creștere.
           </div>
         </div>
       </div>
 
-      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+      <div class="faq-item group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300" data-category="process">
         <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
-          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">How long does the funding process take?</span>
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Cât durează procesul de finanțare?</span>
           <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
             <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </div>
         </button>
         <div class="accordion-content px-6 text-gray-600 leading-relaxed">
           <div class="pb-6">
-            The timeline depends on the complexity of the request and the type of financing. Simple working capital lines or factoring can often be arranged within 1-2 weeks. More complex investment loans or EU grant applications may take 1-3 months. Our role is to expedite this process by ensuring all documentation is perfect before submission.
+            Durata depinde de complexitatea cererii și de tipul de finanțare. Liniile simple de capital de lucru sau factoringul pot fi adesea aranjate în 1-2 săptămâni. Creditele de investiții mai complexe sau cererile pentru granturi UE pot dura 1-3 luni. Rolul nostru este să accelerăm acest proces asigurându-ne că toată documentația este perfectă înainte de depunere.
           </div>
         </div>
       </div>
 
-      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+      <div class="faq-item group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300" data-category="funding">
         <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
-          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Do you charge upfront fees?</span>
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Percepeți comisioane în avans?</span>
           <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
             <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </div>
         </button>
         <div class="accordion-content px-6 text-gray-600 leading-relaxed">
           <div class="pb-6">
-            We believe in a success-based partnership. For most intermediation services, our fees are success-based, meaning we only get paid when you secure your funding. For complex consultancy projects requiring extensive preparation (like EU grants or business restructuring), we may have a transparent fee structure that includes a small retainer, which will be clearly discussed upfront.
+            Credem într-un parteneriat bazat pe succes. Pentru majoritatea serviciilor de intermediere, onorariile noastre sunt bazate pe succes, ceea ce înseamnă că suntem plătiți doar atunci când obțineți finanțarea. Pentru proiecte complexe de consultanță care necesită o pregătire extensivă (cum ar fi granturi UE sau restructurarea afacerii), putem avea o structură transparentă de comisioane care include un mic avans, aspect ce va fi discutat clar de la început.
           </div>
         </div>
       </div>
 
-      <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+      <div class="faq-item group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300" data-category="process">
         <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
-          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Can you help if my application was previously rejected?</span>
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Mă puteți ajuta dacă cererea mea a fost respinsă anterior?</span>
           <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
             <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </div>
         </button>
         <div class="accordion-content px-6 text-gray-600 leading-relaxed">
           <div class="pb-6">
-            Yes, absolutely. Often, applications are rejected due to incomplete documentation or poor presentation rather than the business's actual viability. We perform a deep diagnostic of your financial health, identify the reasons for rejection, and help restructure your application or find alternative funding partners better suited to your risk profile.
+            Da, absolut. Adesea, cererile sunt respinse din cauza documentației incomplete sau a prezentării slabe, mai degrabă decât din cauza viabilității reale a afacerii. Efectuăm un diagnostic profund al sănătății tale financiare, identificăm motivele respingerii și ajutăm la restructurarea cererii tale sau la găsirea unor parteneri de finanțare alternativi, mai potriviți profilului tău de risc.
           </div>
         </div>
       </div>
 
-       <div class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300">
+       <div class="faq-item group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cta-teal/30 transition-all duration-300" data-category="eligibility">
         <button class="accordion-btn w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
-          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">What industries do you work with?</span>
+          <span class="text-lg font-bold text-royal-blue group-hover:text-cta-teal transition-colors">Cu ce industrii lucrați?</span>
           <div class="w-8 h-8 bg-royal-blue/5 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cta-teal/10 transition-colors">
             <svg class="accordion-icon w-4 h-4 text-royal-blue group-hover:text-cta-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </div>
         </button>
         <div class="accordion-content px-6 text-gray-600 leading-relaxed">
           <div class="pb-6">
-            We are industry-agnostic and have successfully helped clients in Manufacturing, Construction, IT & Tech, Retail, Transport, and Agriculture. Our team includes specialists who understand the specific financial cycles and capital needs of different market sectors.
+            Suntem agnostici din punct de vedere al industriei și am ajutat cu succes clienți din Producție, Construcții, IT & Tech, Retail, Transport și Agricultură. Echipa noastră include specialiști care înțeleg ciclurile financiare specifice și nevoile de capital ale diferitelor sectoare de piață.
           </div>
         </div>
       </div>
@@ -244,14 +255,14 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/></svg>
       </div>
     </div>
-    <h2 class="text-3xl font-bold text-royal-blue mb-4">Still have questions?</h2>
-    <p class="text-gray-600 max-w-2xl mx-auto mb-8">Can’t find the answer you’re looking for? Our financial experts are available to chat and guide you to the right solution.</p>
+    <h2 class="text-3xl font-bold text-royal-blue mb-4">Mai ai întrebări?</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-8">Nu găsești răspunsul pe care îl cauți? Experții noștri financiari sunt disponibili pentru a discuta și a te ghida către soluția potrivită.</p>
     <div class="flex justify-center gap-4">
       <a href="#contact">
-        <button class="bg-royal-blue text-white px-8 py-3 rounded-full font-semibold hover:bg-cta-teal transition duration-300 shadow-lg">Contact Support</button>
+        <button class="bg-royal-blue text-white px-8 py-3 rounded-full font-semibold hover:bg-cta-teal transition duration-300 shadow-lg">Contactează Suportul</button>
       </a>
       <a href="tel:+40746000033">
-        <button class="bg-white text-royal-blue border border-gray-200 px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition duration-300">Call Us Now</button>
+        <button class="bg-white text-royal-blue border border-gray-200 px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition duration-300">Sună-ne Acum</button>
       </a>
     </div>
   </div>
@@ -273,15 +284,15 @@
 
         <div class="bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-3xl p-8 shadow-2xl mb-8">
           <h2 class="text-2xl lg:text-3xl text-white font-bold mb-2 leading-tight">
-            <span class="text-warm-gold">Ready</span> to Take Control
+            <span class="text-warm-gold">Gata</span> să preiei controlul
           </h2>
           <h2 class="text-2xl lg:text-3xl text-white font-bold mb-4 leading-tight">
-            of your Finances?
+            finanțelor tale?
           </h2>
-          <p class="text-white/80 text-sm mb-6">Schedule your free consultation today and discover how we can help you achieve your financial goals.</p>
+          <p class="text-white/80 text-sm mb-6">Programează o consultație gratuită astăzi și descoperă cum te putem ajuta să îți atingi obiectivele financiare.</p>
           <button class="w-full bg-white text-royal-blue px-8 py-4 rounded-full text-sm font-semibold hover:bg-warm-gold hover:text-white transition duration-300 shadow-lg group">
             <span class="flex items-center justify-center gap-2">
-              Free Consultation
+              Consultanță Gratuită
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="group-hover:translate-x-1 transition duration-300">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
               </svg>
@@ -294,13 +305,13 @@
             <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-xl flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2CA58D" viewBox="0 0 16 16"><path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z"/></svg>
             </div>
-            <p class="text-xs text-gray-600 font-semibold">Secure</p>
+            <p class="text-xs text-gray-600 font-semibold">Sigur</p>
           </div>
           <div class="text-center">
             <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-warm-gold/10 to-transparent border border-warm-gold/20 rounded-xl flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#CFAE55" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
             </div>
-            <p class="text-xs text-gray-600 font-semibold">Trusted</p>
+            <p class="text-xs text-gray-600 font-semibold">De Încredere</p>
           </div>
           <div class="text-center">
             <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-royal-blue/10 to-transparent border border-royal-blue/20 rounded-xl flex items-center justify-center">
@@ -313,9 +324,9 @@
 
       <div class="flex flex-wrap gap-12 lg:gap-16 text-sm">
         <div>
-          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Contact Us</p>
+          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Contactează-ne</p>
           <ul class="space-y-3">
-            <li class="font-semibold text-royal-blue">Phone</li>
+            <li class="font-semibold text-royal-blue">Telefon</li>
             <li class="text-gray-600 hover:text-cta-teal transition duration-300"><a href="tel:+40746000033">+40 746 000 033</a></li>
             <li class="font-semibold text-royal-blue mt-6">Email</li>
             <li class="text-gray-600 hover:text-cta-teal transition duration-300"><a href="mailto:office@capitalhub.finance">office@capitalhub.finance</a></li>
@@ -323,19 +334,19 @@
         </div>
 
         <div>
-          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Main Menu</p>
+          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Meniu Principal</p>
           <ul class="space-y-3 text-gray-600">
             <li><a href="index.html" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
               </svg>
-              <span>Home</span>
+              <span>Acasă</span>
             </a></li>
             <li><a href="services.html" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
               </svg>
-              <span>Services</span>
+              <span>Servicii</span>
             </a></li>
             <li><a href="#" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
@@ -353,11 +364,11 @@
         </div>
 
         <div>
-          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Visit Us</p>
+          <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Vizitează-ne</p>
           <ul class="space-y-3 text-gray-600">
-            <li>Sos. Unirii nr 55A,</li>
-            <li>Bucharest, Romania</li>
-            <li class="font-semibold mt-6 text-royal-blue">Open Sat-Sun</li>
+            <li>Șos. Unirii nr 55A,</li>
+            <li>București, România</li>
+            <li class="font-semibold mt-6 text-royal-blue">Deschis Sâm-Dum</li>
             <li>09:00 - 18:00</li>
           </ul>
         </div>
@@ -365,10 +376,10 @@
     </div>
 
     <div class="border-t border-gray-300 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6 text-xs text-gray-500">
-      <p>© 2025 CapitalHub. All Rights Reserved.</p>
+      <p>© 2025 CapitalHub. Toate Drepturile Rezervate.</p>
       <div class="flex gap-6">
-        <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Terms & Conditions</a>
-        <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Privacy Policy</a>
+        <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Termeni & Condiții</a>
+        <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Politica de Confidențialitate</a>
       </div>
       <div class="flex gap-4">
         <a href="#" class="w-8 h-8 bg-royal-blue hover:bg-cta-teal text-white rounded-full flex items-center justify-center transition duration-300 hover:scale-110">
@@ -434,15 +445,6 @@
       const content = this.nextElementSibling;
       const isExpanded = this.getAttribute('aria-expanded') === 'true';
 
-      // Close all other accordions (optional - standard behavior often keeps them open)
-      // accordions.forEach(otherAcc => {
-      //   if (otherAcc !== this) {
-      //     otherAcc.setAttribute('aria-expanded', 'false');
-      //     otherAcc.nextElementSibling.style.maxHeight = null;
-      //     otherAcc.nextElementSibling.classList.remove('open');
-      //   }
-      // });
-
       // Toggle current
       this.setAttribute('aria-expanded', !isExpanded);
       content.classList.toggle('open');
@@ -454,6 +456,58 @@
       }
     });
   });
+
+  // Filter Logic (NEW)
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // 1. Update active button state
+      filterBtns.forEach(b => {
+        b.classList.remove('active');
+        b.classList.add('inactive');
+      });
+      btn.classList.remove('inactive');
+      btn.classList.add('active');
+
+      // 2. Filter items
+      const filterValue = btn.getAttribute('data-filter');
+
+      faqItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        
+        if (filterValue === 'all' || filterValue === itemCategory) {
+          // Show item
+          item.style.display = 'block';
+          // Small timeout to allow display:block to apply before opacity fade
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 10);
+        } else {
+          // Hide item
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300); // Match duration-300
+        }
+      });
+    });
+  });
+
 </script>
+<a href="https://wa.me/40749119999" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 z-50">
+        <div class="relative flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-lg">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75 animate-ping"></span>
+            
+            <span class="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.76.46 3.45 1.32 4.95L2.06 21.94l5.25-1.37c1.44.8 3.05 1.24 4.73 1.24c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2M12.04 20.13c-1.51 0-2.97-.42-4.22-1.22l-.3-.18l-3.12.82l.83-3.04l-.2-.31c-.88-1.35-1.34-2.9-1.34-4.5c0-4.76 3.92-8.68 8.72-8.68c4.8 0 8.72 3.92 8.72 8.68c0 4.76-3.92 8.68-8.72 8.68m5.31-6.19c-.24-.12-1.42-.7-1.64-.78c-.22-.08-.38-.12-.54.12c-.16.24-.62.78-.76.94c-.14.16-.28.18-.52.06c-.24-.12-1.02-.38-1.94-1.18c-.72-.62-1.2-1.38-1.34-1.62c-.14-.24-.01-.37.11-.48c.11-.11.24-.28.36-.42c.12-.14.16-.24.24-.4c.08-.16.04-.3-.02-.42c-.06-.12-.54-1.3-.74-1.78c-.2-.48-.4-.41-.54-.41c-.14,0-.3,0-.46,0c-.16,0-.42.06-.64.3c-.22.24-.86.84-.86 2.04c0 1.2.88 2.36 1 2.52c.12.16 1.74 2.65 4.22 3.72c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.42-.58 1.62-1.14c.2-.56.2-1.04.14-1.14c-.06-.1-.22-.16-.46-.28Z"/>
+                </svg>
+            </span>
+        </div>
+    </a>
 </body>
 </html>

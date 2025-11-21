@@ -60,6 +60,7 @@
     --radius-3xl: 1.5rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-bounce: bounce 1s infinite;
     --blur-sm: 8px;
     --blur-xl: 24px;
@@ -516,6 +517,12 @@
   .h-full {
     height: 100%;
   }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
+  }
+  .max-h-40 {
+    max-height: calc(var(--spacing) * 40);
+  }
   .min-h-80 {
     min-height: calc(var(--spacing) * 80);
   }
@@ -671,11 +678,17 @@
   .rotate-3 {
     rotate: 3deg;
   }
+  .rotate-45 {
+    rotate: 45deg;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .animate-bounce {
     animation: var(--animate-bounce);
+  }
+  .animate-ping {
+    animation: var(--animate-ping);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -832,6 +845,10 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
   .border-cta-teal {
     border-color: var(--color-cta-teal);
   }
@@ -916,6 +933,9 @@
       border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
     }
   }
+  .bg-\[\#25D366\] {
+    background-color: #25D366;
+  }
   .bg-cta-teal {
     background-color: var(--color-cta-teal);
   }
@@ -936,6 +956,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-cta-teal) 20%, transparent);
     }
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
@@ -1320,6 +1343,9 @@
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
   }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -1349,6 +1375,9 @@
   }
   .pb-32 {
     padding-bottom: calc(var(--spacing) * 32);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
@@ -1506,6 +1535,9 @@
   }
   .opacity-40 {
     opacity: 40%;
+  }
+  .opacity-75 {
+    opacity: 75%;
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -2499,6 +2531,12 @@ body {
 @property --tw-ease {
   syntax: "*";
   inherits: false;
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 @keyframes bounce {
   0%, 100% {

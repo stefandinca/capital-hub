@@ -7,62 +7,49 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
- 
+  <title>Capital Hub Finance - Soluții de Finanțare</title>
 </head>
 <body class=" bg-white justify-center  2xl:px-96">
   
-  <!-- HEADER-->
-
-<!-- Navbar -->
-<div class="lg:hidden flex w-full justify-between bg-royal-blue items-center px-6 py-4 fixed z-50 shadow-lg">
-  <!-- Logo -->
+  <div class="lg:hidden flex w-full justify-between bg-royal-blue items-center px-6 py-4 fixed z-50 shadow-lg">
   <a href="#home" class="flex items-center">
     <img class="w-10 h-10 mr-2" src="img/capital_hub_logo.png" /><p class="font-bold text-base text-white">CAPITAL HUB</p>
   </a>
 
-  <!-- Hamburger / Close Icon -->
   <div id="menu-btn" class="flex cursor-pointer fill-white">
-    <!-- Hamburger -->
     <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="block" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
     </svg>
-    <!-- X (Close) -->
     <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="hidden" viewBox="0 0 16 16">
       <path d="M4.646 4.646a.5.5 0 011 0L8 6.293l2.354-2.647a.5.5 0 11.708.708L8.707 7l2.647 2.354a.5.5 0 11-.708.708L8 7.707l-2.354 2.647a.5.5 0 11-.708-.708L7.293 7 4.646 4.646a.5.5 0 010-.708z"/>
     </svg>
   </div>
 </div>
 
-<!-- Overlay (hidden by default) -->
 <div id="menu-overlay" class="fixed inset-0 bg-royal-blue/50 hidden z-40"></div>
 
-<!-- Mobile Menu -->
 <div id="mobile-menu"
   class="fixed top-[64px] left-0 w-full
          bg-royal-blue-2 backdrop-blur-xl
          flex flex-col items-center lg:hidden
          transform scale-y-0 origin-top
          transition-transform duration-300 ease-out z-50 shadow-xl">
-  <a href="#about" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Home</a>
-  <a href="services.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Services</a>
+  <a href="#about" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Acasă</a>
+  <a href="services.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Servicii</a>
   <a href="#blog" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Blog</a>
-  <a href="#faq" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">F.A.Q.</a>
+  <a href="faq.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">F.A.Q.</a>
   <a href="#contact" class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">Contact</a>
 </div>
 
 
-<!--- Desktop HERO - Layered Depth Design -->
-  <div class="hidden lg:block relative overflow-hidden">
-    <!-- Background with gradient overlay -->
+<div class="hidden lg:block relative overflow-hidden">
     <div class="absolute inset-0 bg-[url(img/business.avif)] bg-cover bg-center">
   <div class="absolute inset-0 bg-gradient-to-br from-royal-blue/90 via-royal-blue-2/60 to-royal-blue/90"></div>
 </div>
 
-    <!-- Floating decorative elements -->
     <div class="absolute top-20 right-20 w-64 h-64 bg-warm-gold/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-20 left-20 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
 
-    <!-- Desktop Navigation -->
     <div class="relative z-20 flex p-6 mx-6 mt-6 justify-between items-center">
       <div>
         <a href="#home" class="flex items-center">
@@ -72,22 +59,22 @@
 
       <div class="flex items-center gap-2">
         <a href="#about" class="scroll-smooth">
-          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">Home</button>
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">Acasă</button>
         </a>
         <a href="services.html" class="scroll-smooth">
-          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">Services</button>
+          <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">Servicii</button>
         </a>
         <a href="#blog" class="scroll-smooth">
           <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">Blog</button>
         </a>
-        <a href="#faq" class="scroll-smooth">
+        <a href="faq.html" class="scroll-smooth">
           <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">F.A.Q.</button>
         </a>
       </div>
 
       <div class="flex items-center gap-2">
-        <a href="#faq" class="scroll-smooth">
-          <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal"><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>EN</button>
+        <a href="faq.html" class="scroll-smooth">
+          <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal"><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>RO</button>
         </a>
         <a href="#contact" class="scroll-smooth">
           <button class="py-3 px-6 rounded-full text-white font-semibold text-sm transition duration-300 ease-in-out bg-cta-teal hover:bg-warm-gold shadow-lg">Contact</button>
@@ -95,133 +82,86 @@
       </div>
     </div>
 
-    <!-- Hero Content with Layered Cards -->
     <div class="relative z-10 px-12 pt-16 pb-32 mx-6 ">
       <div class="max-w-7xl mx-auto grid lg:grid-cols-1 gap-12 items-center ">
-        <!-- Left: Main Content -->
         <div class="relative z-10">
           <div class="inline-block px-4 py-2 bg-cta-teal/20 backdrop-blur-sm border border-cta-teal/30 rounded-full mb-6">
-            <p class="text-sm font-semibold text-cta-teal">Trusted by 600+ Companies</p>
+            <p class="text-sm font-semibold text-cta-teal">De încredere pentru 600+ Companii</p>
           </div>
           <h1 class="text-5xl lg:text-7xl text-white font-bold leading-tight">
-            Invest with confidence
+            Investește cu încredere
           </h1>
           <h1 class="text-5xl lg:text-7xl text-warm-gold font-bold mt-4">
-            Grow with purpose
+            Crește cu un scop
           </h1>
           <p class="mt-8 text-lg text-white/90 max-w-xl leading-relaxed">
-            CapitalHub helps small businesses secure the funding they need to grow and thrive.
+            Capital Hub Finance oferă companiilor un mod structurat, eficient și realist de a accesa finanțare. Ne adresăm antreprenorilor care vor claritate în proces, acces la surse relevante și parteneri care înțeleg cum funcționează deciziile de business.
           </p>
           <div class="flex gap-4 mt-10">
             <button class="flex items-center bg-cta-teal py-4 px-8 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-warm-gold hover:scale-105 shadow-xl">
-              Learn more
+              Află mai multe
               <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/></svg>
             </button>
             <button class="bg-white/10 backdrop-blur-sm py-4 px-8 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-white/20 border border-white/20 shadow-xl">
-              Schedule a call
+              Programează o discuție
             </button>
           </div>
         </div>
 
-        <!-- Right: Floating Layered Cards 
-        <div class="relative h-[500px]">
-         
-          <div class="absolute top-12 right-0 w-80 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl transform rotate-3 hover:rotate-0 transition duration-500">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 bg-cta-teal/10 rounded-full flex items-center justify-center">
-                <svg class="w-6 h-6 text-cta-teal" fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path></svg>
-              </div>
-              <div>
-                <p class="text-2xl font-bold text-royal-blue">$5M+</p>
-                <p class="text-xs text-gray-600">EU Funds Secured</p>
-              </div>
-            </div>
-          </div>
-
-         
-          <div class="absolute top-48 right-16 w-72 bg-royal-blue-2 rounded-2xl p-6 shadow-2xl transform -rotate-2 hover:rotate-0 transition duration-500">
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-warm-gold/20 rounded-full flex items-center justify-center">
-                <svg class="w-6 h-6 text-warm-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
-              </div>
-              <div>
-                <p class="text-2xl font-bold text-white">600+</p>
-                <p class="text-xs text-white/70">Satisfied Clients</p>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="absolute top-80 left-8 w-64 bg-gradient-to-br from-cta-teal to-cta-teal/80 rounded-2xl p-6 shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
-            <p class="text-3xl font-bold text-white mb-2">80%</p>
-            <p class="text-sm text-white/90">Success Rate</p>
-            <div class="mt-4 h-2 bg-white/20 rounded-full overflow-hidden">
-              <div class="h-full w-4/5 bg-white rounded-full"></div>
-            </div>
-          </div>-->
-        </div>
       </div>
     </div>
   </div>
-<!---END DESKTOP HERO-->
- 
-<!--- MOBILE HERO-->
-  <div class="lg:hidden relative overflow-hidden bg-gradient-to-br from-royal-blue to-royal-blue-2 px-6 pt-20 pb-16">
-    <!-- Floating decorative elements -->
+<div class="lg:hidden relative overflow-hidden bg-gradient-to-br from-royal-blue to-royal-blue-2 px-6 pt-20 pb-16">
     <div class="absolute top-10 right-0 w-32 h-32 bg-warm-gold/10 rounded-full blur-2xl"></div>
     <div class="absolute bottom-10 left-0 w-40 h-40 bg-cta-teal/10 rounded-full blur-2xl"></div>
 
     <div class="relative z-10">
       <div class="inline-block px-4 py-2 bg-cta-teal/20 backdrop-blur-sm border border-cta-teal/30 rounded-full mb-6">
-        <p class="text-xs font-semibold text-cta-teal">Trusted by 600+ Companies</p>
+        <p class="text-xs font-semibold text-cta-teal">De încredere pentru 600+ Companii</p>
       </div>
       <h1 class="text-4xl text-white font-bold leading-tight">
-        Invest with confidence
+        Investește cu încredere
         
       </h1>
       <h1 class="text-4xl text-warm-gold font-bold mt-2">
-        Grow with purpose
+        Crește cu un scop
       </h1>
       <p class="mt-6 text-base text-white/90 leading-relaxed">
-        CapitalHub helps small businesses secure the funding they need to grow and thrive.
+        Capital Hub Finance oferă companiilor un mod structurat, eficient și realist de a accesa finanțare. Ne adresăm antreprenorilor care vor claritate în proces, acces la surse relevante și parteneri care înțeleg cum funcționează deciziile de business.
       </p>
 
-      <!-- Stats Cards -->
       <div class="grid grid-cols-2 gap-4 mt-8">
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
           <p class="text-2xl font-bold text-white">600+</p>
-          <p class="text-xs text-white/70">Clients</p>
+          <p class="text-xs text-white/70">Clienți</p>
         </div>
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
           <p class="text-2xl font-bold text-warm-gold">$5M+</p>
-          <p class="text-xs text-white/70">Secured</p>
+          <p class="text-xs text-white/70">Obținuți</p>
         </div>
       </div>
 
       <div class="flex flex-col gap-3 mt-8">
         <button class="flex items-center justify-center bg-cta-teal py-4 px-6 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-warm-gold shadow-xl">
-          Learn more
+          Află mai multe
           <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/></svg>
         </button>
         <button class="bg-white/10 backdrop-blur-sm py-4 px-6 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-white/20 border border-white/20">
-          Schedule a call
+          Programează o discuție
         </button>
       </div>
     </div>
   </div>
-<!---END MOBILE HERO-->
-
-<!--- SERVICES - Bento Grid Layout -->
 <div class="py-16 lg:py-24 px-6 bg-gradient-to-b from-white to-off-off-white relative overflow-hidden">
   <div class="absolute top-1/2 right-0 w-64 h-64 bg-cta-teal/5 rounded-full blur-3xl"></div>
 
   <div class="max-w-7xl mx-auto relative z-10">
     <div class="text-center mb-16">
       <div id="services" class="inline-block px-6 py-2 border border-gray-400/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-6">
-        SERVICES
+        SERVICII
       </div>
       <h2 class="text-3xl lg:text-5xl text-royal-blue font-bold max-w-4xl mx-auto leading-tight">
-        We Champion the Bold to<br/>Achieve the <span class="text-warm-gold">Extraordinary</span>
+        Susținem Curajul pentru a <br/>Atinge <span class="text-warm-gold">Extraordinarul</span>
       </h2>
     </div>
 
@@ -235,25 +175,25 @@
             <div class="w-16 h-16 bg-cta-teal/20 rounded-2xl flex items-center justify-center mb-8">
               <svg class="w-8 h-8 text-cta-teal" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
             </div>
-            <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4">Financial Advisory</h3>
-            <p class="text-white/80 text-base leading-relaxed mb-8">Strategic guidance to secure funding and optimize your financial structure for sustained growth.</p>
+            <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4">Consultanță Financiară</h3>
+            <p class="text-white/80 text-base leading-relaxed mb-8">Ghidaj strategic pentru a asigura finanțarea și a optimiza structura financiară pentru o creștere susținută.</p>
             <ul class="space-y-4 mb-8">
               <li class="flex items-center text-white/70 text-sm">
                 <span class="w-2 h-2 bg-cta-teal rounded-full mr-3"></span>
-                Business Planning & Valuation
+                Planificare de Business & Evaluare
               </li>
               <li class="flex items-center text-white/70 text-sm">
                 <span class="w-2 h-2 bg-cta-teal rounded-full mr-3"></span>
-                Advanced Financial Modeling
+                Modelare Financiară Avansată
               </li>
               <li class="flex items-center text-white/70 text-sm">
                 <span class="w-2 h-2 bg-cta-teal rounded-full mr-3"></span>
-                Investment Strategy & Compliance
+                Strategii de Investiții & Conformitate
               </li>
             </ul>
           </div>
           <button class="inline-flex items-center text-white text-sm font-semibold group-hover:gap-3 gap-2 transition-all duration-300">
-            Learn more
+            Află mai multe
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
           </button>
         </div>
@@ -263,11 +203,11 @@
             <div class="w-16 h-16 bg-warm-gold/10 rounded-2xl flex items-center justify-center mb-8">
               <svg class="w-8 h-8 text-warm-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
             </div>
-            <h3 class="text-2xl lg:text-3xl font-bold text-royal-blue mb-4">Funding Solutions</h3>
-            <p class="text-gray-600 text-base leading-relaxed mb-8">Comprehensive access to diverse funding sources ranging from traditional bank loans to alternative financing options tailored for modern businesses.</p>
+            <h3 class="text-2xl lg:text-3xl font-bold text-royal-blue mb-4">Soluții de Finanțare</h3>
+            <p class="text-gray-600 text-base leading-relaxed mb-8">Acces complet la diverse surse de finanțare, de la împrumuturi bancare tradiționale până la opțiuni alternative de finanțare adaptate afacerilor moderne.</p>
           </div>
           <div class="flex items-center text-cta-teal text-sm font-semibold group-hover:gap-2 gap-1 transition-all duration-300">
-            Explore options
+            Explorează opțiunile
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
           </div>
         </div>
@@ -280,8 +220,8 @@
           <div class="w-12 h-12 bg-cta-teal/20 rounded-2xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-cta-teal" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3">Expert Consultation</h3>
-          <p class="text-white/80 text-sm leading-relaxed">Personalized guidance from industry veterans who understand the market.</p>
+          <h3 class="text-xl font-bold text-white mb-3">Consultanță Expertă</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Ghidaj personalizat de la veterani din industrie care înțeleg piața.</p>
         </div>
 
         <div class="bg-gradient-to-br from-cta-teal to-cta-teal/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-500 relative overflow-hidden group h-full flex flex-col justify-center">
@@ -290,7 +230,7 @@
             <p class="text-5xl lg:text-6xl font-bold text-white mb-2">
               <span id="stat-number">600</span>+
             </p>
-            <p class="text-white/90 text-sm font-semibold mb-4">Successful Projects</p>
+            <p class="text-white/90 text-sm font-semibold mb-4">Proiecte de Succes</p>
             <div class="h-1.5 bg-white/20 rounded-full overflow-hidden">
               <div class="h-full w-3/4 bg-white rounded-full"></div>
             </div>
@@ -302,8 +242,8 @@
             <svg class="w-6 h-6 text-warm-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-royal-blue mb-2">Quick Approval</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Fast-track processing protocols for urgent funding needs.</p>
+            <h3 class="text-xl font-bold text-royal-blue mb-2">Aprobare Rapidă</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Protocoale de procesare rapidă pentru nevoi urgente de finanțare.</p>
           </div>
         </div>
 
@@ -311,36 +251,27 @@
     </div>
   </div>
 </div>
-<!--- END SERVICES -->
-
-<!---PHILOSOPHY & STATS-->
 <div class="relative overflow-hidden">
-  <!-- Gradient Background -->
   <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
 
-  <!-- Gradient Overlays -->
   <div class="absolute inset-0 bg-gradient-to-t from-royal-blue/50 to-transparent"></div>
   <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-cta-teal/5 to-transparent"></div>
 
-  <!-- Floating elements -->
   <div class="absolute top-20 left-10 w-72 h-72 bg-warm-gold/10 rounded-full blur-3xl"></div>
   <div class="absolute bottom-20 right-10 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
 
   <div class="relative z-10 lg:mx-6 px-6 lg:px-12 py-16 lg:py-32">
     <div class="max-w-7xl mx-auto">
-      <!-- Header -->
       <div class="text-center mb-16">
         <div id="philosophy" class="inline-block px-6 py-2 border border-white/30 bg-white/5 backdrop-blur-sm rounded-full text-xs font-semibold text-white/90 uppercase tracking-wider mb-8">
-          OUR PHILOSOPHY
+          FILOSOFIA NOASTRĂ
         </div>
         <h2 class="text-3xl lg:text-5xl text-white font-bold max-w-4xl mx-auto leading-tight">
-          Strategic Interventions that <br/><span class="text-warm-gold">Transform</span> our Clients' Business Trajectory
+          Intervenții Strategice care <br/><span class="text-warm-gold">Transformă</span> Traiectoria Afacerii Clienților Noștri
         </h2>
       </div>
 
-      <!-- Animated Stats Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Stat 1 -->
         <div class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition duration-500 overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-br from-cta-teal/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
           <div class="relative z-10">
@@ -348,14 +279,13 @@
               <span class="text-5xl lg:text-6xl font-bold text-white counter" data-target="600">0</span>
               <span class="text-4xl text-cta-teal font-bold ml-1">+</span>
             </div>
-            <p class="text-white/70 text-sm font-semibold uppercase tracking-wide">Satisfied Clients</p>
+            <p class="text-white/70 text-sm font-semibold uppercase tracking-wide">Clienți Mulțumiți</p>
             <div class="mt-4 h-1.5 bg-white/10 rounded-full overflow-hidden">
               <div class="h-full w-full bg-gradient-to-r from-cta-teal to-warm-gold rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></div>
             </div>
           </div>
         </div>
 
-        <!-- Stat 2 -->
         <div class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition duration-500 overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-br from-warm-gold/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
           <div class="relative z-10">
@@ -364,14 +294,13 @@
               <span class="text-5xl lg:text-6xl font-bold text-white counter" data-target="5">0</span>
               <span class="text-2xl text-white font-bold ml-1">M+</span>
             </div>
-            <p class="text-white/70 text-sm font-semibold uppercase tracking-wide">EU Funds Secured</p>
+            <p class="text-white/70 text-sm font-semibold uppercase tracking-wide">Fonduri UE Atrase</p>
             <div class="mt-4 h-1.5 bg-white/10 rounded-full overflow-hidden">
               <div class="h-full w-4/5 bg-gradient-to-r from-cta-teal to-warm-gold rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></div>
             </div>
           </div>
         </div>
 
-        <!-- Stat 3 -->
         <div class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition duration-500 overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-br from-cta-teal/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
           <div class="relative z-10">
@@ -379,14 +308,13 @@
               <span class="text-5xl lg:text-6xl font-bold text-white counter" data-target="80">0</span>
               <span class="text-4xl text-cta-teal font-bold ml-1">%</span>
             </div>
-            <p class="text-white/70 text-sm font-semibold uppercase tracking-wide">Success Rate</p>
+            <p class="text-white/70 text-sm font-semibold uppercase tracking-wide">Rată de Succes</p>
             <div class="mt-4 h-1.5 bg-white/10 rounded-full overflow-hidden">
               <div class="h-full w-4/5 bg-gradient-to-r from-cta-teal to-warm-gold rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></div>
             </div>
           </div>
         </div>
 
-        <!-- Stat 4 -->
         <div class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition duration-500 overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-br from-warm-gold/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
           <div class="relative z-10">
@@ -394,7 +322,7 @@
               <span class="text-3xl text-cta-teal font-bold mr-1">></span>
               <span class="text-5xl lg:text-6xl font-bold text-white counter" data-target="100">0</span>
             </div>
-            <p class="text-white/70 text-sm font-semibold uppercase tracking-wide">Repeat Clients</p>
+            <p class="text-white/70 text-sm font-semibold uppercase tracking-wide">Clienți Recurenți</p>
             <div class="mt-4 h-1.5 bg-white/10 rounded-full overflow-hidden">
               <div class="h-full w-3/4 bg-gradient-to-r from-cta-teal to-warm-gold rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></div>
             </div>
@@ -404,29 +332,24 @@
     </div>
   </div>
 </div>
-<!---END PHILOSOPHY-->
-
-<!--TESTIMONIALS - Redesigned-->
 <div class="py-16 lg:py-24 px-6 bg-gradient-to-b from-off-off-white to-white relative overflow-hidden">
-  <!-- Floating decorative element -->
   <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-warm-gold/5 rounded-full blur-3xl"></div>
 
   <div class="max-w-7xl mx-auto relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Left: Header & CTA -->
       <div>
         <div class="mb-8">
           <div id="testimonials" class="inline-block px-6 py-2 border border-gray-400/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-6">
-            TESTIMONIALS
+            RECENZII
           </div>
           <h2 class="text-3xl lg:text-5xl text-royal-blue font-bold leading-tight">
-            Client <span class="text-warm-gold">Experiences</span><br/>That Speak for Themselves
+            Experiențele <span class="text-warm-gold">Clienților</span><br/>Vorbesc de la Sine
           </h2>
         </div>
 
         <div class="flex flex-wrap gap-6 items-center mb-8">
           <button class="px-8 py-4 text-sm font-semibold text-white bg-royal-blue rounded-full transition duration-300 hover:bg-warm-gold hover:scale-105 shadow-xl">
-            Read All Testimonials
+            Citește Toate Recenziile
           </button>
           <div class="flex items-center gap-3 bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
             <img class="h-10" src="img/google-reviews.png"/>
@@ -437,33 +360,29 @@
           </div>
         </div>
 
-        <!-- Stats -->
         <div class="grid grid-cols-2 gap-4">
           <div class="bg-gradient-to-br from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-2xl p-4">
             <p class="text-3xl font-bold text-royal-blue">98%</p>
-            <p class="text-xs text-gray-600">Client Satisfaction</p>
+            <p class="text-xs text-gray-600">Satisfacția Clienților</p>
           </div>
           <div class="bg-gradient-to-br from-warm-gold/10 to-transparent border border-warm-gold/20 rounded-2xl p-4">
             <p class="text-3xl font-bold text-royal-blue">4.9/5</p>
-            <p class="text-xs text-gray-600">Average Rating</p>
+            <p class="text-xs text-gray-600">Rating Mediu</p>
           </div>
         </div>
       </div>
 
-      <!-- Right: Testimonial Card -->
       <div class="relative">
-        <!-- Background decoration -->
         <div class="absolute -top-6 -right-6 w-24 h-24 bg-cta-teal/10 rounded-full blur-2xl"></div>
 
         <div class="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border border-gray-100">
-          <!-- Quote icon -->
           <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-cta-teal to-cta-teal/80 rounded-2xl flex items-center justify-center shadow-xl">
             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
           </div>
 
           <div class="mb-8">
             <p class="text-royal-blue text-lg lg:text-xl leading-relaxed font-medium">
-              "Partnering with CapitalHub was a game-changer for us. They took the time to understand our challenges and helped us streamline our operations for success."
+              "Parteneriatul cu CapitalHub a schimbat complet jocul pentru noi. Și-au făcut timp să ne înțeleagă provocările și ne-au ajutat să ne eficientizăm operațiunile pentru succes."
             </p>
           </div>
 
@@ -490,73 +409,68 @@
     </div>
   </div>
 </div>
-<!--- END TESTIMONIALS-->
-
-<!--- TRUSTED PARTNER - Redesigned -->
 <div class="py-16 lg:py-24 px-6 relative overflow-hidden">
-  <!-- Gradient background -->
   <div class="absolute inset-0 bg-gradient-to-br from-royal-blue/5 to-transparent"></div>
 
   <div class="max-w-7xl mx-auto relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-      <!-- Left: Image with overlay card -->
       <div class="relative">
         <img class="rounded-3xl w-full shadow-2xl" src="img/partner.png"/>
 
-        <!-- Floating overlay card -->
         <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-2xl border border-gray-100 max-w-xs">
           <div class="flex items-center gap-4">
             <div class="w-12 h-12 bg-gradient-to-br from-cta-teal to-cta-teal/80 rounded-xl flex items-center justify-center">
               <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
             </div>
             <div>
-              <p class="text-sm font-bold text-royal-blue">Certified Partner</p>
-              <p class="text-xs text-gray-600">SEC Registered</p>
+              <p class="text-sm font-bold text-royal-blue">Platformă Digitală</p>
+              <p class="text-xs text-gray-600">Acces Structurat</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Right: Content card -->
       <div class="relative">
         <div class="bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-3xl p-8 lg:p-12 shadow-2xl relative overflow-hidden">
-          <!-- Decorative element -->
           <div class="absolute top-0 right-0 w-48 h-48 bg-warm-gold/10 rounded-full blur-3xl"></div>
 
           <div class="relative z-10">
             <div class="mb-6">
               <div id="trusted" class="inline-block px-6 py-2 border border-white/30 bg-white/10 backdrop-blur-sm rounded-full text-xs font-semibold text-white uppercase tracking-wider">
-                TRUSTED PARTNER
+                DESPRE NOI
               </div>
             </div>
 
             <h2 class="text-3xl lg:text-4xl text-white font-bold mb-4">
-              Registered <span class="text-warm-gold">Investor</span> Advisor
+              Partenerul Tău pentru <span class="text-warm-gold">Creștere</span> Sustenabilă
             </h2>
 
-            <p class="text-white/90 text-base leading-relaxed mb-8">
-              We help you achieve your vision and cultivate confidence and peace of mind across your financial journey.
+            <p class="text-white/90 text-base leading-relaxed mb-6">
+              Capital Hub Finance s-a născut dintr-o observație simplă: companiile pierd prea mult timp navigând prin opțiuni de finanțare care nu se potrivesc cu realitatea lor. Noi aducem structură în acest proces și conectăm firmele cu surse de finanțare relevante – bancare, alternative sau nerambursabile – asumându-ne rolul de partener activ.
+            </p>
+            
+            <p class="text-white/90 text-base leading-relaxed mb-8 font-semibold border-l-4 border-cta-teal pl-4">
+              Am construit platforma Capital Hub pentru companii care au nevoie de acces structurat la soluții de finanțare și care preferă un proces clar în locul încercărilor pe cont propriu.
             </p>
 
-            <!-- Features list -->
             <ul class="space-y-3 mb-8">
               <li class="flex items-center text-white/80 text-sm">
                 <span class="w-1.5 h-1.5 bg-cta-teal rounded-full mr-3"></span>
-                SEC Registered & Compliant
+                Partener Activ în Finanțare
               </li>
               <li class="flex items-center text-white/80 text-sm">
                 <span class="w-1.5 h-1.5 bg-cta-teal rounded-full mr-3"></span>
-                Fiduciary Responsibility
+                Acces la Surse Relevante
               </li>
               <li class="flex items-center text-white/80 text-sm">
                 <span class="w-1.5 h-1.5 bg-cta-teal rounded-full mr-3"></span>
-                Transparent Fee Structure
+                Proces Clar și Structurat
               </li>
             </ul>
 
             <button class="rounded-full bg-cta-teal px-8 py-4 text-white text-sm font-semibold transition duration-300 ease-in-out hover:bg-warm-gold hover:scale-105 shadow-xl">
-              Free Consultation
+              Consultanță Gratuită
             </button>
           </div>
         </div>
@@ -565,28 +479,22 @@
     </div>
   </div>
 </div>
-<!--- END TRUSTED PARTNER-->
-
-<!---TEAM - Redesigned -->
 <div class="py-16 lg:py-24 px-6 bg-gradient-to-b from-white to-off-off-white relative overflow-hidden">
-  <!-- Floating element -->
   <div class="absolute top-1/3 right-0 w-72 h-72 bg-cta-teal/5 rounded-full blur-3xl"></div>
 
   <div class="max-w-7xl mx-auto relative z-10">
-    <!-- Header -->
     <div class="text-center mb-16">
       <div class="inline-block px-6 py-2 border border-gray-400/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-6">
-        OUR TEAM
+        ECHIPA NOASTRĂ
       </div>
       <h2 class="text-3xl lg:text-5xl text-royal-blue font-bold mb-4">
-        Meet the <span class="text-warm-gold">Experts</span>
+        Cunoaște <span class="text-warm-gold">Experții</span>
       </h2>
       <p class="text-gray-600 max-w-2xl mx-auto">
-        Dedicated professionals with decades of combined experience in financial services
+        Profesioniști dedicați cu zeci de ani de experiență cumulată în servicii financiare
       </p>
     </div>
 
-    <!-- Team Grid -->
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       <div class="group cursor-pointer">
         <div class="relative mb-4">
@@ -599,7 +507,7 @@
         </div>
         <div class="text-center">
           <p class="font-bold text-royal-blue text-base mb-1">Julia Reed</p>
-          <p class="text-sm text-gray-600">Chief Executive</p>
+          <p class="text-sm text-gray-600">Director General</p>
         </div>
       </div>
 
@@ -614,7 +522,7 @@
         </div>
         <div class="text-center">
           <p class="font-bold text-royal-blue text-base mb-1">Marco Pera</p>
-          <p class="text-sm text-gray-600">Senior Manager</p>
+          <p class="text-sm text-gray-600">Manager Senior</p>
         </div>
       </div>
 
@@ -629,7 +537,7 @@
         </div>
         <div class="text-center">
           <p class="font-bold text-royal-blue text-base mb-1">Alessia Fox</p>
-          <p class="text-sm text-gray-600">Analyst Manager</p>
+          <p class="text-sm text-gray-600">Manager Analist</p>
         </div>
       </div>
 
@@ -644,7 +552,7 @@
         </div>
         <div class="text-center">
           <p class="font-bold text-royal-blue text-base mb-1">Pedro Diaz</p>
-          <p class="text-sm text-gray-600">Financial Analyst</p>
+          <p class="text-sm text-gray-600">Analist Financiar</p>
         </div>
       </div>
 
@@ -659,17 +567,16 @@
         </div>
         <div class="text-center">
           <p class="font-bold text-royal-blue text-base mb-1">Alex Tedis</p>
-          <p class="text-sm text-gray-600">CFO & Co-Founder</p>
+          <p class="text-sm text-gray-600">CFO & Co-Fondator</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Partners/Clients Logo Section -->
 <div class="bg-white py-16 border-y border-gray-200">
   <div class="max-w-7xl mx-auto px-6">
-    <p class="text-center text-sm text-gray-500 font-semibold uppercase tracking-wider mb-8">Trusted by Leading Organizations</p>
+    <p class="text-center text-sm text-gray-500 font-semibold uppercase tracking-wider mb-8">De încredere pentru organizații de top</p>
     <div class="flex flex-wrap justify-center items-center gap-12 opacity-40 hover:opacity-60 transition duration-500">
       <p class="font-bold text-2xl text-gray-800">WestBank</p>
       <p class="font-bold text-2xl text-gray-800">RIDGEROCK</p>
@@ -681,149 +588,206 @@
   </div>
 </div>
 
-  <!-- FAQ Section -->
-  <div id="faq" class="relative overflow-hidden py-16 lg:py-24 px-6">
-    <!-- Background Gradient -->
-    <div class="absolute inset-0 bg-gradient-to-br from-off-off-white via-white to-off-off-white"></div>
+ <div id="faq" class="relative overflow-hidden py-16 lg:py-24 px-6">
+  <div class="absolute inset-0 bg-gradient-to-br from-off-off-white via-white to-off-off-white"></div>
 
-    <!-- Floating Decorative Elements -->
-    <div class="absolute top-20 right-0 w-96 h-96 bg-warm-gold/5 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-cta-teal/5 rounded-full blur-3xl"></div>
+  <div class="absolute top-20 right-0 w-96 h-96 bg-warm-gold/5 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-cta-teal/5 rounded-full blur-3xl"></div>
 
-    <div class="relative flex flex-col lg:flex-row justify-center gap-16 max-w-7xl mx-auto">
-      <!-- Left: Header -->
-      <div class="lg:w-1/3">
-        <div class="mb-6">
-          <div class="inline-block px-6 py-2 bg-gradient-to-r from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider">
-            <p>FAQ</p>
-          </div>
-        </div>
-        <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold mb-6 leading-tight">Financial Planning FAQ's</h2>
-        <p class="text-gray-600 mb-8 text-base leading-relaxed">Comprehensive answers to financial planning and fund raising services.</p>
-
-        <!-- CTA Card -->
-        <div class="bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-2xl p-6 shadow-xl">
-          <p class="text-white text-sm mb-4">Still have questions?</p>
-          <button class="w-full bg-white text-royal-blue px-8 py-3 rounded-full text-sm font-semibold hover:bg-warm-gold hover:text-white transition duration-300 shadow-lg">Ask Us Anything</button>
+  <div class="relative flex flex-col lg:flex-row justify-center gap-16 max-w-7xl mx-auto">
+    <div class="lg:w-1/3">
+      <div class="mb-6">
+        <div class="inline-block px-6 py-2 bg-gradient-to-r from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider">
+          <p>FAQ</p>
         </div>
       </div>
+      <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold mb-6 leading-tight">Întrebări Frecvente</h2>
+      <p class="text-gray-600 mb-8 text-base leading-relaxed">Răspunsuri complete despre planificarea financiară și serviciile de strângere de fonduri.</p>
 
-      <!-- Right: FAQ Items -->
-      <div class="lg:w-1/2 space-y-4">
-        <div class="group bg-white border border-gray-200 hover:border-cta-teal/30 p-6 rounded-2xl flex justify-between items-center cursor-pointer hover:shadow-xl transition-all duration-300">
-          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">What documents do I need to apply?</p>
-          <div class="bg-royal-blue group-hover:bg-cta-teal rounded-full p-2.5 transition-all duration-300 group-hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-gray-200 hover:border-cta-teal/30 p-6 rounded-2xl flex justify-between items-center cursor-pointer hover:shadow-xl transition-all duration-300">
-          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">Will there be a dedicated advisor?</p>
-          <div class="bg-royal-blue group-hover:bg-cta-teal rounded-full p-2.5 transition-all duration-300 group-hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-gray-200 hover:border-cta-teal/30 p-6 rounded-2xl flex justify-between items-center cursor-pointer hover:shadow-xl transition-all duration-300">
-          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">Can you help us structure future plans?</p>
-          <div class="bg-royal-blue group-hover:bg-cta-teal rounded-full p-2.5 transition-all duration-300 group-hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-gray-200 hover:border-cta-teal/30 p-6 rounded-2xl flex justify-between items-center cursor-pointer hover:shadow-xl transition-all duration-300">
-          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">What are the fees and commission?</p>
-          <div class="bg-royal-blue group-hover:bg-cta-teal rounded-full p-2.5 transition-all duration-300 group-hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-gray-200 hover:border-cta-teal/30 p-6 rounded-2xl flex justify-between items-center cursor-pointer hover:shadow-xl transition-all duration-300">
-          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">How long does the funding process take?</p>
-          <div class="bg-royal-blue group-hover:bg-cta-teal rounded-full p-2.5 transition-all duration-300 group-hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
-          </div>
-        </div>
+      <div class="bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-2xl p-6 shadow-xl">
+        <p class="text-white text-sm mb-4">Nu ai găsit răspunsul?</p>
+        <a href="faq.html" class="block w-full text-center bg-white text-royal-blue px-8 py-3 rounded-full text-sm font-semibold hover:bg-warm-gold hover:text-white transition duration-300 shadow-lg">
+          Vezi toate întrebările
+        </a>
       </div>
     </div>
-  </div>
 
-  <!-- Newsletter Section -->
+    <div class="lg:w-1/2 space-y-4">
+      
+      <div class="faq-item bg-white border border-gray-200 hover:border-cta-teal/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
+        <button class="faq-btn w-full text-left p-6 flex justify-between items-center focus:outline-none">
+          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">Ce documente sunt necesare pentru a aplica?</p>
+          <div class="icon-container bg-royal-blue text-white rounded-full p-2.5 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-gray-50">
+          <p class="p-6 pt-0 text-sm text-gray-600 leading-relaxed">
+            Documentele necesare variază în funcție de tipul de finanțare, dar de obicei includ: Certificatul de Înregistrare (CUI), actele de identitate ale administratorilor, ultimele bilanțuri contabile și balanțe de verificare, precum și extrase de cont recente. Un consultant te va ghida exact pentru cazul tău.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 hover:border-cta-teal/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
+        <button class="faq-btn w-full text-left p-6 flex justify-between items-center focus:outline-none">
+          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">Voi avea un consultant dedicat?</p>
+          <div class="icon-container bg-royal-blue text-white rounded-full p-2.5 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-gray-50">
+          <p class="p-6 pt-0 text-sm text-gray-600 leading-relaxed">
+            Da, absolut. Credem în relații pe termen lung. Vei avea alocat un consultant financiar dedicat care va cunoaște în detaliu afacerea ta și te va asista pe tot parcursul procesului, de la analiză până la implementare.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 hover:border-cta-teal/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
+        <button class="faq-btn w-full text-left p-6 flex justify-between items-center focus:outline-none">
+          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">Ne puteți ajuta să structurăm planurile de viitor?</p>
+          <div class="icon-container bg-royal-blue text-white rounded-full p-2.5 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-gray-50">
+          <p class="p-6 pt-0 text-sm text-gray-600 leading-relaxed">
+            Cu siguranță. Serviciile noastre includ modelare financiară și planificare de business. Te ajutăm să construiești scenarii realiste (Best/Worst Case) pentru a asigura o creștere sustenabilă și pentru a fi pregătit în fața investitorilor sau băncilor.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 hover:border-cta-teal/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
+        <button class="faq-btn w-full text-left p-6 flex justify-between items-center focus:outline-none">
+          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">Care sunt taxele și comisioanele?</p>
+          <div class="icon-container bg-royal-blue text-white rounded-full p-2.5 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-gray-50">
+          <p class="p-6 pt-0 text-sm text-gray-600 leading-relaxed">
+            Transparența este cheia. Structura noastră de comisioane este clară de la început. În multe cazuri (în special la atragerea de finanțări), lucrăm pe baza unui onorariu de succes, aliniindu-ne interesele direct cu reușita ta.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 hover:border-cta-teal/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
+        <button class="faq-btn w-full text-left p-6 flex justify-between items-center focus:outline-none">
+          <p class="text-base font-semibold text-royal-blue group-hover:text-cta-teal transition duration-300">Cât durează procesul de finanțare?</p>
+          <div class="icon-container bg-royal-blue text-white rounded-full p-2.5 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+          </div>
+        </button>
+        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-gray-50">
+          <p class="p-6 pt-0 text-sm text-gray-600 leading-relaxed">
+            Durata depinde de sursa de finanțare. Liniile de credit bancare pot fi aprobate în 1-2 săptămâni, în timp ce fondurile nerambursabile sau finanțările complexe de capital privat pot dura mai mult. Noi accelerăm procesul prin pregătirea corectă și completă a dosarului.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.faq-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      const icon = button.querySelector('.icon-container');
+      
+      // Toggle current item
+      if (answer.classList.contains('max-h-0')) {
+        answer.classList.remove('max-h-0');
+        answer.classList.add('max-h-40'); // Sau o valoare mai mare dacă textul e lung
+        icon.classList.add('rotate-45', 'bg-cta-teal');
+        icon.classList.remove('bg-royal-blue');
+      } else {
+        answer.classList.add('max-h-0');
+        answer.classList.remove('max-h-40');
+        icon.classList.remove('rotate-45', 'bg-cta-teal');
+        icon.classList.add('bg-royal-blue');
+      }
+      
+      // Optional: Close others when one opens (Accordion style)
+      
+      document.querySelectorAll('.faq-btn').forEach(otherBtn => {
+        if (otherBtn !== button) {
+          const otherAnswer = otherBtn.nextElementSibling;
+          const otherIcon = otherBtn.querySelector('.icon-container');
+          otherAnswer.classList.add('max-h-0');
+          otherAnswer.classList.remove('max-h-40');
+          otherIcon.classList.remove('rotate-45', 'bg-cta-teal');
+          otherIcon.classList.add('bg-royal-blue');
+        }
+      });
+      
+    });
+  });
+</script>
+
   <div class="flex flex-col lg:flex-row h-auto lg:h-[500px] w-full overflow-hidden">
-    <!-- Left: Newsletter Form -->
     <div class="relative flex-1 p-12 lg:p-16 flex flex-col justify-center overflow-hidden">
-      <!-- Gradient Background -->
       <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-royal-blue/50 to-transparent"></div>
 
-      <!-- Floating Decorative Elements -->
       <div class="absolute top-0 left-0 w-64 h-64 bg-warm-gold/10 rounded-full blur-3xl"></div>
       <div class="absolute bottom-0 right-0 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
 
       <div class="relative max-w-md mx-auto lg:mx-0">
-        <!-- Badge -->
         <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-6">
-          <p>Stay Informed</p>
+          <p>Rămâi Informat</p>
         </div>
 
-        <h2 class="text-3xl lg:text-4xl text-white font-bold mb-2 leading-tight">Latest News &</h2>
-        <p class="text-3xl lg:text-4xl text-warm-gold font-bold mb-4 leading-tight">Resources</p>
-        <p class="text-white/80 text-sm mb-8">Get expert insights and updates delivered to your inbox</p>
+        <h2 class="text-3xl lg:text-4xl text-white font-bold mb-2 leading-tight">Ultimele Știri &</h2>
+        <p class="text-3xl lg:text-4xl text-warm-gold font-bold mb-4 leading-tight">Resurse</p>
+        <p class="text-white/80 text-sm mb-8">Primește informații de la experți și actualizări direct în inbox</p>
 
         <div class="flex bg-white/95 backdrop-blur-sm rounded-full p-1.5 shadow-2xl">
-          <input type="email" placeholder="Enter your email" class="bg-transparent outline-none px-6 py-3 flex-1 text-gray-700 placeholder-gray-400 text-sm">
-          <button class="bg-gradient-to-r from-cta-teal to-cta-teal/80 text-white px-8 py-3 rounded-full text-sm font-semibold hover:from-warm-gold hover:to-warm-gold transition duration-300 shadow-lg">Subscribe</button>
+          <input type="email" placeholder="Introdu adresa de email" class="bg-transparent outline-none px-6 py-3 flex-1 text-gray-700 placeholder-gray-400 text-sm">
+          <button class="bg-gradient-to-r from-cta-teal to-cta-teal/80 text-white px-8 py-3 rounded-full text-sm font-semibold hover:from-warm-gold hover:to-warm-gold transition duration-300 shadow-lg">Abonează-te</button>
         </div>
 
-        <!-- Stats Below Form -->
         <div class="grid grid-cols-3 gap-4 mt-8">
           <div class="text-center">
             <p class="text-2xl font-bold text-white">5K+</p>
-            <p class="text-white/60 text-xs">Subscribers</p>
+            <p class="text-white/60 text-xs">Abonați</p>
           </div>
           <div class="text-center">
-            <p class="text-2xl font-bold text-warm-gold">Weekly</p>
-            <p class="text-white/60 text-xs">Updates</p>
+            <p class="text-2xl font-bold text-warm-gold">Săptămânal</p>
+            <p class="text-white/60 text-xs">Noutăți</p>
           </div>
           <div class="text-center">
-            <p class="text-2xl font-bold text-white">Free</p>
-            <p class="text-white/60 text-xs">Access</p>
+            <p class="text-2xl font-bold text-white">Gratuit</p>
+            <p class="text-white/60 text-xs">Acces</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Right: Image with Overlay -->
     <div class="flex-1 relative bg-gray-200 min-h-80 lg:min-h-0">
       <img src="img/hero_bg.png" class="w-full h-full object-cover" alt="Meeting">
-      <!-- Gradient Overlay -->
       <div class="absolute inset-0 bg-gradient-to-l from-transparent via-royal-blue/20 to-royal-blue/80"></div>
 
-      <!-- Floating Card on Image -->
       <div class="absolute bottom-8 right-8 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl max-w-xs hidden lg:block">
         <div class="flex items-center gap-3 mb-3">
           <div class="w-10 h-10 bg-gradient-to-br from-cta-teal to-cta-teal/80 rounded-full flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16"><path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/></svg>
           </div>
           <div>
-            <p class="text-royal-blue font-bold text-sm">Weekly Insights</p>
-            <p class="text-gray-500 text-xs">Expert Analysis</p>
+            <p class="text-royal-blue font-bold text-sm">Analize Săptămânale</p>
+            <p class="text-gray-500 text-xs">Expertiză Financiară</p>
           </div>
         </div>
-        <p class="text-gray-600 text-xs leading-relaxed">Access exclusive financial reports and market trends</p>
+        <p class="text-gray-600 text-xs leading-relaxed">Acces la rapoarte financiare exclusive și tendințe de piață</p>
       </div>
     </div>
   </div>
 
-  <!-- Footer / Contact Section -->
   <div id="contact" class="relative overflow-hidden bg-gradient-to-br from-off-off-white via-white to-off-off-white py-16 px-6 lg:px-12">
-    <!-- Floating Decorative Elements -->
     <div class="absolute top-0 right-0 w-96 h-96 bg-warm-gold/5 rounded-full blur-3xl"></div>
     <div class="absolute bottom-0 left-0 w-96 h-96 bg-royal-blue/5 rounded-full blur-3xl"></div>
 
     <div class="relative max-w-7xl mx-auto">
       <div class="flex flex-col lg:flex-row justify-between items-start gap-16 mb-16">
-        <!-- Left: CTA Card -->
         <div class="max-w-md">
           <a href="#home" class="flex items-center mb-8 group">
             <div class="w-12 h-12 mr-3 rounded-xl bg-gradient-to-br from-royal-blue to-royal-blue-2 p-2 group-hover:scale-110 transition duration-300">
@@ -834,15 +798,15 @@
 
           <div class="bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-3xl p-8 shadow-2xl mb-8">
             <h2 class="text-2xl lg:text-3xl text-white font-bold mb-2 leading-tight">
-              <span class="text-warm-gold">Ready</span> to Take Control
+              <span class="text-warm-gold">Gata</span> să preiei controlul
             </h2>
             <h2 class="text-2xl lg:text-3xl text-white font-bold mb-4 leading-tight">
-              of your Finances?
+              finanțelor tale?
             </h2>
-            <p class="text-white/80 text-sm mb-6">Schedule your free consultation today and discover how we can help you achieve your financial goals.</p>
+            <p class="text-white/80 text-sm mb-6">Programează o discuție gratuită astăzi și descoperă cum te putem ajuta să îți atingi obiectivele financiare.</p>
             <button class="w-full bg-white text-royal-blue px-8 py-4 rounded-full text-sm font-semibold hover:bg-warm-gold hover:text-white transition duration-300 shadow-lg group">
               <span class="flex items-center justify-center gap-2">
-                Free Consultation
+                Consultanță Gratuită
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="group-hover:translate-x-1 transition duration-300">
                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                 </svg>
@@ -850,19 +814,18 @@
             </button>
           </div>
 
-          <!-- Trust Badges -->
           <div class="grid grid-cols-3 gap-4">
             <div class="text-center">
               <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-xl flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2CA58D" viewBox="0 0 16 16"><path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z"/></svg>
               </div>
-              <p class="text-xs text-gray-600 font-semibold">Secure</p>
+              <p class="text-xs text-gray-600 font-semibold">Sigur</p>
             </div>
             <div class="text-center">
               <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-warm-gold/10 to-transparent border border-warm-gold/20 rounded-xl flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#CFAE55" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
               </div>
-              <p class="text-xs text-gray-600 font-semibold">Trusted</p>
+              <p class="text-xs text-gray-600 font-semibold">De Încredere</p>
             </div>
             <div class="text-center">
               <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-royal-blue/10 to-transparent border border-royal-blue/20 rounded-xl flex items-center justify-center">
@@ -873,12 +836,11 @@
           </div>
         </div>
 
-        <!-- Right: Footer Links -->
         <div class="flex flex-wrap gap-12 lg:gap-16 text-sm">
           <div>
-            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Contact Us</p>
+            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Contactează-ne</p>
             <ul class="space-y-3">
-              <li class="font-semibold text-royal-blue">Phone</li>
+              <li class="font-semibold text-royal-blue">Telefon</li>
               <li class="text-gray-600 hover:text-cta-teal transition duration-300"><a href="tel:+40746000033">+40 746 000 033</a></li>
               <li class="font-semibold text-royal-blue mt-6">Email</li>
               <li class="text-gray-600 hover:text-cta-teal transition duration-300"><a href="mailto:office@capitalhub.finance">office@capitalhub.finance</a></li>
@@ -886,19 +848,19 @@
           </div>
 
           <div>
-            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Main Menu</p>
+            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Meniu Principal</p>
             <ul class="space-y-3 text-gray-600">
               <li><a href="#about" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                 </svg>
-                <span>About Us</span>
+                <span>Acasă</span>
               </a></li>
               <li><a href="services.html" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                 </svg>
-                <span>Services</span>
+                <span>Servicii</span>
               </a></li>
               <li><a href="#blog" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
@@ -906,7 +868,7 @@
                 </svg>
                 <span>Blog</span>
               </a></li>
-              <li><a href="#faq" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
+              <li><a href="faq.html" class="hover:text-cta-teal transition duration-300 flex items-center gap-2 group">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                 </svg>
@@ -916,23 +878,22 @@
           </div>
 
           <div>
-            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Visit Us</p>
+            <p class="font-bold mb-4 uppercase text-gray-400 text-xs tracking-wider">Vizitează-ne</p>
             <ul class="space-y-3 text-gray-600">
-              <li>Sos. Unirii nr 55A,</li>
-              <li>Bucharest, Romania</li>
-              <li class="font-semibold mt-6 text-royal-blue">Open Sat-Sun</li>
+              <li>Șos. Unirii nr 55A,</li>
+              <li>București, România</li>
+              <li class="font-semibold mt-6 text-royal-blue">Deschis Sâm-Dum</li>
               <li>09:00 - 18:00</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Bottom Footer Bar -->
       <div class="border-t border-gray-300 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6 text-xs text-gray-500">
-        <p>© 2025 CapitalHub. All Rights Reserved.</p>
+        <p>© 2025 CapitalHub. Toate drepturile rezervate.</p>
         <div class="flex gap-6">
-          <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Terms & Conditions</a>
-          <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Privacy Policy</a>
+          <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Termeni & Condiții</a>
+          <a href="#" class="hover:text-royal-blue transition duration-300 font-semibold">Politica de Confidențialitate</a>
         </div>
         <div class="flex gap-4">
           <a href="#" class="w-8 h-8 bg-royal-blue hover:bg-cta-teal text-white rounded-full flex items-center justify-center transition duration-300 hover:scale-110">
@@ -948,10 +909,6 @@
       </div>
     </div>
   </div>
-<!--- END TEAM-->
-
-
-<!--- nav bar script-->
 <script>
 
     const menuBtn = document.getElementById("menu-btn");
@@ -1034,5 +991,18 @@
   });
 
 </script>
+
+<a href="https://wa.me/40749119999" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 z-50">
+        <div class="relative flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-lg">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75 animate-ping"></span>
+            
+            <span class="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.76.46 3.45 1.32 4.95L2.06 21.94l5.25-1.37c1.44.8 3.05 1.24 4.73 1.24c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2M12.04 20.13c-1.51 0-2.97-.42-4.22-1.22l-.3-.18l-3.12.82l.83-3.04l-.2-.31c-.88-1.35-1.34-2.9-1.34-4.5c0-4.76 3.92-8.68 8.72-8.68c4.8 0 8.72 3.92 8.72 8.68c0 4.76-3.92 8.68-8.72 8.68m5.31-6.19c-.24-.12-1.42-.7-1.64-.78c-.22-.08-.38-.12-.54.12c-.16.24-.62.78-.76.94c-.14.16-.28.18-.52.06c-.24-.12-1.02-.38-1.94-1.18c-.72-.62-1.2-1.38-1.34-1.62c-.14-.24-.01-.37.11-.48c.11-.11.24-.28.36-.42c.12-.14.16-.24.24-.4c.08-.16.04-.3-.02-.42c-.06-.12-.54-1.3-.74-1.78c-.2-.48-.4-.41-.54-.41c-.14,0-.3,0-.46,0c-.16,0-.42.06-.64.3c-.22.24-.86.84-.86 2.04c0 1.2.88 2.36 1 2.52c.12.16 1.74 2.65 4.22 3.72c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.42-.58 1.62-1.14c.2-.56.2-1.04.14-1.14c-.06-.1-.22-.16-.46-.28Z"/>
+                </svg>
+            </span>
+        </div>
+    </a>
+
 </body>
 </html>
