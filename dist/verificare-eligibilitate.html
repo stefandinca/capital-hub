@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Verificare Eligibilitate - Capital Hub Finance</title>
+</head>
+<body class="bg-white justify-center 2xl:px-96">
+  
+  <!-- WhatsApp Sticky Button -->
+  <a href="https://wa.me/40746000033" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition duration-300 hover:scale-110 group">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-ping"></span>
+    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">!</span>
+  </a>
+
+  <!-- Mobile Menu - keeping existing code -->
+  <div class="lg:hidden flex w-full justify-between bg-royal-blue items-center px-6 py-4 fixed z-50 shadow-lg">
+    <a href="index.html" class="flex items-center">
+      <img class="w-10 h-10 mr-2" src="img/capital_hub_logo.png" /><p class="font-bold text-base text-white">CAPITAL HUB</p>
+    </a>
+
+    <div id="menu-btn" class="flex cursor-pointer fill-white">
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="block" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="hidden" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 011 0L8 6.293l2.354-2.647a.5.5 0 11.708.708L8.707 7l2.647 2.354a.5.5 0 11-.708.708L8 7.707l-2.354 2.647a.5.5 0 11-.708-.708L7.293 7 4.646 4.646a.5.5 0 010-.708z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div id="menu-overlay" class="fixed inset-0 bg-royal-blue/50 hidden z-40"></div>
+
+  <div id="mobile-menu"
+    class="fixed top-[64px] left-0 w-full
+           bg-royal-blue-2 backdrop-blur-xl
+           flex flex-col items-center lg:hidden
+           transform scale-y-0 origin-top
+           transition-transform duration-300 ease-out z-50 shadow-xl">
+    <a href="index.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Acasă</a>
+    <a href="services.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Servicii</a>
+    <a href="blog.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Blog</a>
+    <a href="faq.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">F.A.Q.</a>
+    <a href="index.html#contact" class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hidden lg:block relative overflow-hidden m-6 rounded-3xl">
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
+    
+    <div class="absolute top-20 right-20 w-96 h-96 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+    <div class="relative flex flex-col">
+      <!-- Navigation -->
+      <div class="flex p-6 justify-between items-center">
+        <div>
+          <a href="index.html" class="flex items-center group">
+            <div class="w-12 h-12 mr-3 rounded-xl bg-white/10 backdrop-blur-sm p-2 group-hover:bg-white/20 transition duration-300">
+              <img class="w-full h-full" src="img/capital_hub_logo.png" />
+            </div>
+            <p class="font-bold text-xl text-white">CAPITAL HUB</p>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="index.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Acasă</button>
+          </a>
+          <a href="services.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Servicii</button>
+          </a>
+          <a href="blog.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Blog</button>
+          </a>
+          <a href="faq.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">F.A.Q.</button>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="#" class="scroll-smooth">
+            <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">
+              <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>RO
+            </button>
+          </a>
+          <a href="index.html#contact" class="scroll-smooth">
+            <button class="py-3 px-6 rounded-full text-white font-semibold text-sm transition duration-300 ease-in-out bg-gradient-to-r from-cta-teal to-cta-teal/80 hover:from-warm-gold hover:to-warm-gold shadow-lg">Contact</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="px-12 py-16 lg:px-24 text-center">
+        <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-6">
+          <p>Verificare Rapidă</p>
+        </div>
+        <h1 class="text-4xl lg:text-6xl text-white font-bold leading-tight max-w-4xl mx-auto">Verifică-ți <span class="text-warm-gold">Potențialul de Finanțare</span></h1>
+        <p class="mt-8 text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">Completează formularul de mai jos și află în câteva minute dacă compania ta se califică pentru finanțare.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hero -->
+  <div class="lg:hidden relative overflow-hidden px-6 pt-24 pb-12 bg-gradient-to-br from-royal-blue to-royal-blue-2">
+    <div class="absolute top-0 right-0 w-48 h-48 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    
+    <div class="relative text-center">
+      <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-4">
+        <p>Verificare Rapidă</p>
+      </div>
+      <h1 class="text-3xl text-white font-bold leading-tight">Verifică-ți <span class="text-warm-gold">Eligibilitatea</span></h1>
+      <p class="mt-6 text-base text-white/90 leading-relaxed">Află dacă compania ta se califică pentru finanțare.</p>
+    </div>
+  </div>
+
+  <!-- Form Section -->
+  <div class="py-16 lg:py-24 px-6 bg-gradient-to-b from-white to-off-off-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl border border-gray-100">
+        <form id="eligibility-form" class="space-y-6">
+          <!-- Personal Info -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-semibold text-royal-blue mb-2">Nume *</label>
+              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-cta-teal focus:ring-2 focus:ring-cta-teal/20 outline-none transition duration-300" placeholder="Ion" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-royal-blue mb-2">Prenume *</label>
+              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-cta-teal focus:ring-2 focus:ring-cta-teal/20 outline-none transition duration-300" placeholder="Popescu" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-semibold text-royal-blue mb-2">Telefon *</label>
+              <input type="tel" required pattern="[+]?[0-9]{10,15}" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-cta-teal focus:ring-2 focus:ring-cta-teal/20 outline-none transition duration-300" placeholder="07XXXXXXXX sau +407XXXXXXXX" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-royal-blue mb-2">Email *</label>
+              <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-cta-teal focus:ring-2 focus:ring-cta-teal/20 outline-none transition duration-300" placeholder="email@exemplu.ro" />
+            </div>
+          </div>
+
+          <!-- CUI -->
+          <div>
+            <label class="block text-sm font-semibold text-royal-blue mb-2">CUI Firmă *</label>
+            <div class="flex gap-2">
+              <input type="text" id="cui-input" required pattern="[0-9]{2,10}" class="flex-1 px-4 py-3 rounded-xl border border-gray-300 focus:border-cta-teal focus:ring-2 focus:ring-cta-teal/20 outline-none transition duration-300" placeholder="12345678" />
+              <button type="button" id="verify-cui-btn" class="px-6 py-3 bg-royal-blue text-white rounded-xl font-semibold hover:bg-cta-teal transition duration-300">Verifică</button>
+            </div>
+            <p class="text-xs text-gray-500 mt-2">Introdu CUI-ul (2-10 cifre) și apasă "Verifică" pentru a completa automat datele firmei</p>
+          </div>
+
+          <!-- Company Info (Auto-filled) -->
+          <div id="company-info" class="hidden space-y-4 p-6 bg-gradient-to-br from-cta-teal/5 to-warm-gold/5 rounded-2xl border border-cta-teal/20">
+            <h3 class="text-lg font-bold text-royal-blue mb-4">Datele Firmei (completate automat)</h3>
+            <div>
+              <label class="block text-sm font-semibold text-royal-blue mb-2">Denumirea Firmei</label>
+              <input type="text" id="company-name" readonly class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-royal-blue mb-2">Adresa Sediului Social</label>
+              <input type="text" id="company-address" readonly class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-royal-blue mb-2">Starea Firmei</label>
+              <input type="text" id="company-status" readonly class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50" />
+            </div>
+          </div>
+
+          <!-- Additional Questions (Shown after CUI verification) -->
+          <div id="additional-fields" class="hidden space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-royal-blue mb-2">Ai acordul celorlalte părți pentru cesiunea creanței? *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-cta-teal focus:ring-2 focus:ring-cta-teal/20 outline-none transition duration-300">
+                  <option value="">Selectează</option>
+                  <option value="da">Da</option>
+                  <option value="nu">Nu</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-royal-blue mb-2">Factura este scadentă? *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-cta-teal focus:ring-2 focus:ring-cta-teal/20 outline-none transition duration-300">
+                  <option value="">Selectează</option>
+                  <option value="da">Da</option>
+                  <option value="nu">Nu</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- File Uploads -->
+            <div class="space-y-4">
+              <h3 class="text-lg font-bold text-royal-blue">Upload Documente *</h3>
+              <p class="text-sm text-gray-600">Acceptăm: PDF, JPG, JPEG, PNG (max 10 MB per fișier)</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-royal-blue mb-2">Contract</label>
+                  <input type="file" required accept=".pdf,.jpg,.jpeg,.png" class="w-full px-4 py-3 rounded-xl border border-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-cta-teal file:text-white hover:file:bg-warm-gold transition duration-300" />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-royal-blue mb-2">Factură</label>
+                  <input type="file" required accept=".pdf,.jpg,.jpeg,.png" class="w-full px-4 py-3 rounded-xl border border-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-cta-teal file:text-white hover:file:bg-warm-gold transition duration-300" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Observații -->
+            <div>
+              <label class="block text-sm font-semibold text-royal-blue mb-2">Observații (optional)</label>
+              <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-cta-teal focus:ring-2 focus:ring-cta-teal/20 outline-none transition duration-300" placeholder="Orice informații suplimentare relevante..."></textarea>
+            </div>
+
+            <!-- GDPR Consent -->
+            <div class="flex items-start gap-3 p-4 bg-royal-blue/5 rounded-xl">
+              <input type="checkbox" required id="gdpr-consent" class="mt-1 w-5 h-5 text-cta-teal border-gray-300 rounded focus:ring-cta-teal" />
+              <label for="gdpr-consent" class="text-sm text-gray-700">
+                Sunt împuternicit să trimit aceste documente și accept prelucrarea datelor conform <a href="#" class="text-cta-teal hover:text-warm-gold font-semibold">Politicii de confidențialitate</a>. *
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center pt-4">
+              <button type="submit" class="bg-gradient-to-r from-cta-teal to-cta-teal/90 hover:from-warm-gold hover:to-warm-gold text-white px-12 py-4 rounded-full text-base font-bold transition duration-300 hover:scale-105 shadow-xl flex items-center gap-3 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                </svg>
+                Trimite Cererea
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-cta-teal/10 rounded-xl flex items-center justify-center mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2CA58D" viewBox="0 0 16 16">
+              <path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z"/>
+            </svg>
+          </div>
+          <p class="text-xs font-semibold text-center text-royal-blue">Sigur & Confidențial</p>
+        </div>
+        
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-warm-gold/10 rounded-xl flex items-center justify-center mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#CFAE55" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
