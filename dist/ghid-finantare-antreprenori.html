@@ -1,0 +1,617 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Ghid complet al finanțării pentru antreprenori - Capital Hub Finance</title>
+  <meta name="description" content="Cum îți alegi corect finanțarea și cum îți pregătești firma pentru aprobarea creditului. Ghid complet despre tipurile de finanțare disponibile pentru antreprenori.">
+</head>
+<body class="bg-white justify-center 2xl:px-96">
+
+  <!-- Added WhatsApp sticky button -->
+  <a href="https://wa.me/40746000033" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition duration-300 hover:scale-110 group">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-ping"></span>
+    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">!</span>
+  </a>
+
+  <!-- Mobile Navigation -->
+  <div class="lg:hidden flex w-full justify-between bg-royal-blue items-center px-6 py-4 fixed z-50 shadow-lg">
+    <a href="index.html" class="flex items-center">
+      <img class="w-10 h-10 mr-2" src="img/capital_hub_logo.png" alt="Logo"/><p class="font-bold text-base text-white">CAPITAL HUB</p>
+    </a>
+
+    <div id="menu-btn" class="flex cursor-pointer fill-white">
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="block" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="hidden" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 011 0L8 6.293l2.354-2.647a.5.5 0 11.708.708L8.707 7l2.647 2.354a.5.5 0 11-.708.708L8 7.707l-2.354 2.647a.5.5 0 11-.708-.708L7.293 7 4.646 4.646a.5.5 0 010-.708z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div id="menu-overlay" class="fixed inset-0 bg-royal-blue/50 hidden z-40"></div>
+
+  <div id="mobile-menu"
+    class="fixed top-[64px] left-0 w-full
+           bg-royal-blue-2 backdrop-blur-xl
+           flex flex-col items-center lg:hidden
+           transform scale-y-0 origin-top
+           transition-transform duration-300 ease-out z-50 shadow-xl">
+    <a href="index.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Acasă</a>
+    <a href="services.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Servicii</a>
+    <a href="blog.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Blog</a>
+    <a href="faq.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">F.A.Q.</a>
+    <a href="#contact" class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">Contact</a>
+  </div>
+
+  <!-- Desktop Hero Section -->
+  <div class="hidden lg:block relative overflow-hidden m-6 rounded-3xl">
+    <div class="absolute inset-0">
+      <img src="img/blogpost-1.avif" class="w-full h-full object-cover" />
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue/90 via-royal-blue-2/85 to-royal-blue/90"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-royal-blue/50 to-transparent"></div>
+
+    <div class="absolute top-20 right-20 w-96 h-96 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+    <div class="relative flex flex-col">
+      <div class="flex p-6 justify-between items-center">
+        <div>
+          <a href="index.html" class="flex items-center group">
+            <div class="w-12 h-12 mr-3 rounded-xl bg-white/10 backdrop-blur-sm p-2 group-hover:bg-white/20 transition duration-300">
+              <img class="w-full h-full" src="img/capital_hub_logo.png" />
+            </div>
+            <p class="font-bold text-xl text-white">CAPITAL HUB</p>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="index.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Acasă</button>
+          </a>
+          <a href="services.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Servicii</button>
+          </a>
+          <a href="blog.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-warm-gold font-semibold text-sm transition duration-300 ease-in-out">Blog</button>
+          </a>
+          <a href="faq.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">F.A.Q.</button>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2">
+            <a href="#" class="scroll-smooth">
+              <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">RO</button>
+            </a>
+            <a href="#" class="scroll-smooth">
+              <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">EN</button>
+            </a>
+            <a href="#" class="scroll-smooth">
+              <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal">BG</button>
+            </a>
+          </div>
+          <a href="#contact" class="scroll-smooth">
+            <button class="py-3 px-6 rounded-full text-white font-semibold text-sm transition duration-300 ease-in-out bg-gradient-to-r from-cta-teal to-cta-teal/80 hover:from-warm-gold hover:to-warm-gold shadow-lg">Contact</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="px-12 py-16 lg:px-24">
+        
+        <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-6">
+          <p>Ghid complet • 7–8 min citire</p>
+        </div>
+        <h1 class="text-4xl lg:text-5xl text-white font-bold leading-tight max-w-4xl mb-6">
+          Ghid complet al finanțării pentru antreprenori – Cum îți alegi corect finanțarea și cum îți pregătești firma pentru aprobarea creditului
+        </h1>
+        <div class="flex items-center gap-3 text-white/80">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg>
+          <span class="text-sm font-semibold">Capital Hub Team</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hero Section -->
+  <div class="lg:hidden relative overflow-hidden px-6 pt-24 pb-12 bg-gradient-to-br from-off-off-white to-white">
+    <div class="absolute top-0 right-0 w-48 h-48 bg-warm-gold/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-royal-blue/5 rounded-full blur-3xl"></div>
+
+    <div class="relative">
+      
+      <div class="inline-block px-6 py-2 bg-gradient-to-r from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-4">
+        <p>Ghid complet • 7–8 min</p>
+      </div>
+      <h1 class="text-3xl text-royal-blue font-bold leading-tight mb-4">
+        Ghid complet al finanțării pentru antreprenori
+      </h1>
+      <p class="text-base text-gray-600 leading-relaxed mb-4">Cum îți alegi corect finanțarea și cum îți pregătești firma pentru aprobarea creditului</p>
+      <div class="flex items-center gap-2 text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </svg>
+        <span class="text-sm font-semibold">Capital Hub Team</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Content -->
+  <article class="py-12 px-6 lg:px-12 bg-white">
+    <div class="max-w-4xl mx-auto">
+
+      <a href="blog.html" class="inline-flex items-center gap-2 text-royal-blue hover:text-royal-blue-2 transition duration-300 mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+          <span class="text-sm font-semibold">Înapoi la Blog</span>
+        </a>
+
+      <!-- Introduction -->
+      <div class="prose prose-lg max-w-none">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Accesul la finanțare rămâne una dintre cele mai importante provocări ale antreprenorilor români. Unele companii caută lichiditate imediată, altele urmăresc investiții mari sau extinderea activității, iar altele încearcă să obțină un scor bancar mai bun pentru creditare.
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Indiferent de mărimea sau vechimea afacerii, majoritatea antreprenorilor ajung într-un moment în care trebuie să răspundă la aceeași întrebare: <strong>„Ce tip de finanțare se potrivește cu adevărat firmei mele?"</strong>
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+          Acest ghid își propune să clarifice principalele soluții disponibile, modul în care sunt analizate de instituțiile financiare și cum îți poți pregăti corect compania pentru a obține aprobarea.
+        </p>
+
+        <!-- Table of Contents -->
+        <div class="bg-gradient-to-br from-royal-blue/5 to-cta-teal/5 rounded-2xl p-8 mb-12 border border-royal-blue/10">
+          <h2 class="text-2xl font-bold text-royal-blue mb-6">În continuare vei afla:</h2>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Ce tipuri de finanțare există și cui se adresează</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Cum funcționează instrumentele pe termen scurt, mediu și lung</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Ce presupun fondurile nerambursabile</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Ce rol are finanțarea alternativă</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Ce este salesback-ul</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Cum se face optimizarea indicatorilor financiar-contabili pentru creșterea eligibilității</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Cum alegi soluția optimă pentru firma ta</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Section 1 -->
+        <h2 class="text-3xl font-bold text-royal-blue mb-6 mt-12">1. Finanțare pe termen scurt – soluții pentru stabilizarea cash-flow-ului</h2>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Finanțarea pe termen scurt este destinată companiilor care trebuie să acopere decalaje temporare între plăți și încasări. Este potrivită pentru activitatea curentă, nu pentru investiții mari.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Factoring și reverse factoring</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Prin factoring, compania transformă facturile neîncasate în lichiditate imediată. Reverse factoringul permite furnizorilor să fie plătiți mai repede, fără a afecta cash-flow-ul clientului.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Linii de credit pentru capital de lucru</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          O soluție flexibilă pentru acoperirea nevoilor urgente. Fondurile sunt accesibile oricând, iar dobânda se plătește doar pentru suma utilizată.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Credite comerciale și finanțări pentru furnizori</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Potrivite pentru achiziția rapidă de stocuri sau pentru acoperirea obligațiilor față de furnizorii strategici.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Microcredite pentru IMM-uri</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Finanțări rapide, cu documentație redusă, ideale pentru sume mici și medii.
+        </p>
+
+        <div class="bg-cta-teal/10 border-l-4 border-cta-teal rounded-r-xl p-6 my-8">
+          <p class="text-gray-700 font-semibold italic">
+            Finanțarea pe termen scurt funcționează ca un mecanism de stabilizare financiară, menținând activitatea companiei în condiții fluide.
+          </p>
+        </div>
+
+        <!-- Section 2 -->
+        <h2 class="text-3xl font-bold text-royal-blue mb-6 mt-12">2. Finanțare pe termen mediu și lung – când obiectivul este creșterea</h2>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Aceste finanțări se adresează companiilor care urmăresc dezvoltarea operațională, modernizarea sau extinderea capacităților.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Leasing pentru echipamente și autovehicule</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          O soluție eficientă pentru achiziția de utilaje, flotă auto sau echipamente industriale, fără a afecta lichiditatea.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Credite de investiții</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Finanțează achiziții de active, construcții, linii de producție, tehnologizare sau extinderi.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Refinanțări și restructurări</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Utilizate pentru reducerea costurilor existente, optimizarea ratelor și reajustarea angajamentelor financiare.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Finanțare verde (soluții fotovoltaice)</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Tot mai solicitată pentru reducerea costurilor energetice și creșterea independenței energetice.
+        </p>
+
+        <div class="bg-cta-teal/10 border-l-4 border-cta-teal rounded-r-xl p-6 my-8">
+          <p class="text-gray-700 font-semibold italic">
+            Finanțarea pe termen mediu și lung este asociată deciziilor strategice, cu impact direct asupra competitivității și profitabilității.
+          </p>
+        </div>
+
+        <!-- Section 3 -->
+        <h2 class="text-3xl font-bold text-royal-blue mb-6 mt-12">3. Fonduri nerambursabile – capital pentru inovație și dezvoltare</h2>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Fondurile nerambursabile pot reprezenta o oportunitate importantă pentru companiile care au proiecte clare și capacitatea de a pregăti documentația necesară.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Fonduri europene și PNRR</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Disponibile pentru digitalizare, eficiență energetică, producție, agricultură sau dezvoltare durabilă.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Granturi internaționale sau private</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Destinate proiectelor inovatoare, educaționale sau tehnice.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Asistență în pregătirea proiectelor</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Succesul finanțărilor nerambursabile depinde în mare măsură de calitatea dosarului tehnic și financiar. Lipsa detaliilor, incoerența datelor sau neconcordanțele duc rapid la respingerea proiectului.
+        </p>
+
+        <div class="bg-warm-gold/10 border-l-4 border-warm-gold rounded-r-xl p-6 my-8">
+          <p class="text-gray-700 font-semibold italic">
+            Fondurile nerambursabile nu sunt soluții „rapide", ci investiții strategice care necesită pregătire riguroasă.
+          </p>
+        </div>
+
+        <!-- Section 4 -->
+        <h2 class="text-3xl font-bold text-royal-blue mb-6 mt-12">4. Finanțare alternativă – soluții moderne pentru companii dinamice</h2>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Instituțiile bancare nu sunt singura opțiune. Pentru multe tipuri de business, finanțarea alternativă reprezintă o cale viabilă și rapidă.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Fintech-uri (creditare rapidă)</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Aprobări accelerate și proces 100% digital.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Crowdfunding și crowd-lending</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Potrivite pentru companiile inovatoare sau aflate la început de drum.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Business angels și investitori privați</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Aduc nu doar capital, ci și expertiză.
+        </p>
+
+        <h3 class="text-2xl font-bold text-royal-blue mb-4 mt-8">Salesback (vânzare cu răscumpărare)</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          O soluție modernă prin care compania vinde temporar un activ pentru a obține lichiditate, păstrând dreptul de utilizare și posibilitatea de răscumpărare ulterioară.
+        </p>
+
+        <div class="bg-cta-teal/10 border-l-4 border-cta-teal rounded-r-xl p-6 my-8">
+          <p class="text-gray-700 font-semibold italic">
+            Este una dintre cele mai eficiente metode de a genera capital rapid, fără a apela la creditare clasică.
+          </p>
+        </div>
+
+        <!-- Section 5 -->
+        <h2 class="text-3xl font-bold text-royal-blue mb-6 mt-12">5. Optimizarea indicatorilor financiar-contabili – diferența dintre respingere și aprobare</h2>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Un aspect deseori ignorat este modul în care arată firma din punct de vedere financiar atunci când ajunge în analiza băncii. De multe ori, respingerea nu vine din lipsa potențialului, ci din prezentarea contabilă care nu reflectă realitatea economică.
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Optimizarea financiară realizată de experți autorizați are ca scop:
+        </p>
+
+        <ul class="space-y-3 text-gray-700 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Analiza structurii bilanțiere</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Identificarea neconcordanțelor și a riscurilor</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Corectarea indicatorilor economico-financiari</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Modelarea fluxurilor pentru scoring bancar</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-cta-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Pregătirea dosarului de creditare în forma corectă</span>
+          </li>
+        </ul>
+
+        <div class="bg-warm-gold/10 border-l-4 border-warm-gold rounded-r-xl p-6 my-8">
+          <p class="text-gray-700 font-semibold italic">
+            Este un proces esențial pentru companiile care doresc să obțină finanțare, mai ales când au fost respinse anterior sau au indicatori sensibili.
+          </p>
+        </div>
+
+        <!-- Conclusion -->
+        <h2 class="text-3xl font-bold text-royal-blue mb-6 mt-12">Concluzie</h2>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Acum că ai parcurs aceste informații, ai o imagine mult mai clară asupra modului în care funcționează finanțarea unei afaceri și asupra motivului pentru care alegerea soluției potrivite este esențială. Fiecare tip de finanțare are un rol precis în evoluția unei companii, iar utilizarea lui corectă poate face diferența dintre stagnare și dezvoltare.
+        </p>
+
+        <div class="bg-gradient-to-br from-royal-blue/5 to-cta-teal/5 rounded-2xl p-8 my-8 border border-royal-blue/10">
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-warm-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span><strong>Finanțarea pe termen scurt</strong> ajută la menținerea unui flux de numerar sănătos.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-warm-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span><strong>Finanțarea pe termen mediu și lung</strong> permite investiții solide și creștere sustenabilă.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-warm-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span><strong>Fondurile nerambursabile</strong> accelerează modernizarea și diversificarea.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-warm-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span><strong>Finanțarea alternativă</strong> oferă flexibilitate în momente în care soluțiile bancare sunt limitate.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-warm-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span><strong>Optimizarea indicatorilor financiar-contabili</strong> pregătește terenul pentru o eligibilitate reală în fața finanțatorilor.</span>
+            </li>
+          </ul>
+        </div>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Cu aceste repere în minte, poți privi finanțarea nu doar ca pe o necesitate, ci ca pe un instrument strategic care, folosit corect, poate transforma direcția întregii companii. Dacă ai nevoie de ghidaj în alegerea soluției potrivite sau în pregătirea dosarului, expertiza specializată poate facilita întregul proces și îți poate crește semnificativ șansele de aprobare.
+        </p>
+
+      </div>
+
+      <!-- CTA Box -->
+      <div class="mt-12 bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-3xl p-8 lg:p-12 text-center">
+        <h3 class="text-3xl font-bold text-white mb-4">
+          Ai nevoie de ajutor pentru finanțarea afacerii tale?
+        </h3>
+        <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+          Contactează-ne astăzi pentru o consultație gratuită și descoperă care este soluția de finanțare potrivită pentru tine.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/40746000033" target="_blank">
+            <button class="flex items-center justify-center bg-green-500 hover:bg-green-600 py-4 px-8 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:scale-105 shadow-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mr-2" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>
+              Scrie-ne pe WhatsApp
+            </button>
+          </a>
+          <a href="tel:+40746000033">
+            <button class="bg-white/10 backdrop-blur-sm py-4 px-8 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-white/20 border border-white/20 shadow-xl">
+              Sună: +40 746 000 033
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Back to Blog -->
+      <div class="mt-12 text-center">
+        <a href="blog.html" class="inline-flex items-center gap-2 text-royal-blue hover:text-cta-teal transition duration-300 font-semibold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+          Înapoi la toate articolele
+        </a>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- Contact Section -->
+  <div id="contact" class="py-16 px-6 lg:px-12 bg-gradient-to-br from-royal-blue to-royal-blue-2">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-6">
+        Hai să discutăm
+      </div>
+
+      <h2 class="text-4xl lg:text-5xl text-white font-bold mb-6">
+        Pregătit să faci <span class="text-warm-gold">următorul pas?</span>
+      </h2>
+
+      <p class="text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Contactează-ne astăzi pentru o consultație gratuită și descoperă cum te putem ajuta să accesezi finanțarea potrivită pentru afacerea ta.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="https://wa.me/40746000033" target="_blank" class="group">
+          <button class="flex items-center bg-green-500 hover:bg-green-600 py-4 px-8 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:scale-105 shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mr-2" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+            Scrie-ne pe WhatsApp
+          </button>
+        </a>
+
+        <a href="tel:+40746000033">
+          <button class="bg-white/10 backdrop-blur-sm py-4 px-8 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-white/20 border border-white/20 shadow-xl">
+            Sună: +40 746 000 033
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+  <div class="py-12 px-6 lg:px-12 bg-off-off-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 pb-8">
+        <div>
+          <a href="index.html" class="flex items-center mb-4">
+            <img class="w-10 h-10 mr-2" src="img/capital_hub_logo.png" alt="Logo"/>
+            <p class="font-bold text-lg text-royal-blue">CAPITAL HUB</p>
+          </a>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Soluții profesionale de finanțare pentru companii care doresc să crească sustenabil și eficient.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-royal-blue mb-4">Navigare</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Acasă</a></li>
+            <li><a href="services.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Servicii</a></li>
+            <li><a href="blog.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Blog</a></li>
+            <li><a href="faq.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Întrebări Frecvente</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-royal-blue mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li>Tel: +40 746 000 033</li>
+            <li>Email: contact@capitalhub.ro</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-royal-blue mb-4">Social Media</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="text-gray-600 hover:text-cta-teal transition duration-300 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+              Facebook
+            </a></li>
+            <li><a href="#" class="text-gray-600 hover:text-cta-teal transition duration-300 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+              Instagram
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
+          <p>&copy; 2025 Capital Hub Finance. Toate drepturile rezervate.</p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-cta-teal transition duration-300">Politica de Confidențialitate</a>
+            <a href="#" class="hover:text-cta-teal transition duration-300">Termeni și Condiții</a>
+            <a href="#" class="hover:text-cta-teal transition duration-300">Cookie-uri</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for menu toggle -->
+  <script>
+    // Menu toggle functionality
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('scale-y-0');
+      mobileMenu.classList.toggle('scale-y-100');
+      menuOverlay.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('block');
+      closeIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('block');
+    });
+
+    menuOverlay.addEventListener('click', () => {
+      mobileMenu.classList.add('scale-y-0');
+      mobileMenu.classList.remove('scale-y-100');
+      menuOverlay.classList.add('hidden');
+      hamburgerIcon.classList.remove('hidden');
+      hamburgerIcon.classList.add('block');
+      closeIcon.classList.add('hidden');
+      closeIcon.classList.remove('block');
+    });
+  </script>
+</body>
+</html>
