@@ -1,0 +1,659 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Echipa Noastră - Capital Hub Finance</title>
+</head>
+<body class="bg-white justify-center 2xl:px-96">
+
+  <!-- WhatsApp sticky button -->
+  <a href="https://wa.me/40746000033" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition duration-300 hover:scale-110 group">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-ping"></span>
+    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">!</span>
+  </a>
+
+  <!-- Mobile Navigation -->
+  <div class="lg:hidden flex w-full justify-between bg-royal-blue items-center px-6 py-4 fixed z-50 shadow-lg">
+    <a href="index.html" class="flex items-center">
+      <img class="w-10 h-10 mr-2" src="img/capital_hub_logo.png" alt="Logo"/><p class="font-bold text-base text-white">CAPITAL HUB</p>
+    </a>
+
+    <div id="menu-btn" class="flex cursor-pointer fill-white">
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="block" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="hidden" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 011 0L8 6.293l2.354-2.647a.5.5 0 11.708.708L8.707 7l2.647 2.354a.5.5 0 11-.708.708L8 7.707l-2.354 2.647a.5.5 0 11-.708-.708L7.293 7 4.646 4.646a.5.5 0 010-.708z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div id="menu-overlay" class="fixed inset-0 bg-royal-blue/50 hidden z-40"></div>
+
+  <div id="mobile-menu"
+    class="fixed top-[64px] left-0 w-full
+           bg-royal-blue-2 backdrop-blur-xl
+           flex flex-col items-center lg:hidden
+           transform scale-y-0 origin-top
+           transition-transform duration-300 ease-out z-50 shadow-xl">
+    <a href="index.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Acasă</a>
+    <a href="services.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Servicii</a>
+    <a href="team.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Echipa</a>
+    <a href="blog.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">Blog</a>
+    <a href="faq.html" class="block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300">F.A.Q.</a>
+    <a href="#contact" class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">Contact</a>
+  </div>
+
+  <!-- Desktop Hero Section -->
+  <div class="hidden lg:block relative overflow-hidden m-6 rounded-3xl">
+    <div class="absolute inset-0">
+      <img src="img/team-hero.avif" class="w-full h-full object-cover" />
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue/90 via-royal-blue-2/85 to-royal-blue/90"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-royal-blue/50 to-transparent"></div>
+
+    <div class="absolute top-20 right-20 w-96 h-96 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+    <div class="relative flex flex-col">
+      <div class="flex p-6 justify-between items-center">
+        <div>
+          <a href="index.html" class="flex items-center group">
+            <div class="w-12 h-12 mr-3 rounded-xl bg-white/10 backdrop-blur-sm p-2 group-hover:bg-white/20 transition duration-300">
+              <img class="w-full h-full" src="img/capital_hub_logo.png" />
+            </div>
+            <p class="font-bold text-xl text-white">CAPITAL HUB</p>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="index.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Acasă</button>
+          </a>
+          <a href="services.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Servicii</button>
+          </a>
+          <a href="team.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-warm-gold font-semibold text-sm transition duration-300 ease-in-out">Echipa</button>
+          </a>
+          <a href="blog.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">Blog</button>
+          </a>
+          <a href="faq.html" class="scroll-smooth">
+            <button class="py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-warm-gold">F.A.Q.</button>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="relative language-dropdown">
+            <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal" id="language-btn-desktop">
+              <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+              <span id="current-lang-desktop">RO</span>
+            </button>
+            <div class="hidden absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50" id="language-menu-desktop">
+              <a href="#" class="block px-4 py-3 text-sm text-royal-blue hover:bg-cta-teal hover:text-white transition duration-200" data-lang="RO">🇷🇴 Română</a>
+              <a href="team-en.html" class="block px-4 py-3 text-sm text-royal-blue hover:bg-cta-teal hover:text-white transition duration-200" data-lang="ENG">🇬🇧 English</a>
+              <a href="#" class="block px-4 py-3 text-sm text-royal-blue hover:bg-cta-teal hover:text-white transition duration-200" data-lang="BG">🇧🇬 Български</a>
+            </div>
+          </div>
+          <a href="#contact" class="scroll-smooth">
+            <button class="py-3 px-6 rounded-full text-white font-semibold text-sm transition duration-300 ease-in-out bg-gradient-to-r from-cta-teal to-cta-teal/80 hover:from-warm-gold hover:to-warm-gold shadow-lg">Contact</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="px-12 py-24 lg:px-24 text-center">
+        <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-6">
+          <p>Echipa Capital Hub</p>
+        </div>
+        <h1 class="text-5xl lg:text-6xl text-white font-bold leading-tight max-w-4xl mx-auto">Profesioniști cu <span class="text-warm-gold">Experiență</span></h1>
+        <p class="mt-8 text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">Echipa Capital Hub reunește experți cu experiență extinsă în finanțare, banking, consultanță și management, dedicați succesului afacerii tale.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hero Section -->
+  <div class="lg:hidden relative overflow-hidden px-6 pt-24 pb-12 bg-gradient-to-br from-off-off-white to-white">
+    <div class="absolute top-0 right-0 w-48 h-48 bg-warm-gold/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-royal-blue/5 rounded-full blur-3xl"></div>
+
+    <div class="relative text-center">
+      <div class="inline-block px-6 py-2 bg-gradient-to-r from-cta-teal/10 to-transparent border border-cta-teal/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-4">
+        <p>Echipa Noastră</p>
+      </div>
+      <h1 class="text-4xl text-royal-blue font-bold leading-tight">Profesioniști cu <span class="text-warm-gold">Experiență</span></h1>
+      <p class="mt-6 text-base text-gray-600 leading-relaxed">Experți dedicați succesului afacerii tale.</p>
+    </div>
+  </div>
+
+  <!-- Team Members Section -->
+  <div class="py-16 lg:py-24 px-6 bg-gradient-to-b from-white to-off-off-white">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Leadership Team -->
+      <div class="mb-16">
+        <div class="text-center mb-12">
+          <div class="inline-block px-6 py-2 border border-gray-400/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-6">
+            Conducere
+          </div>
+          <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold">Echipa de <span class="text-warm-gold">Conducere</span></h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+          <!-- Ciprian V. -->
+          <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 border border-gray-100">
+            <div class="relative h-64 bg-gradient-to-br from-royal-blue to-royal-blue-2 overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-32 h-32 bg-white/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute top-4 right-4">
+                <div class="px-4 py-2 bg-warm-gold rounded-full">
+                  <p class="text-xs font-bold text-white">Director General</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-royal-blue mb-2">Ciprian V.</h3>
+              <p class="text-cta-teal font-semibold text-sm mb-4">Director General – Capital Hub</p>
+              <p class="text-gray-600 leading-relaxed mb-6">Ciprian are peste două decenii de experiență în conducerea și transformarea organizațiilor, atât în mediul privat, cât și în proiecte strategice cu impact național. Economist la bază, cu o formare solidă în management și analiză financiară, abordează finanțările și parteneriatele cu rigoare, structură și orientare constantă către rezultate.</p>
+
+              <div class="border-t border-gray-200 pt-6">
+                <p class="text-sm font-bold text-royal-blue mb-3">Îl recomandă:</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Experiența de CEO în mai multe companii, inclusiv în organizații listate la bursă
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Parcursul antreprenorial și capacitatea de a crea și lansa proiecte noi
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Implicarea în consilierea unor inițiative publice cu relevanță strategică
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Formarea economică și perspectiva aplicată asupra nevoilor reale ale IMM-urilor
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Iulia V. -->
+          <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 border border-gray-100">
+            <div class="relative h-64 bg-gradient-to-br from-cta-teal to-cta-teal/80 overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-32 h-32 bg-white/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute top-4 right-4">
+                <div class="px-4 py-2 bg-warm-gold rounded-full">
+                  <p class="text-xs font-bold text-white">Director Operațiuni</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-royal-blue mb-2">Iulia V.</h3>
+              <p class="text-cta-teal font-semibold text-sm mb-4">Director Operațiuni – Capital Hub</p>
+              <p class="text-gray-600 leading-relaxed mb-6">Iulia are peste 14 ani de experiență în cadrul Parlamentului României, unde a gestionat activități administrative, operaționale și de coordonare în structuri cu nivel ridicat de complexitate. În Capital Hub, asigură funcționarea operațională a platformei și coordonează întregul flux administrativ al colaborărilor și contractelor.</p>
+
+              <div class="border-t border-gray-200 pt-6">
+                <p class="text-sm font-bold text-royal-blue mb-3">O recomandă:</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Experiența extinsă în administrație publică și procese legislative
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Gestionarea proiectelor operaționale și a activităților complexe
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Colaborarea cu ONG-uri și instituții publice
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Atenția la detalii și disciplina în gestionarea documentelor și proceselor
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dan C. -->
+          <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 border border-gray-100">
+            <div class="relative h-64 bg-gradient-to-br from-warm-gold to-warm-gold/80 overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-32 h-32 bg-white/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute top-4 right-4">
+                <div class="px-4 py-2 bg-royal-blue rounded-full">
+                  <p class="text-xs font-bold text-white">Coordonator Dezvoltare</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-royal-blue mb-2">Dan C.</h3>
+              <p class="text-cta-teal font-semibold text-sm mb-4">Coordonator Dezvoltare – Capital Hub</p>
+              <p class="text-gray-600 leading-relaxed mb-6">Dan are peste două decenii de experiență antreprenorială, timp în care a dezvoltat și coordonat proiecte în domenii diferite, cu componentă operațională, comercială și strategică. În Capital Hub, contribuie activ la extinderea portofoliului și la dezvoltarea relațiilor cu clienții.</p>
+
+              <div class="border-t border-gray-200 pt-6">
+                <p class="text-sm font-bold text-royal-blue mb-3">Îl recomandă:</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Peste două decenii de antreprenoriat și proiecte variate
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Abilitatea de a construi și menține relații de încredere
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Orientarea spre rezultate și identificarea oportunităților
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Capacitatea de adaptare și înțelegerea mecanismelor de business
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sorin B. -->
+          <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 border border-gray-100">
+            <div class="relative h-64 bg-gradient-to-br from-royal-blue-2 to-royal-blue overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-32 h-32 bg-white/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute top-4 right-4">
+                <div class="px-4 py-2 bg-warm-gold rounded-full">
+                  <p class="text-xs font-bold text-white">Director Financiar</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-royal-blue mb-2">Sorin B.</h3>
+              <p class="text-cta-teal font-semibold text-sm mb-4">Director Financiar – Capital Hub</p>
+              <p class="text-gray-600 leading-relaxed mb-6">Sorin are o experiență de peste două decenii în servicii financiare, management și dezvoltare strategică, construită în roluri precum Managing Partner și Associate Partner în companii din domeniul leasingului, consultanței și operațiunilor financiare. Gestionează integrarea portofoliilor, evaluarea dosarelor și coordonarea proceselor financiare din Capital Hub.</p>
+
+              <div class="border-t border-gray-200 pt-6">
+                <p class="text-sm font-bold text-royal-blue mb-3">Îl recomandă:</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Peste 20 de ani de experiență în servicii financiare și management
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Expertiză în relația cu bănci, finanțatori și investitori
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Abilități solide în structurarea, analiza și transmiterea portofoliilor financiare
+                  </li>
+                  <li class="flex items-start text-sm text-gray-600">
+                    <svg class="w-4 h-4 text-cta-teal mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Formarea economică și perspectiva strategică asupra produselor financiare
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Expert Team -->
+      <div class="mb-16">
+        <div class="text-center mb-12">
+          <div class="inline-block px-6 py-2 border border-gray-400/20 rounded-full text-xs font-semibold text-royal-blue uppercase tracking-wider mb-6">
+            Echipa de Experți
+          </div>
+          <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold">Specialiști <span class="text-warm-gold">Dedicați</span></h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Adina R. -->
+          <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 border border-gray-100">
+            <div class="relative h-48 bg-gradient-to-br from-cta-teal/80 to-cta-teal overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-royal-blue mb-1">Adina R.</h3>
+              <p class="text-cta-teal font-semibold text-sm mb-4">Expert Contabil</p>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4">Adina are peste trei decenii de experiență în domeniul economic și financiar, în care a coordonat procesele economico-financiare ale unui grup de companii și a gestionat structuri complexe din zona IMM și corporate.</p>
+
+              <div class="border-t border-gray-200 pt-4">
+                <p class="text-xs font-bold text-royal-blue mb-2">Îl recomandă:</p>
+                <ul class="space-y-1.5">
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Experiența de peste 30 de ani în contabilitate și analiză financiară
+                  </li>
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Coordonarea proceselor economico-financiare la nivel de grup de companii
+                  </li>
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Expertiza în finanțări pentru investiții, activitate curentă și proiecte europene
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bogdan S. -->
+          <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 border border-gray-100">
+            <div class="relative h-48 bg-gradient-to-br from-warm-gold/80 to-warm-gold overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-royal-blue mb-1">Bogdan S.</h3>
+              <p class="text-cta-teal font-semibold text-sm mb-4">Consultant Senior Credite</p>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4">Bogdan are peste 15 ani de experiență în banking și finanțări, consolidată prin roluri de coordonare și management în instituții bancare și organizații cu structuri complexe de vânzări. Este specializat în structurarea soluțiilor de creditare pentru IMM-uri.</p>
+
+              <div class="border-t border-gray-200 pt-4">
+                <p class="text-xs font-bold text-royal-blue mb-2">Îl recomandă:</p>
+                <ul class="space-y-1.5">
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Peste 15 ani de experiență în banking și finanțări
+                  </li>
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Expertiza în structurarea creditelor pentru IMM-uri
+                  </li>
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Abilitatea de a negocia și optimiza condițiile de creditare
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Robert T. -->
+          <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 border border-gray-100">
+            <div class="relative h-48 bg-gradient-to-br from-royal-blue-2 to-royal-blue overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-royal-blue mb-1">Robert T.</h3>
+              <p class="text-cta-teal font-semibold text-sm mb-4">Consultant Senior Credite</p>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4">Robert are o experiență de peste 15 ani în banking, creditare și consultanță financiară, acumulată în instituții bancare de top și în companii specializate în servicii financiare pentru IMM-uri. În cadrul Capital Hub contribuie decisiv la configurarea soluțiilor de creditare pentru companii.</p>
+
+              <div class="border-t border-gray-200 pt-4">
+                <p class="text-xs font-bold text-royal-blue mb-2">Îl recomandă:</p>
+                <ul class="space-y-1.5">
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Peste 15 ani de experiență în banking și consultanță financiară
+                  </li>
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Expertiza în structurarea și negocierea creditelor pentru IMM-uri
+                  </li>
+                  <li class="flex items-start text-xs text-gray-600">
+                    <span class="w-1 h-1 bg-cta-teal rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    Profesionalismul, rigoarea și orientarea constantă spre rezultate
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="py-16 px-6 lg:px-12 bg-gradient-to-br from-royal-blue to-royal-blue-2">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wider mb-6">
+        Contactează Echipa
+      </div>
+
+      <h2 class="text-4xl lg:text-5xl text-white font-bold mb-6">
+        Pregătit să lucrezi cu <span class="text-warm-gold">profesioniști?</span>
+      </h2>
+
+      <p class="text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Contactează-ne astăzi pentru o consultație gratuită și descoperă cum echipa Capital Hub te poate ajuta să accesezi finanțarea potrivită.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="https://wa.me/40746000033" target="_blank" class="group">
+          <button class="flex items-center bg-green-500 hover:bg-green-600 py-4 px-8 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:scale-105 shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mr-2" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+            Scrie-ne pe WhatsApp
+          </button>
+        </a>
+
+        <a href="tel:+40746000033">
+          <button class="bg-white/10 backdrop-blur-sm py-4 px-8 rounded-full text-white text-sm font-semibold transition ease-in-out duration-300 hover:bg-white/20 border border-white/20 shadow-xl">
+            Sună: +40 746 000 033
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="py-12 px-6 lg:px-12 bg-off-off-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 pb-8">
+        <div>
+          <a href="index.html" class="flex items-center mb-4">
+            <img class="w-10 h-10 mr-2" src="img/capital_hub_logo.png" alt="Logo"/>
+            <p class="font-bold text-lg text-royal-blue">CAPITAL HUB</p>
+          </a>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Soluții profesionale de finanțare pentru companii care doresc să crească sustenabil și eficient.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-royal-blue mb-4">Navigare</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Acasă</a></li>
+            <li><a href="services.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Servicii</a></li>
+            <li><a href="team.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Echipa</a></li>
+            <li><a href="blog.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Blog</a></li>
+            <li><a href="faq.html" class="text-gray-600 hover:text-cta-teal transition duration-300">Întrebări Frecvente</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-royal-blue mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li>Tel: +40 746 000 033</li>
+            <li>Email: contact@capitalhub.ro</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-royal-blue mb-4">Social Media</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="text-gray-600 hover:text-cta-teal transition duration-300 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+              Facebook
+            </a></li>
+            <li><a href="#" class="text-gray-600 hover:text-cta-teal transition duration-300 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+              Instagram
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
+          <p>&copy; 2025 Capital Hub Finance. Toate drepturile rezervate.</p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-cta-teal transition duration-300">Politica de Confidențialitate</a>
+            <a href="#" class="hover:text-cta-teal transition duration-300">Termeni și Condiții</a>
+            <a href="#" class="hover:text-cta-teal transition duration-300">Cookie-uri</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for menu toggle -->
+  <script>
+    // Menu toggle functionality
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('scale-y-0');
+      mobileMenu.classList.toggle('scale-y-100');
+      menuOverlay.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('block');
+      closeIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('block');
+    });
+
+    menuOverlay.addEventListener('click', () => {
+      mobileMenu.classList.add('scale-y-0');
+      mobileMenu.classList.remove('scale-y-100');
+      menuOverlay.classList.add('hidden');
+      hamburgerIcon.classList.remove('hidden');
+      hamburgerIcon.classList.add('block');
+      closeIcon.classList.add('hidden');
+      closeIcon.classList.remove('block');
+    });
+
+    // Language dropdown functionality
+    const languageBtn = document.getElementById('language-btn-desktop');
+    const languageMenu = document.getElementById('language-menu-desktop');
+    const currentLang = document.getElementById('current-lang-desktop');
+
+    if (languageBtn && languageMenu) {
+      languageBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        languageMenu.classList.toggle('hidden');
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', () => {
+        languageMenu.classList.add('hidden');
+      });
+
+      // Handle language selection
+      const langOptions = languageMenu.querySelectorAll('[data-lang]');
+      langOptions.forEach(option => {
+        option.addEventListener('click', (e) => {
+          e.preventDefault();
+          const selectedLang = option.getAttribute('data-lang');
+          currentLang.textContent = selectedLang;
+          languageMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
