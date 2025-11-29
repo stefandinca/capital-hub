@@ -461,10 +461,13 @@
     const langOptions = languageMenu.querySelectorAll('[data-lang]');
     langOptions.forEach(option => {
       option.addEventListener('click', (e) => {
-        e.preventDefault();
-        const selectedLang = option.getAttribute('data-lang');
-        currentLang.textContent = selectedLang;
-        languageMenu.classList.add('hidden');
+        const href = option.getAttribute('href');
+        // Only prevent default for current page (href="#") or Bulgarian
+        if (href === '#' || option.getAttribute('data-lang') === 'BG') {
+          e.preventDefault();
+          languageMenu.classList.add('hidden');
+        }
+        // For actual language switches (href with .html), let the link work naturally
       });
     });
   }

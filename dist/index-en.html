@@ -930,13 +930,13 @@
       const languageOptions = languageMenu.querySelectorAll('a[data-lang]');
       languageOptions.forEach(option => {
         option.addEventListener('click', (e) => {
-          e.preventDefault();
-          const selectedLang = option.getAttribute('data-lang');
-          currentLangSpan.textContent = selectedLang;
-          languageMenu.classList.add('hidden');
-
-          // Here you can add logic to actually change the language
-          console.log('Language changed to:', selectedLang);
+          const href = option.getAttribute('href');
+          // Only prevent default for current page (href="#") or Bulgarian
+          if (href === '#' || option.getAttribute('data-lang') === 'BG') {
+            e.preventDefault();
+            languageMenu.classList.add('hidden');
+          }
+          // For actual language switches (href with .html), let the link work naturally
         });
       });
     }
