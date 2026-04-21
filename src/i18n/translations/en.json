@@ -157,46 +157,99 @@
     "heroTitle": "The Capital Hub Team",
     "heroSubtitle": "Experienced Professionals",
     "heroDescription": "The Capital Hub team brings together experts with extensive experience in financing, banking, consultancy, and management — dedicated to the success of your business.",
-    "sectionBadge": "LEADERSHIP",
-    "sectionTitle": "The Leadership Team",
     "ctaTitle": "Let's talk about your company",
     "ctaText": "Schedule a discussion with the Capital Hub team and learn how we can help.",
-    "members": {
-      "ciprian": {
-        "name": "Ciprian Vlad",
-        "role": "CEO - Capital Hub",
-        "bio": "Ciprian has over two decades of experience leading and transforming organizations, both in the private sector and in strategic projects of national impact. An economist by training, with a strong grounding in management and financial analysis, he approaches financing and partnerships with rigor, structure, and a constant focus on results.",
-        "strengthsLabel": "Why he's the right fit:",
-        "strengths": [
-          "CEO experience across multiple companies, including publicly listed organizations",
-          "Entrepreneurial background and a proven ability to build and launch new ventures",
-          "Advisory involvement in public initiatives of strategic relevance",
-          "Economics background with a hands-on perspective on the real needs of SMEs"
-        ]
-      },
-      "iulia": {
-        "name": "Iulia Vlad",
-        "role": "Operations Director - Capital Hub",
-        "bio": "Iulia has over 14 years of experience within the Parliament of Romania, where she managed administrative, operational, and coordination activities in highly complex structures. At Capital Hub, she ensures the operational running of the platform and coordinates the entire administrative flow of collaborations and contracts.",
-        "strengthsLabel": "Why she's the right fit:",
-        "strengths": [
-          "Extensive experience in public administration and legislative processes",
-          "Management of operational projects and complex activities",
-          "Collaboration with NGOs and public institutions",
-          "Attention to detail and discipline in handling documents and processes"
-        ]
-      },
-      "dan": {
-        "name": "Dan C.",
-        "role": "Development Coordinator - Capital Hub",
-        "bio": "Dan has over two decades of entrepreneurial experience, during which he has developed and coordinated projects across diverse fields — spanning operational, commercial, and strategic components. At Capital Hub, he actively contributes to expanding the portfolio and developing client relationships.",
-        "strengthsLabel": "Why he's the right fit:",
-        "strengths": [
-          "Over two decades of entrepreneurship and diverse projects",
-          "Ability to build and maintain trusted relationships",
-          "Results orientation and a sharp eye for opportunity",
-          "Adaptability and a strong grasp of business mechanics"
-        ]
+    "leadership": {
+      "sectionBadge": "LEADERSHIP",
+      "sectionTitle": "The Leadership Team",
+      "members": {
+        "ciprian": {
+          "name": "Ciprian V.",
+          "role": "CEO - Capital Hub",
+          "bio": "Ciprian has over two decades of experience leading and transforming organizations, both in the private sector and in strategic projects of national impact. An economist by training, with a strong grounding in management and financial analysis, he approaches financing and partnerships with rigor, structure, and a constant focus on results.",
+          "strengthsLabel": "Why he's the right fit:",
+          "strengths": [
+            "CEO experience across multiple companies, including publicly listed organizations",
+            "Entrepreneurial background and a proven ability to build and launch new ventures",
+            "Advisory involvement in public initiatives of strategic relevance",
+            "Economics background with a hands-on perspective on the real needs of SMEs"
+          ]
+        },
+        "iulia": {
+          "name": "Iulia V.",
+          "role": "Operations Director - Capital Hub",
+          "bio": "Iulia has over 14 years of experience within the Parliament of Romania, where she managed administrative, operational, and coordination activities in highly complex structures. At Capital Hub, she ensures the operational running of the platform and coordinates the entire administrative flow of collaborations and contracts.",
+          "strengthsLabel": "Why she's the right fit:",
+          "strengths": [
+            "Extensive experience in public administration and legislative processes",
+            "Management of operational projects and complex activities",
+            "Collaboration with NGOs and public institutions",
+            "Attention to detail and discipline in handling documents and processes"
+          ]
+        },
+        "dan": {
+          "name": "Dan C.",
+          "role": "Development Coordinator - Capital Hub",
+          "bio": "Dan has over two decades of entrepreneurial experience, during which he has developed and coordinated projects across diverse fields — spanning operational, commercial, and strategic components. At Capital Hub, he actively contributes to expanding the portfolio and developing client relationships.",
+          "strengthsLabel": "Why he's the right fit:",
+          "strengths": [
+            "Over two decades of entrepreneurship and diverse projects",
+            "Ability to build and maintain trusted relationships",
+            "Results orientation and a sharp eye for opportunity",
+            "Adaptability and a strong grasp of business mechanics"
+          ]
+        },
+        "sorin": {
+          "name": "Sorin B.",
+          "role": "CFO - Capital Hub",
+          "bio": "Sorin has over two decades of experience in financial services, management, and strategic development, built in roles such as Managing Partner and Associate Partner at companies in leasing, consultancy, and financial operations. He oversees portfolio integration, application assessment, and the coordination of financial processes at Capital Hub.",
+          "strengthsLabel": "Why he's the right fit:",
+          "strengths": [
+            "Over 20 years of experience in financial services and management",
+            "Expertise in relationships with banks, lenders, and investors",
+            "Strong skills in structuring, analyzing, and submitting financial portfolios",
+            "Economics background and a strategic perspective on financial products"
+          ]
+        }
+      }
+    },
+    "experts": {
+      "sectionBadge": "EXPERT TEAM",
+      "sectionTitle": "Dedicated Specialists",
+      "members": {
+        "adina": {
+          "name": "Adina R.",
+          "role": "Chartered Accountant",
+          "bio": "Adina has over three decades of experience in the economic and financial field, during which she has coordinated the economic and financial processes of a group of companies and managed complex structures across the SME and corporate segments.",
+          "strengthsLabel": "Why she's the right fit:",
+          "strengths": [
+            "Over 30 years of experience in accounting and financial analysis",
+            "Coordination of economic and financial processes at the group-of-companies level",
+            "Expertise in financing for investments, ongoing operations, and European projects"
+          ]
+        },
+        "bogdan": {
+          "name": "Bogdan S.",
+          "role": "Senior Credit Consultant",
+          "bio": "Bogdan has over 15 years of experience in banking and financing, consolidated through coordination and management roles in banking institutions and in organizations with complex sales structures. He specializes in structuring lending solutions for SMEs.",
+          "strengthsLabel": "Why he's the right fit:",
+          "strengths": [
+            "Over 15 years of experience in banking and financing",
+            "Expertise in structuring loans for SMEs",
+            "Ability to negotiate and optimize lending terms"
+          ]
+        },
+        "robert": {
+          "name": "Robert T.",
+          "role": "Senior Credit Consultant",
+          "bio": "Robert has over 15 years of experience in banking, lending, and financial consultancy, gained at top banking institutions and at companies specialized in financial services for SMEs. At Capital Hub, he plays a decisive role in shaping lending solutions for companies.",
+          "strengthsLabel": "Why he's the right fit:",
+          "strengths": [
+            "Over 15 years of experience in banking and financial consultancy",
+            "Expertise in structuring and negotiating SME loans",
+            "Professionalism, rigor, and a consistent focus on results"
+          ]
+        }
       }
     }
   },

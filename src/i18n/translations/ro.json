@@ -157,46 +157,99 @@
     "heroTitle": "Echipa Capital Hub",
     "heroSubtitle": "Profesionisti cu Experienta",
     "heroDescription": "Echipa Capital Hub reuneste experti cu experienta extinsa in finantare, banking, consultanta si management, dedicati succesului afacerii tale.",
-    "sectionBadge": "CONDUCERE",
-    "sectionTitle": "Echipa de Conducere",
     "ctaTitle": "Hai sa discutam despre compania ta",
     "ctaText": "Programeaza o discutie cu echipa Capital Hub si afla cum te putem ajuta.",
-    "members": {
-      "ciprian": {
-        "name": "Ciprian Vlad",
-        "role": "Director General - Capital Hub",
-        "bio": "Ciprian are peste doua decenii de experienta in conducerea si transformarea organizatiilor, atat in mediul privat, cat si in proiecte strategice cu impact national. Economist la baza, cu o formare solida in management si analiza financiara, abordeaza finantarile si parteneriatele cu rigoare, structura si orientare constanta catre rezultate.",
-        "strengthsLabel": "Il recomanda:",
-        "strengths": [
-          "Experienta de CEO in mai multe companii, inclusiv in organizatii listate la bursa",
-          "Parcursul antreprenorial si capacitatea de a crea si lansa proiecte noi",
-          "Implicarea in consilierea unor initiative publice cu relevanta strategica",
-          "Formarea economica si perspectiva aplicata asupra nevoilor reale ale IMM-urilor"
-        ]
-      },
-      "iulia": {
-        "name": "Iulia Vlad",
-        "role": "Director Operatiuni - Capital Hub",
-        "bio": "Iulia are peste 14 ani de experienta in cadrul Parlamentului Romaniei, unde a gestionat activitati administrative, operationale si de coordonare in structuri cu nivel ridicat de complexitate. In Capital Hub, asigura functionarea operationala a platformei si coordoneaza intregul flux administrativ al colaborarilor si contractelor.",
-        "strengthsLabel": "O recomanda:",
-        "strengths": [
-          "Experienta extinsa in administratie publica si procese legislative",
-          "Gestionarea proiectelor operationale si a activitatilor complexe",
-          "Colaborarea cu ONG-uri si institutii publice",
-          "Atentia la detalii si disciplina in gestionarea documentelor si proceselor"
-        ]
-      },
-      "dan": {
-        "name": "Dan C.",
-        "role": "Coordonator Dezvoltare - Capital Hub",
-        "bio": "Dan are peste doua decenii de experienta antreprenoriala, timp in care a dezvoltat si coordonat proiecte in domenii diferite, cu componenta operationala, comerciala si strategica. In Capital Hub, contribuie activ la extinderea portofoliului si la dezvoltarea relatiilor cu clientii.",
-        "strengthsLabel": "Il recomanda:",
-        "strengths": [
-          "Peste doua decenii de antreprenoriat si proiecte variate",
-          "Abilitatea de a construi si mentine relatii de incredere",
-          "Orientarea spre rezultate si identificarea oportunitatilor",
-          "Capacitatea de adaptare si intelegerea mecanismelor de business"
-        ]
+    "leadership": {
+      "sectionBadge": "CONDUCERE",
+      "sectionTitle": "Echipa de Conducere",
+      "members": {
+        "ciprian": {
+          "name": "Ciprian V.",
+          "role": "Director General - Capital Hub",
+          "bio": "Ciprian are peste doua decenii de experienta in conducerea si transformarea organizatiilor, atat in mediul privat, cat si in proiecte strategice cu impact national. Economist la baza, cu o formare solida in management si analiza financiara, abordeaza finantarile si parteneriatele cu rigoare, structura si orientare constanta catre rezultate.",
+          "strengthsLabel": "Il recomanda:",
+          "strengths": [
+            "Experienta de CEO in mai multe companii, inclusiv in organizatii listate la bursa",
+            "Parcursul antreprenorial si capacitatea de a crea si lansa proiecte noi",
+            "Implicarea in consilierea unor initiative publice cu relevanta strategica",
+            "Formarea economica si perspectiva aplicata asupra nevoilor reale ale IMM-urilor"
+          ]
+        },
+        "iulia": {
+          "name": "Iulia V.",
+          "role": "Director Operatiuni - Capital Hub",
+          "bio": "Iulia are peste 14 ani de experienta in cadrul Parlamentului Romaniei, unde a gestionat activitati administrative, operationale si de coordonare in structuri cu nivel ridicat de complexitate. In Capital Hub, asigura functionarea operationala a platformei si coordoneaza intregul flux administrativ al colaborarilor si contractelor.",
+          "strengthsLabel": "O recomanda:",
+          "strengths": [
+            "Experienta extinsa in administratie publica si procese legislative",
+            "Gestionarea proiectelor operationale si a activitatilor complexe",
+            "Colaborarea cu ONG-uri si institutii publice",
+            "Atentia la detalii si disciplina in gestionarea documentelor si proceselor"
+          ]
+        },
+        "dan": {
+          "name": "Dan C.",
+          "role": "Coordonator Dezvoltare - Capital Hub",
+          "bio": "Dan are peste doua decenii de experienta antreprenoriala, timp in care a dezvoltat si coordonat proiecte in domenii diferite, cu componenta operationala, comerciala si strategica. In Capital Hub, contribuie activ la extinderea portofoliului si la dezvoltarea relatiilor cu clientii.",
+          "strengthsLabel": "Il recomanda:",
+          "strengths": [
+            "Peste doua decenii de antreprenoriat si proiecte variate",
+            "Abilitatea de a construi si mentine relatii de incredere",
+            "Orientarea spre rezultate si identificarea oportunitatilor",
+            "Capacitatea de adaptare si intelegerea mecanismelor de business"
+          ]
+        },
+        "sorin": {
+          "name": "Sorin B.",
+          "role": "Director Financiar - Capital Hub",
+          "bio": "Sorin are o experienta de peste doua decenii in servicii financiare, management si dezvoltare strategica, construita in roluri precum Managing Partner si Associate Partner in companii din domeniul leasingului, consultantei si operatiunilor financiare. Gestioneaza integrarea portofoliilor, evaluarea dosarelor si coordonarea proceselor financiare din Capital Hub.",
+          "strengthsLabel": "Il recomanda:",
+          "strengths": [
+            "Peste 20 de ani de experienta in servicii financiare si management",
+            "Expertiza in relatia cu banci, finantatori si investitori",
+            "Abilitati solide in structurarea, analiza si transmiterea portofoliilor financiare",
+            "Formarea economica si perspectiva strategica asupra produselor financiare"
+          ]
+        }
+      }
+    },
+    "experts": {
+      "sectionBadge": "ECHIPA DE EXPERTI",
+      "sectionTitle": "Specialisti Dedicati",
+      "members": {
+        "adina": {
+          "name": "Adina R.",
+          "role": "Expert Contabil",
+          "bio": "Adina are peste trei decenii de experienta in domeniul economic si financiar, in care a coordonat procesele economico-financiare ale unui grup de companii si a gestionat structuri complexe din zona IMM si corporate.",
+          "strengthsLabel": "O recomanda:",
+          "strengths": [
+            "Experienta de peste 30 de ani in contabilitate si analiza financiara",
+            "Coordonarea proceselor economico-financiare la nivel de grup de companii",
+            "Expertiza in finantari pentru investitii, activitate curenta si proiecte europene"
+          ]
+        },
+        "bogdan": {
+          "name": "Bogdan S.",
+          "role": "Consultant Senior Credite",
+          "bio": "Bogdan are peste 15 ani de experienta in banking si finantari, consolidata prin roluri de coordonare si management in institutii bancare si organizatii cu structuri complexe de vanzari. Este specializat in structurarea solutiilor de creditare pentru IMM-uri.",
+          "strengthsLabel": "Il recomanda:",
+          "strengths": [
+            "Peste 15 ani de experienta in banking si finantari",
+            "Expertiza in structurarea creditelor pentru IMM-uri",
+            "Abilitatea de a negocia si optimiza conditiile de creditare"
+          ]
+        },
+        "robert": {
+          "name": "Robert T.",
+          "role": "Consultant Senior Credite",
+          "bio": "Robert are o experienta de peste 15 ani in banking, creditare si consultanta financiara, acumulata in institutii bancare de top si in companii specializate in servicii financiare pentru IMM-uri. In cadrul Capital Hub contribuie decisiv la configurarea solutiilor de creditare pentru companii.",
+          "strengthsLabel": "Il recomanda:",
+          "strengths": [
+            "Peste 15 ani de experienta in banking si consultanta financiara",
+            "Expertiza in structurarea si negocierea creditelor pentru IMM-uri",
+            "Profesionalismul, rigoarea si orientarea constanta spre rezultate"
+          ]
+        }
       }
     }
   },

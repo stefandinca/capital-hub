@@ -9,10 +9,17 @@ import ro from '../../i18n/translations/ro.json';
 const locale = 'ro';
 const tm = ro.team;
 
-const members = [
-  { slug: 'ciprian', photo: '/dev/img/Ciprian.jpeg', data: tm.members.ciprian },
-  { slug: 'iulia',   photo: '/dev/img/Iulia.jpeg',   data: tm.members.iulia },
-  { slug: 'dan',     photo: '/dev/img/Dan.jpeg',     data: tm.members.dan },
+const leadership = [
+  { photo: '/dev/img/Ciprian.jpeg', banner: 'blue' as const,   data: tm.leadership.members.ciprian },
+  { photo: '/dev/img/Iulia.jpeg',   banner: 'teal' as const,   data: tm.leadership.members.iulia },
+  { photo: '/dev/img/Dan.jpeg',     banner: 'gold' as const,   data: tm.leadership.members.dan },
+  { photo: undefined,               banner: 'blue-2' as const, data: tm.leadership.members.sorin },
+];
+
+const experts = [
+  { photo: undefined, banner: 'teal' as const,   data: tm.experts.members.adina },
+  { photo: undefined, banner: 'gold' as const,   data: tm.experts.members.bogdan },
+  { photo: undefined, banner: 'blue-2' as const, data: tm.experts.members.robert },
 ];
 ---
 
@@ -38,22 +45,55 @@ const members = [
     </div>
   </section>
 
-  <!-- Team Section -->
+  <!-- Leadership -->
   <section class="py-16 lg:py-24 px-6 bg-off-off-white relative overflow-hidden">
     <div class="absolute top-0 left-0 w-96 h-96 bg-royal-blue/5 rounded-full blur-3xl"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-warm-gold/5 rounded-full blur-3xl"></div>
 
     <div class="max-w-7xl mx-auto relative z-10">
       <div class="text-center mb-12 lg:mb-16">
-        <SectionBadge text={t(locale, 'team.sectionBadge')} variant="light" />
+        <SectionBadge text={t(locale, 'team.leadership.sectionBadge')} variant="light" />
         <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold">
-          {t(locale, 'team.sectionTitle')}
+          {t(locale, 'team.leadership.sectionTitle')}
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {leadership.map((m) => (
+          <TeamMember
+            variant="leadership"
+            banner={m.banner}
+            photo={m.photo}
+            alt={m.data.name}
+            name={m.data.name}
+            role={m.data.role}
+            bio={m.data.bio}
+            strengthsLabel={m.data.strengthsLabel}
+            strengths={m.data.strengths}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Experts -->
+  <section class="py-16 lg:py-24 px-6 bg-white relative overflow-hidden">
+    <div class="absolute top-10 right-10 w-80 h-80 bg-cta-teal/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-10 w-72 h-72 bg-warm-gold/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center mb-12 lg:mb-16">
+        <SectionBadge text={t(locale, 'team.experts.sectionBadge')} variant="light" />
+        <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold">
+          {t(locale, 'team.experts.sectionTitle')}
         </h2>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {members.map((m) => (
+        {experts.map((m) => (
           <TeamMember
+            variant="expert"
+            banner={m.banner}
             photo={m.photo}
             alt={m.data.name}
             name={m.data.name}
