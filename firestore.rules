@@ -1,0 +1,77 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Compatibility form submissions
+    match /compatibility_submissions/{docId} {
+      allow create: if
+        request.resource.data.keys().hasAll([
+          'companyName', 'cui', 'domain', 'revenue', 'mainProblem',
+          'triedFinancing', 'urgency', 'willingToAdjust',
+          'fullName', 'phone', 'email', 'consent',
+          'locale', 'createdAt', 'source', 'status'
+        ])
+        && request.resource.data.consent == true
+        && request.resource.data.status == 'new'
+        && request.resource.data.source == 'website'
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.triedFinancing in ['approved', 'rejected', 'no']
+        && request.resource.data.urgency in ['immediate', 'months', 'exploring']
+        && request.resource.data.willingToAdjust in ['yes', 'depends', 'no']
+        && request.resource.data.locale in ['ro', 'en']
+        && request.resource.data.companyName is string
+        && request.resource.data.companyName.size() > 0
+        && request.resource.data.companyName.size() <= 200
+        && request.resource.data.email is string
+        && request.resource.data.email.size() > 0
+        && request.resource.data.email.size() <= 200;
+
+      allow read, update: if request.auth != null;
+
+      allow delete: if false;
+    }
+
+    // Contact form submissions
+    match /contact_submissions/{docId} {
+      allow create: if
+        request.resource.data.keys().hasAll([
+          'name', 'email', 'message',
+          'locale', 'createdAt', 'source', 'status'
+        ])
+        && request.resource.data.status == 'new'
+        && request.resource.data.source == 'website'
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.locale in ['ro', 'en']
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 200
+        && request.resource.data.email is string
+        && request.resource.data.email.size() > 0
+        && request.resource.data.message is string
+        && request.resource.data.message.size() > 0
+        && request.resource.data.message.size() <= 5000;
+
+      allow read, update: if request.auth != null;
+
+      allow delete: if false;
+    }
+
+    // Articles (resources/blog)
+    match /articles/{docId} {
+      // Public can read published articles only
+      allow read: if resource.data.status == 'published'
+                  || request.auth != null;
+
+      // Only authenticated admins can create/update
+      allow create, update: if request.auth != null;
+
+      // No deletes
+      allow delete: if false;
+    }
+
+    // Deny everything else
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
