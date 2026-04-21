@@ -1,0 +1,36 @@
+---
+import { getAlternates } from '../../i18n/index';
+
+interface Props {
+  pageKey: string;
+  locale: string;
+}
+
+const { pageKey, locale } = Astro.props;
+const alternates = getAlternates(pageKey);
+---
+
+{alternates.map((alt) => (
+  <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />
+))}
+<link rel="alternate" hreflang="x-default" href={alternates.find(a => a.locale === 'ro')?.href} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Capital Hub Finance",
+  "url": "https://capitalhub.finance",
+  "telephone": "+40746000033",
+  "email": "contact@capitalhub.ro",
+  "logo": "https://capitalhub.finance/dev/img/capital_hub_logo.png",
+  "description": locale === 'ro'
+    ? "Capital Hub Finance construieste companii finantabile prin diagnostic, structurare si acces la finantare."
+    : "Capital Hub Finance builds finance-ready companies through diagnostics, structuring and financing access.",
+  "areaServed": "RO",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://facebook.com/capitalhubfinance",
+    "https://instagram.com/capitalhubfinance",
+    "https://linkedin.com/company/capitalhubfinance"
+  ]
+})} />

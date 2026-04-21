@@ -1,0 +1,22 @@
+---
+interface Props {
+  color?: 'gold' | 'teal' | 'blue';
+  size?: 'md' | 'lg';
+  position: string;
+}
+
+const { color = 'teal', size = 'lg', position } = Astro.props;
+
+const colorMap = {
+  gold: 'bg-warm-gold/10',
+  teal: 'bg-cta-teal/10',
+  blue: 'bg-royal-blue/5',
+};
+
+const sizeMap = {
+  md: 'w-64 h-64',
+  lg: 'w-96 h-96',
+};
+---
+
+<div class:list={['absolute rounded-full blur-3xl', colorMap[color], sizeMap[size], position]} />

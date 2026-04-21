@@ -1,0 +1,170 @@
+---
+import { t, getLocalePath } from '../../i18n/index';
+import { locales, localeLabels, localeFlags, type Locale } from '../../i18n/config';
+import { site } from '../../data/site';
+
+interface Props {
+  locale: string;
+  currentPage?: string;
+}
+
+const { locale, currentPage = 'home' } = Astro.props;
+
+const navItems = [
+  { key: 'home', page: 'home' },
+  { key: 'services', page: 'services' },
+  { key: 'howWeWork', page: 'howWeWork' },
+  { key: 'financingTypes', page: 'financingTypes' },
+  { key: 'about', page: 'about' },
+  { key: 'compatibility', page: 'compatibility' },
+  { key: 'resources', page: 'resources' },
+];
+---
+
+<!-- Mobile Header -->
+<div class="lg:hidden flex w-full justify-between bg-royal-blue items-center px-6 py-4 fixed z-50 shadow-lg">
+  <a href={getLocalePath(locale, 'home')} class="flex items-center">
+    <img class="w-10 h-10 mr-2" src={site.logo} alt="Capital Hub Logo" />
+    <p class="font-bold text-base text-white">CAPITAL HUB</p>
+  </a>
+
+  <button id="menu-btn" class="flex cursor-pointer fill-white" aria-label="Menu">
+    <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="block" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+    </svg>
+    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="hidden" viewBox="0 0 16 16">
+      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+    </svg>
+  </button>
+</div>
+
+<!-- Mobile Menu Overlay -->
+<div id="menu-overlay" class="fixed inset-0 bg-royal-blue/50 hidden z-40"></div>
+
+<!-- Mobile Menu -->
+<nav id="mobile-menu" class="fixed top-[64px] left-0 w-full bg-royal-blue-2 backdrop-blur-xl flex flex-col items-center lg:hidden transform scale-y-0 origin-top transition-transform duration-300 ease-out z-50 shadow-xl" aria-label="Mobile navigation">
+  {navItems.map((item) => (
+    <a href={getLocalePath(locale, item.page)} class:list={['block w-full text-center py-4 text-white text-sm font-semibold hover:bg-royal-blue transition duration-300', currentPage === item.page && 'bg-royal-blue']}>
+      {t(locale, `nav.${item.key}`)}
+    </a>
+  ))}
+  <a href={getLocalePath(locale, 'contact')} class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">
+    {t(locale, 'nav.contact')}
+  </a>
+  <!-- Mobile Language Switcher -->
+  <div class="flex gap-2 py-4">
+    {locales.map((loc) => (
+      <a href={getLocalePath(loc, currentPage)} class:list={['px-3 py-1 rounded-full text-xs font-semibold transition duration-300', loc === locale ? 'bg-warm-gold text-white' : 'bg-white/10 text-white/70 hover:bg-white/20']}>
+        {localeFlags[loc]} {loc.toUpperCase()}
+      </a>
+    ))}
+  </div>
+</nav>
+
+<!-- Desktop Header (transparent, floats over hero) -->
+<header class="hidden lg:block absolute top-0 left-0 right-0 z-50">
+  <div class="flex p-6 mx-6 mt-6 justify-between items-center">
+    <a href={getLocalePath(locale, 'home')} class="flex items-center">
+      <img class="w-12 h-12 mr-2" src={site.logo} alt="Capital Hub Logo" />
+      <p class="font-bold text-xl text-white">CAPITAL HUB</p>
+    </a>
+
+    <nav class="flex items-center gap-1" aria-label="Main navigation">
+      {navItems.map((item) => (
+        <a href={getLocalePath(locale, item.page)} class:list={['py-2 px-4 rounded-lg text-sm font-semibold transition duration-300 ease-in-out', currentPage === item.page ? 'text-cta-teal' : 'text-white hover:text-cta-teal']}>
+          {t(locale, `nav.${item.key}`)}
+        </a>
+      ))}
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <!-- Language Dropdown -->
+      <div class="relative" id="lang-dropdown">
+        <button class="flex items-center py-2 px-4 rounded-lg text-white font-semibold text-sm transition duration-300 ease-in-out hover:text-cta-teal" id="lang-btn">
+          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>
+          {localeFlags[locale as Locale]} {locale.toUpperCase()}
+        </button>
+        <div class="hidden absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50" id="lang-menu">
+          {locales.map((loc) => (
+            <a href={getLocalePath(loc, currentPage)} class:list={['block px-4 py-3 text-sm text-royal-blue hover:bg-cta-teal hover:text-white transition duration-200', loc === locale && 'bg-gray-50 font-semibold']}>
+              {localeFlags[loc]} {localeLabels[loc]}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <a href={getLocalePath(locale, 'contact')} class="py-3 px-6 rounded-full text-white font-semibold text-sm transition duration-300 ease-in-out bg-cta-teal hover:bg-warm-gold shadow-lg">
+        {t(locale, 'nav.contact')}
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (!menuBtn || !mobileMenu || !menuOverlay || !hamburgerIcon || !closeIcon) return;
+
+    const toggleMenu = () => {
+      mobileMenu.classList.toggle('scale-y-0');
+      mobileMenu.classList.toggle('scale-y-100');
+      menuOverlay.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('block');
+      closeIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('block');
+    };
+
+    const closeMenu = () => {
+      mobileMenu.classList.add('scale-y-0');
+      mobileMenu.classList.remove('scale-y-100');
+      menuOverlay.classList.add('hidden');
+      hamburgerIcon.classList.remove('hidden');
+      hamburgerIcon.classList.add('block');
+      closeIcon.classList.add('hidden');
+      closeIcon.classList.remove('block');
+    };
+
+    menuBtn.addEventListener('click', toggleMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+
+    // Language dropdown
+    const langBtn = document.getElementById('lang-btn');
+    const langMenu = document.getElementById('lang-menu');
+    if (langBtn && langMenu) {
+      langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langMenu.classList.toggle('hidden');
+      });
+      document.addEventListener('click', () => langMenu.classList.add('hidden'));
+    }
+
+    // Patch language switcher links on article pages to preserve ?id= param
+    const path = window.location.pathname;
+    const search = window.location.search;
+    const articlePaths: Record<string, Record<string, string>> = {
+      '/dev/ro/resurse/articol': { ro: '/dev/ro/resurse/articol', en: '/dev/en/resources/article' },
+      '/dev/en/resources/article': { ro: '/dev/ro/resurse/articol', en: '/dev/en/resources/article' },
+    };
+    const normalizedPath = path.replace(/\/+$/, '');
+    const articleMap = articlePaths[normalizedPath];
+    if (articleMap && search) {
+      document.querySelectorAll('a[href*="/dev/ro/resurse"], a[href*="/dev/en/resources"]').forEach((link) => {
+        const href = link.getAttribute('href') || '';
+        if (href.includes('/dev/ro/resurse') && !href.includes('articol')) {
+          link.setAttribute('href', articleMap.ro + search);
+        } else if (href.includes('/dev/en/resources') && !href.includes('article')) {
+          link.setAttribute('href', articleMap.en + search);
+        }
+      });
+    }
+  });
+</script>

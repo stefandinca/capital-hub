@@ -1,0 +1,19 @@
+---
+interface Props {
+  text: string;
+  variant?: 'light' | 'dark' | 'glass';
+  id?: string;
+}
+
+const { text, variant = 'light', id } = Astro.props;
+
+const classes = {
+  light: 'border-gray-400/20 text-royal-blue bg-white',
+  dark: 'border-white/30 bg-white/5 backdrop-blur-sm text-white/90',
+  glass: 'border-cta-teal/30 bg-cta-teal/20 backdrop-blur-sm text-cta-teal',
+};
+---
+
+<div id={id} class:list={['inline-block px-6 py-2 border rounded-full text-xs font-semibold uppercase tracking-wider mb-6', classes[variant]]}>
+  {text}
+</div>

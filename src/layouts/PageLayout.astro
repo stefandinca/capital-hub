@@ -1,0 +1,42 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import WhatsAppButton from '../components/layout/WhatsAppButton.astro';
+import SEOHead from '../components/seo/SEOHead.astro';
+import { t, getLocalePath } from '../i18n/index';
+
+interface Props {
+  locale: string;
+  pageKey: string;
+  title?: string;
+  description?: string;
+}
+
+const { locale, pageKey, title, description } = Astro.props;
+
+const pageTitle = title || t(locale, `meta.${pageKey}Title`);
+const pageDescription = description || t(locale, `meta.${pageKey}Description`);
+const canonicalUrl = `https://capitalhub.finance${getLocalePath(locale, pageKey)}`;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  locale={locale}
+  canonicalUrl={canonicalUrl}
+  pageKey={pageKey}
+>
+  <Fragment slot="head">
+    <SEOHead pageKey={pageKey} locale={locale} />
+  </Fragment>
+
+  <Header locale={locale} currentPage={pageKey} />
+
+  <main>
+    <slot />
+  </main>
+
+  <Footer locale={locale} />
+  <WhatsAppButton />
+</BaseLayout>

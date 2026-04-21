@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /dev/admin/
+
+Sitemap: https://capitalhub.finance/dev/sitemap-index.xml

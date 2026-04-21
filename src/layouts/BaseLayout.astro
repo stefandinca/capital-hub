@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  locale: string;
+  canonicalUrl?: string;
+  ogImage?: string;
+  pageKey?: string;
+}
+
+const { title, description, locale, canonicalUrl, ogImage, pageKey } = Astro.props;
+---
+
+<!doctype html>
+<html lang={locale} class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <meta name="generator" content={Astro.generator} />
+
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content={locale === 'ro' ? 'ro_RO' : 'en_US'} />
+  {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+  {ogImage && <meta property="og:image" content={ogImage} />}
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+
+  {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+  <link rel="icon" type="image/png" href="/dev/img/capital_hub_logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+  <title>{title}</title>
+
+  <slot name="head" />
+</head>
+<body class="bg-white">
+  <slot />
+</body>
+</html>
