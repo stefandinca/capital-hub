@@ -13,6 +13,7 @@ Conducere
 Echipa de Conducere
 
 **Card:**
+[ciprian.jpeg]
 Ciprian Vlad
 Director General – Capital Hub
 
@@ -24,3 +25,31 @@ Ciprian are peste două decenii de experiență în conducerea și transformarea
 - Parcursul antreprenorial și capacitatea de a crea și lansa proiecte noi
 - Implicarea în consilierea unor inițiative publice cu relevanță strategică
 - Formarea economică și perspectiva aplicată asupra nevoilor reale ale IMM-urilor
+
+**Card:**
+[iulia.jpeg]
+Iulia Vlad
+Director Operațiuni – Capital Hub
+
+Iulia are peste 14 ani de experiență în cadrul Parlamentului României, unde a gestionat activități administrative, operaționale și de coordonare în structuri cu nivel ridicat de complexitate. În Capital Hub, asigură funcționarea operațională a platformei și coordonează întregul flux administrativ al colaborărilor și contractelor.
+
+O recomandă:
+
+- Experiența extinsă în administrație publică și procese legislative
+- Gestionarea proiectelor operaționale și a activităților complexe
+- Colaborarea cu ONG-uri și instituții publice
+- Atenția la detalii și disciplina în gestionarea documentelor și proceselor
+
+**Card:**
+[dan.jpeg]
+Dan C.
+Coordonator Dezvoltare – Capital Hub
+
+Dan are peste două decenii de experiență antreprenorială, timp în care a dezvoltat și coordonat proiecte în domenii diferite, cu componentă operațională, comercială și strategică. În Capital Hub, contribuie activ la extinderea portofoliului și la dezvoltarea relațiilor cu clienții.
+
+Îl recomandă:
+
+- Peste două decenii de antreprenoriat și proiecte variate
+- Abilitatea de a construi și menține relații de încredere
+- Orientarea spre rezultate și identificarea oportunităților
+- Capacitatea de adaptare și înțelegerea mecanismelor de business
