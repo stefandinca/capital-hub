@@ -1,0 +1,23 @@
+---
+import { t, getLocalePath } from '../../i18n/index';
+import CTAButton from '../shared/CTAButton.astro';
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+---
+
+<section class="py-16 lg:py-24 px-6 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
+  <div class="absolute top-10 right-10 w-64 h-64 bg-warm-gold/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 left-10 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+  <div class="max-w-4xl mx-auto text-center relative z-10">
+    <h2 class="text-3xl lg:text-5xl text-white font-bold leading-tight mb-8">
+      {t(locale, 'finalCta.title')}
+    </h2>
+    <CTAButton href={getLocalePath(locale, 'compatibility')} text={t(locale, 'finalCta.cta')} variant="primary" arrow={true} class="text-base px-10 py-5" />
+  </div>
+</section>

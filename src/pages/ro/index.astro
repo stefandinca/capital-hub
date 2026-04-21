@@ -1,0 +1,18 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import HeroSection from '../../components/home/HeroSection.astro';
+import IntroSection from '../../components/home/IntroSection.astro';
+import ProcessPreview from '../../components/home/ProcessPreview.astro';
+import DifferentiationSection from '../../components/home/DifferentiationSection.astro';
+import FinalCTA from '../../components/home/FinalCTA.astro';
+
+const locale = 'ro';
+---
+
+<PageLayout locale={locale} pageKey="home">
+  <HeroSection locale={locale} />
+  <IntroSection locale={locale} />
+  <ProcessPreview locale={locale} />
+  <DifferentiationSection locale={locale} />
+  <FinalCTA locale={locale} />
+</PageLayout>

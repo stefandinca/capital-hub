@@ -1,0 +1,33 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import SectionBadge from '../../components/shared/SectionBadge.astro';
+import ArticleList from '../../components/resources/ArticleList';
+import { t, getLocalePath } from '../../i18n/index';
+
+const locale = 'en';
+---
+
+<PageLayout locale={locale} pageKey="resources">
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
+    <div class="absolute top-20 right-20 w-72 h-72 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-10 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+    <div class="h-24"></div>
+    <div class="relative z-10 px-6 lg:px-12 pt-16 pb-24">
+      <div class="max-w-4xl mx-auto text-center">
+        <SectionBadge text={t(locale, 'resources.badge')} variant="dark" />
+        <h1 class="text-4xl lg:text-6xl text-white font-bold leading-tight">
+          {t(locale, 'resources.title')} <span class="text-warm-gold">{t(locale, 'resources.titleHighlight')}</span>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section class="py-16 lg:py-24 px-6 bg-gradient-to-b from-white to-off-off-white">
+    <div class="max-w-7xl mx-auto">
+      <ArticleList client:load locale={locale} basePath="/dev/en/resources/article" />
+    </div>
+  </section>
+</PageLayout>

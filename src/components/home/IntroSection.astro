@@ -1,0 +1,30 @@
+---
+import { t } from '../../i18n/index';
+import SectionBadge from '../shared/SectionBadge.astro';
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+---
+
+<section class="py-16 lg:py-24 px-6 bg-gradient-to-b from-white to-off-off-white relative overflow-hidden">
+  <div class="absolute top-1/2 right-0 w-64 h-64 bg-cta-teal/5 rounded-full blur-3xl"></div>
+
+  <div class="max-w-4xl mx-auto relative z-10 text-center">
+    <SectionBadge text={t(locale, 'intro.badge')} />
+
+    <h2 class="text-3xl lg:text-5xl text-royal-blue font-bold leading-tight">
+      {t(locale, 'intro.title')} <span class="text-warm-gold">{t(locale, 'intro.titleHighlight')}</span>
+    </h2>
+
+    <p class="mt-8 text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+      {t(locale, 'intro.p1')}
+    </p>
+
+    <p class="mt-6 text-lg text-royal-blue font-semibold leading-relaxed max-w-3xl mx-auto border-l-4 border-cta-teal pl-6 text-left">
+      {t(locale, 'intro.p2')}
+    </p>
+  </div>
+</section>

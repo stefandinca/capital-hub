@@ -1,0 +1,85 @@
+---
+import { t, getLocalePath } from '../../i18n/index';
+import CTAButton from '../shared/CTAButton.astro';
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+---
+
+<!-- Desktop Hero -->
+<section class="hidden lg:block relative overflow-hidden" aria-label="Hero">
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')] bg-cover bg-center">
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue/95 via-royal-blue-2/80 to-royal-blue/95"></div>
+  </div>
+
+  <div class="absolute top-20 right-20 w-64 h-64 bg-warm-gold/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-20 left-20 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+  <!-- Header spacer -->
+  <div class="h-24"></div>
+
+  <div class="relative z-10 px-12 pt-16 pb-32 mx-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-3xl">
+        <div class="inline-block px-4 py-2 bg-cta-teal/20 backdrop-blur-sm border border-cta-teal/30 rounded-full mb-8">
+          <p class="text-sm font-semibold text-cta-teal">Capital Hub Finance</p>
+        </div>
+
+        <h1 class="text-5xl lg:text-7xl text-white font-bold leading-tight">
+          {t(locale, 'hero.title1')}
+        </h1>
+        <h1 class="text-5xl lg:text-7xl text-warm-gold font-bold mt-4">
+          {t(locale, 'hero.title2')}
+        </h1>
+
+        <p class="mt-4 text-2xl text-white/90 font-medium">
+          {t(locale, 'hero.subtitle')}
+        </p>
+
+        <p class="mt-6 text-lg text-white/70 max-w-xl leading-relaxed">
+          {t(locale, 'hero.description')}
+        </p>
+
+        <div class="flex gap-4 mt-10">
+          <CTAButton href={getLocalePath(locale, 'compatibility')} text={t(locale, 'hero.cta1')} variant="primary" arrow={true} />
+          <CTAButton href={getLocalePath(locale, 'howWeWork')} text={t(locale, 'hero.cta2')} variant="secondary" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile Hero -->
+<section class="lg:hidden relative overflow-hidden bg-gradient-to-br from-royal-blue to-royal-blue-2 px-6 pt-20 pb-16" aria-label="Hero">
+  <div class="absolute top-10 right-0 w-32 h-32 bg-warm-gold/10 rounded-full blur-2xl"></div>
+  <div class="absolute bottom-10 left-0 w-40 h-40 bg-cta-teal/10 rounded-full blur-2xl"></div>
+
+  <div class="relative z-10">
+    <div class="inline-block px-4 py-2 bg-cta-teal/20 backdrop-blur-sm border border-cta-teal/30 rounded-full mb-6">
+      <p class="text-xs font-semibold text-cta-teal">Capital Hub Finance</p>
+    </div>
+
+    <h1 class="text-4xl text-white font-bold leading-tight">
+      {t(locale, 'hero.title1')}
+    </h1>
+    <h1 class="text-4xl text-warm-gold font-bold mt-2">
+      {t(locale, 'hero.title2')}
+    </h1>
+
+    <p class="mt-4 text-lg text-white/90 font-medium">
+      {t(locale, 'hero.subtitle')}
+    </p>
+
+    <p class="mt-4 text-base text-white/70 leading-relaxed">
+      {t(locale, 'hero.description')}
+    </p>
+
+    <div class="flex flex-col gap-3 mt-8">
+      <CTAButton href={getLocalePath(locale, 'compatibility')} text={t(locale, 'hero.cta1')} variant="primary" arrow={true} class="justify-center" />
+      <CTAButton href={getLocalePath(locale, 'howWeWork')} text={t(locale, 'hero.cta2')} variant="secondary" class="justify-center" />
+    </div>
+  </div>
+</section>

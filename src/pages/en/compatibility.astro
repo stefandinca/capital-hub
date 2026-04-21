@@ -1,0 +1,379 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import SectionBadge from '../../components/shared/SectionBadge.astro';
+import CTAButton from '../../components/shared/CTAButton.astro';
+import { t, getLocalePath } from '../../i18n/index';
+import en from '../../i18n/translations/en.json';
+
+const locale = 'en';
+const c = en.compatibility;
+---
+
+<PageLayout locale={locale} pageKey="compatibility">
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
+    <div class="absolute top-20 right-20 w-72 h-72 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-10 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+    <div class="h-24"></div>
+
+    <div class="relative z-10 px-6 lg:px-12 pt-16 pb-24 lg:pb-32">
+      <div class="max-w-7xl mx-auto text-center">
+        <SectionBadge text={t(locale, 'compatibility.badge')} variant="dark" />
+        <h1 class="text-4xl lg:text-6xl text-white font-bold max-w-4xl mx-auto leading-tight">
+          {t(locale, 'compatibility.title')} <span class="text-warm-gold">{t(locale, 'compatibility.titleHighlight')}</span>
+        </h1>
+        <p class="mt-6 text-lg lg:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+          {t(locale, 'compatibility.subtitle')}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work With / Don't Work With -->
+  <section class="relative px-6 lg:px-12 py-16 lg:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- We work with you if -->
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h2 class="text-2xl lg:text-3xl text-royal-blue font-bold">{t(locale, 'compatibility.workWith')}</h2>
+          </div>
+          <ul class="space-y-4">
+            {c.workWithItems.map((item: string) => (
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-700">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- We don't work with -->
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h2 class="text-2xl lg:text-3xl text-royal-blue font-bold">{t(locale, 'compatibility.dontWorkWith')}</h2>
+          </div>
+          <ul class="space-y-4">
+            {c.dontWorkWithItems.map((item: string) => (
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-700">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualification Form -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
+    <div class="absolute top-20 right-20 w-72 h-72 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-10 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 px-6 lg:px-12 py-16 lg:py-24">
+      <div class="max-w-3xl mx-auto">
+        <form
+          id="compatibility-form"
+          class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 lg:p-12"
+        >
+          <div id="form-status" class="hidden mb-6 text-center py-4 rounded-xl text-sm font-semibold"></div>
+
+          <h2 class="text-3xl lg:text-4xl text-white font-bold mb-2 text-center">
+            {t(locale, 'compatibility.form.submit')}
+          </h2>
+          <p class="text-white/60 text-center mb-10">{t(locale, 'compatibility.subtitle')}</p>
+
+          <!-- Company Details -->
+          <div class="space-y-6">
+            <h3 class="text-lg font-semibold text-warm-gold">{t(locale, 'compatibility.badge')}</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm text-white/70 mb-2">{t(locale, 'compatibility.form.companyName')}</label>
+                <input
+                  type="text"
+                  name="companyName"
+                  required
+                  class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-cta-teal transition duration-300"
+                  placeholder={t(locale, 'compatibility.form.companyName')}
+                />
+              </div>
+              <div>
+                <label class="block text-sm text-white/70 mb-2">{t(locale, 'compatibility.form.cui')}</label>
+                <input
+                  type="text"
+                  name="cui"
+                  required
+                  class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-cta-teal transition duration-300"
+                  placeholder={t(locale, 'compatibility.form.cui')}
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm text-white/70 mb-2">{t(locale, 'compatibility.form.domain')}</label>
+                <input
+                  type="text"
+                  name="domain"
+                  required
+                  class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-cta-teal transition duration-300"
+                  placeholder={t(locale, 'compatibility.form.domain')}
+                />
+              </div>
+              <div>
+                <label class="block text-sm text-white/70 mb-2">{t(locale, 'compatibility.form.revenue')}</label>
+                <input
+                  type="text"
+                  name="revenue"
+                  required
+                  class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-cta-teal transition duration-300"
+                  placeholder={t(locale, 'compatibility.form.revenue')}
+                />
+              </div>
+            </div>
+
+            <!-- Main Problem -->
+            <div>
+              <label class="block text-sm text-white/70 mb-2">{t(locale, 'compatibility.form.mainProblem')}</label>
+              <textarea
+                name="mainProblem"
+                rows="4"
+                required
+                class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-cta-teal transition duration-300 resize-none"
+                placeholder={t(locale, 'compatibility.form.mainProblem')}
+              ></textarea>
+            </div>
+
+            <!-- Tried Financing -->
+            <div>
+              <label class="block text-sm text-white/70 mb-3">{t(locale, 'compatibility.form.triedFinancing')}</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="triedFinancing" value="approved" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.approved')}</span>
+                </label>
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="triedFinancing" value="rejected" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.rejected')}</span>
+                </label>
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="triedFinancing" value="no" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.no')}</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Urgency -->
+            <div>
+              <label class="block text-sm text-white/70 mb-3">{t(locale, 'compatibility.form.urgency')}</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="urgency" value="immediate" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.immediate')}</span>
+                </label>
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="urgency" value="months" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.months')}</span>
+                </label>
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="urgency" value="exploring" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.exploring')}</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Willingness -->
+            <div>
+              <label class="block text-sm text-white/70 mb-3">{t(locale, 'compatibility.form.willingToAdjust')}</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="willingToAdjust" value="yes" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.yes')}</span>
+                </label>
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="willingToAdjust" value="depends" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.depends')}</span>
+                </label>
+                <label class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 cursor-pointer hover:border-cta-teal/50 transition duration-300 has-[:checked]:border-cta-teal has-[:checked]:bg-cta-teal/10">
+                  <input type="radio" name="willingToAdjust" value="no" class="accent-cta-teal" />
+                  <span class="text-sm text-white/80">{t(locale, 'compatibility.form.no')}</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Contact Details -->
+            <h3 class="text-lg font-semibold text-warm-gold pt-4">Contact</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-sm text-white/70 mb-2">{t(locale, 'compatibility.form.fullName')}</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  required
+                  class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-cta-teal transition duration-300"
+                  placeholder={t(locale, 'compatibility.form.fullName')}
+                />
+              </div>
+              <div>
+                <label class="block text-sm text-white/70 mb-2">{t(locale, 'compatibility.form.phone')}</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-cta-teal transition duration-300"
+                  placeholder="+40 7XX XXX XXX"
+                />
+              </div>
+              <div>
+                <label class="block text-sm text-white/70 mb-2">{t(locale, 'compatibility.form.email')}</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-cta-teal transition duration-300"
+                  placeholder="email@example.com"
+                />
+              </div>
+            </div>
+
+            <!-- Consent -->
+            <label class="flex items-start gap-3 cursor-pointer">
+              <input type="checkbox" name="consent" required class="accent-cta-teal mt-1" />
+              <span class="text-sm text-white/60">{t(locale, 'compatibility.form.consent')}</span>
+            </label>
+
+            <!-- Submit -->
+            <div class="text-center pt-4">
+              <button
+                type="submit"
+                class="inline-flex items-center gap-2 py-4 px-10 rounded-full text-sm font-semibold bg-cta-teal hover:bg-warm-gold text-white shadow-xl hover:scale-105 transition ease-in-out duration-300"
+              >
+                {t(locale, 'compatibility.form.submit')}
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Happens Next -->
+  <section class="relative px-6 lg:px-12 py-16 lg:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <SectionBadge text={t(locale, 'compatibility.afterTitle')} variant="light" />
+        <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold">
+          {t(locale, 'compatibility.afterTitle')}
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          {t(locale, 'compatibility.afterText')}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+        <!-- If Compatible -->
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-royal-blue">{t(locale, 'compatibility.ifCompatible')}</h3>
+          </div>
+          <ul class="space-y-3">
+            {c.compatibleItems.map((item: string) => (
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-700">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- If Not Compatible -->
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-royal-blue">{t(locale, 'compatibility.ifNot')}</h3>
+          </div>
+          <ul class="space-y-3">
+            {c.notItems.map((item: string) => (
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-700">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<script>
+  import { submitCompatibilityForm } from '../../lib/submit-compatibility';
+
+  const form = document.getElementById('compatibility-form') as HTMLFormElement;
+  const statusEl = document.getElementById('form-status')!;
+  const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement;
+  const originalText = submitBtn?.innerHTML;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    statusEl.classList.add('hidden');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg> Submitting...';
+
+    try {
+      const formData = new FormData(form);
+      await submitCompatibilityForm(formData, 'en');
+      statusEl.textContent = 'Form submitted successfully! We will get back to you within 24-48 hours.';
+      statusEl.className = 'mb-6 text-center py-4 rounded-xl text-sm font-semibold bg-emerald-500/20 text-emerald-300';
+      form.reset();
+    } catch (err) {
+      statusEl.textContent = 'An error occurred. Please try again.';
+      statusEl.className = 'mb-6 text-center py-4 rounded-xl text-sm font-semibold bg-red-500/20 text-red-300';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalText;
+    }
+  });
+</script>
+
+</PageLayout>

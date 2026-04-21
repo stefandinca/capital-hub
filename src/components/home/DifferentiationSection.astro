@@ -1,0 +1,48 @@
+---
+import { t } from '../../i18n/index';
+import SectionBadge from '../shared/SectionBadge.astro';
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+---
+
+<section class="py-16 lg:py-24 px-6 bg-white relative overflow-hidden">
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-warm-gold/5 rounded-full blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <SectionBadge text={t(locale, 'differentiation.badge')} />
+        <h2 class="text-3xl lg:text-5xl text-royal-blue font-bold leading-tight">
+          {t(locale, 'differentiation.title')} <br /><span class="text-warm-gold">{t(locale, 'differentiation.titleHighlight')}</span>
+        </h2>
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+          {t(locale, 'differentiation.p1')}
+        </p>
+        <p class="mt-4 text-lg text-royal-blue font-semibold leading-relaxed border-l-4 border-cta-teal pl-6">
+          {t(locale, 'differentiation.p2')}
+        </p>
+      </div>
+
+      <div class="relative">
+        <img class="rounded-3xl w-full shadow-2xl object-cover aspect-[4/3]" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Business strategy meeting" loading="lazy" />
+        <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-2xl border border-gray-100 max-w-xs">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-cta-teal to-cta-teal/80 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm font-bold text-royal-blue">{locale === 'ro' ? 'Structura inainte de finantare' : 'Structure before financing'}</p>
+              <p class="text-xs text-gray-600">{locale === 'ro' ? 'Proces etapizat' : 'Phased process'}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

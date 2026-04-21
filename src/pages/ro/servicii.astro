@@ -1,0 +1,195 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import SectionBadge from '../../components/shared/SectionBadge.astro';
+import CTAButton from '../../components/shared/CTAButton.astro';
+import { t, getLocalePath } from '../../i18n/index';
+import ro from '../../i18n/translations/ro.json';
+
+const locale = 'ro';
+const s = ro.services;
+
+const serviceBlocks = [
+  {
+    key: 'diagnostic',
+    data: s.diagnostic,
+    theme: 'dark' as const,
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+    imageAlt: 'Financial analysis',
+  },
+  {
+    key: 'structuring',
+    data: s.structuring,
+    theme: 'light' as const,
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+    imageAlt: 'Data dashboard',
+  },
+  {
+    key: 'financing',
+    data: s.financing,
+    theme: 'dark' as const,
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+    imageAlt: 'Financial analysis',
+  },
+  {
+    key: 'optimization',
+    data: s.optimization,
+    theme: 'light' as const,
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+    imageAlt: 'Data dashboard',
+  },
+  {
+    key: 'partnership',
+    data: s.partnership,
+    theme: 'dark' as const,
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+    imageAlt: 'Financial analysis',
+  },
+];
+---
+
+<PageLayout locale={locale} pageKey="services">
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
+    <div class="absolute top-20 right-20 w-72 h-72 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-10 w-96 h-96 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+    <!-- Header spacer -->
+    <div class="h-24"></div>
+
+    <div class="relative z-10 px-6 lg:px-12 pt-16 pb-24 lg:pb-32">
+      <div class="max-w-7xl mx-auto text-center">
+        <SectionBadge text={t(locale, 'services.badge')} variant="dark" />
+        <h1 class="text-4xl lg:text-6xl text-white font-bold max-w-4xl mx-auto leading-tight">
+          {t(locale, 'services.title')} <span class="text-warm-gold">{t(locale, 'services.titleHighlight')}</span>
+        </h1>
+        <p class="mt-6 text-lg lg:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+          {t(locale, 'services.subtitle')}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Detail Sections -->
+  {serviceBlocks.map((block, index) => (
+    block.theme === 'dark' ? (
+      <!-- Dark Card -->
+      <section class="relative px-6 lg:px-12 py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto">
+          <div class="relative bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-3xl shadow-xl overflow-hidden">
+            <div class="absolute top-10 right-10 w-48 h-48 bg-warm-gold/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 left-10 w-64 h-64 bg-cta-teal/5 rounded-full blur-3xl"></div>
+
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-12">
+              <div class="flex flex-col justify-center">
+                <SectionBadge text={block.data.label} variant="dark" />
+                <h2 class="text-3xl lg:text-4xl text-white font-bold leading-tight">
+                  {block.data.title}
+                </h2>
+                <p class="mt-2 text-lg text-warm-gold font-medium">
+                  {block.data.subtitle}
+                </p>
+                <p class="mt-4 text-white/70 leading-relaxed">
+                  {block.data.description}
+                </p>
+
+                <ul class="mt-6 space-y-3">
+                  {block.data.includes.map((item: string) => (
+                    <li class="flex items-start gap-3 text-white/80 text-sm">
+                      <svg class="w-5 h-5 text-cta-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div class="flex flex-wrap gap-4 mt-8">
+                  <CTAButton href={getLocalePath(locale, 'compatibility')} text={t(locale, 'services.cta1')} variant="primary" arrow={true} />
+                  <CTAButton href={getLocalePath(locale, 'compatibility')} text={t(locale, 'services.cta2')} variant="secondary" />
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <img
+                  src={block.image}
+                  alt={block.imageAlt}
+                  class="rounded-2xl shadow-xl w-full max-w-md object-cover aspect-[4/3]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    ) : (
+      <!-- Light Card -->
+      <section class="relative px-6 lg:px-12 py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+          <div class="relative bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="absolute top-10 right-10 w-48 h-48 bg-royal-blue/5 rounded-full blur-3xl"></div>
+
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-12">
+              <div class="flex items-center justify-center lg:order-first">
+                <img
+                  src={block.image}
+                  alt={block.imageAlt}
+                  class="rounded-2xl shadow-xl w-full max-w-md object-cover aspect-[4/3]"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col justify-center">
+                <SectionBadge text={block.data.label} variant="light" />
+                <h2 class="text-3xl lg:text-4xl text-royal-blue font-bold leading-tight">
+                  {block.data.title}
+                </h2>
+                <p class="mt-2 text-lg text-warm-gold font-medium">
+                  {block.data.subtitle}
+                </p>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                  {block.data.description}
+                </p>
+
+                <ul class="mt-6 space-y-3">
+                  {block.data.includes.map((item: string) => (
+                    <li class="flex items-start gap-3 text-gray-700 text-sm">
+                      <svg class="w-5 h-5 text-cta-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div class="flex flex-wrap gap-4 mt-8">
+                  <CTAButton href={getLocalePath(locale, 'compatibility')} text={t(locale, 'services.cta1')} variant="outline" arrow={true} />
+                  <CTAButton href={getLocalePath(locale, 'compatibility')} text={t(locale, 'services.cta2')} variant="outline" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  ))}
+
+  <!-- Footer Note -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue"></div>
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-warm-gold/10 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 px-6 lg:px-12 py-16 lg:py-24">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-lg lg:text-xl text-white/80 leading-relaxed italic">
+          {t(locale, 'services.footerNote')}
+        </p>
+        <div class="mt-10">
+          <CTAButton href={getLocalePath(locale, 'compatibility')} text={t(locale, 'services.cta1')} variant="primary" arrow={true} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</PageLayout>

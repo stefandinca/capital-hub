@@ -1,0 +1,119 @@
+---
+import { t, getLocalePath } from '../../i18n/index';
+import PageLayout from '../../layouts/PageLayout.astro';
+import SectionBadge from '../../components/shared/SectionBadge.astro';
+import CTAButton from '../../components/shared/CTAButton.astro';
+
+const locale = 'ro';
+
+const financingTypes = [
+  {
+    key: 'bankLoans',
+    icon: `<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>`,
+  },
+  {
+    key: 'factoring',
+    icon: `<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>`,
+  },
+  {
+    key: 'alternative',
+    icon: `<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg>`,
+  },
+  {
+    key: 'leasing',
+    icon: `<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>`,
+  },
+  {
+    key: 'grants',
+    icon: `<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" /></svg>`,
+  },
+];
+---
+
+<PageLayout locale={locale} pageKey="financingTypes">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue pt-32 pb-20 px-6">
+    <div class="absolute top-20 right-20 w-72 h-72 bg-warm-gold/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-10 w-96 h-96 bg-cta-teal/8 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-warm-gold/5 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+      <SectionBadge text={t(locale, 'financingTypes.badge')} variant="dark" />
+
+      <h1 class="text-3xl lg:text-5xl text-white font-bold leading-tight mt-4">
+        {t(locale, 'financingTypes.title')}
+      </h1>
+      <p class="text-2xl lg:text-4xl text-warm-gold font-bold mt-4">
+        {t(locale, 'financingTypes.titleHighlight')}
+      </p>
+
+      <p class="mt-6 text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
+        {t(locale, 'financingTypes.subtitle')}
+      </p>
+
+      <div class="mt-10 inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-5">
+        <p class="text-white/90 text-lg font-semibold italic">
+          &ldquo;{t(locale, 'financingTypes.principle')}&rdquo;
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financing Types Grid -->
+  <section class="py-16 lg:py-24 px-6 bg-gray-50 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-80 h-80 bg-royal-blue/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-warm-gold/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="grid md:grid-cols-2 gap-8">
+        {financingTypes.map((item) => (
+          <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-500 border border-gray-100 group">
+            <div class="w-14 h-14 bg-gradient-to-br from-royal-blue to-royal-blue-2 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition duration-500">
+              <Fragment set:html={item.icon} />
+            </div>
+
+            <h3 class="text-xl font-bold text-royal-blue mb-3">
+              {t(locale, `financingTypes.${item.key}.title`)}
+            </h3>
+
+            <p class="text-gray-600 leading-relaxed mb-6">
+              {t(locale, `financingTypes.${item.key}.description`)}
+            </p>
+
+            <CTAButton
+              href={getLocalePath(locale, 'compatibility')}
+              text={t(locale, 'financingTypes.cta')}
+              variant="outline"
+              arrow={true}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Unsure CTA Section -->
+  <section class="py-16 lg:py-24 px-6 bg-white relative overflow-hidden">
+    <div class="absolute top-10 right-10 w-64 h-64 bg-cta-teal/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-3xl mx-auto text-center relative z-10">
+      <div class="bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue rounded-3xl p-12 shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-40 h-40 bg-warm-gold/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-cta-teal/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10">
+          <p class="text-xl lg:text-2xl text-white font-semibold mb-8">
+            {t(locale, 'financingTypes.unsure')}
+          </p>
+
+          <CTAButton
+            href={getLocalePath(locale, 'compatibility')}
+            text={t(locale, 'financingTypes.unsureCta')}
+            variant="primary"
+            arrow={true}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>
