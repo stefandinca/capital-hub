@@ -18,6 +18,7 @@ export const routeMap: Record<string, Record<Locale, string>> = {
   howWeWork:      { ro: 'cum-lucram',       en: 'how-we-work' },
   financingTypes: { ro: 'tipuri-finantare', en: 'financing-types' },
   about:          { ro: 'despre-noi',       en: 'about-us' },
+  team:           { ro: 'echipa',           en: 'team' },
   compatibility:  { ro: 'compatibilitate',  en: 'compatibility' },
   resources:      { ro: 'resurse',          en: 'resources' },
   contact:        { ro: 'contact',          en: 'contact' },

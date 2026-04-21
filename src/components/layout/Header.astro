@@ -11,11 +11,11 @@ interface Props {
 const { locale, currentPage = 'home' } = Astro.props;
 
 const navItems = [
-  { key: 'home', page: 'home' },
+  { key: 'about', page: 'about' },
+  { key: 'team', page: 'team' },
   { key: 'services', page: 'services' },
   { key: 'howWeWork', page: 'howWeWork' },
   { key: 'financingTypes', page: 'financingTypes' },
-  { key: 'about', page: 'about' },
   { key: 'compatibility', page: 'compatibility' },
   { key: 'resources', page: 'resources' },
 ];
@@ -48,9 +48,6 @@ const navItems = [
       {t(locale, `nav.${item.key}`)}
     </a>
   ))}
-  <a href={getLocalePath(locale, 'contact')} class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">
-    {t(locale, 'nav.contact')}
-  </a>
   <!-- Mobile Language Switcher -->
   <div class="flex gap-2 py-4">
     {locales.map((loc) => (
@@ -59,6 +56,9 @@ const navItems = [
       </a>
     ))}
   </div>
+  <a href={getLocalePath(locale, 'contact')} class="block w-full text-center py-4 text-white text-sm font-semibold bg-cta-teal hover:bg-warm-gold transition duration-300">
+    {t(locale, 'nav.contact')}
+  </a>
 </nav>
 
 <!-- Desktop Header (transparent, floats over hero) -->
@@ -71,7 +71,7 @@ const navItems = [
 
     <nav class="flex items-center gap-1" aria-label="Main navigation">
       {navItems.map((item) => (
-        <a href={getLocalePath(locale, item.page)} class:list={['py-2 px-4 rounded-lg text-sm font-semibold transition duration-300 ease-in-out', currentPage === item.page ? 'text-cta-teal' : 'text-white hover:text-cta-teal']}>
+        <a href={getLocalePath(locale, item.page)} class:list={['py-2 px-4 rounded-lg text-sm font-semibold transition duration-300 ease-in-out whitespace-nowrap', currentPage === item.page ? 'text-cta-teal' : 'text-white hover:text-cta-teal']}>
           {t(locale, `nav.${item.key}`)}
         </a>
       ))}

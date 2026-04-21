@@ -5,6 +5,7 @@
     "howWeWork": "How We Work",
     "financingTypes": "Financing Types",
     "about": "About Us",
+    "team": "Team",
     "compatibility": "Compatibility",
     "resources": "Resources",
     "contact": "Contact"
@@ -151,6 +152,54 @@
     "p3": "This experience allows us to intervene where it matters and build solutions that work in practice, not just on paper.",
     "teamCta": "Meet the Capital Hub team"
   },
+  "team": {
+    "badge": "TEAM",
+    "heroTitle": "The Capital Hub Team",
+    "heroSubtitle": "Experienced Professionals",
+    "heroDescription": "The Capital Hub team brings together experts with extensive experience in financing, banking, consultancy, and management — dedicated to the success of your business.",
+    "sectionBadge": "LEADERSHIP",
+    "sectionTitle": "The Leadership Team",
+    "ctaTitle": "Let's talk about your company",
+    "ctaText": "Schedule a discussion with the Capital Hub team and learn how we can help.",
+    "members": {
+      "ciprian": {
+        "name": "Ciprian Vlad",
+        "role": "CEO - Capital Hub",
+        "bio": "Ciprian has over two decades of experience leading and transforming organizations, both in the private sector and in strategic projects of national impact. An economist by training, with a strong grounding in management and financial analysis, he approaches financing and partnerships with rigor, structure, and a constant focus on results.",
+        "strengthsLabel": "Why he's the right fit:",
+        "strengths": [
+          "CEO experience across multiple companies, including publicly listed organizations",
+          "Entrepreneurial background and a proven ability to build and launch new ventures",
+          "Advisory involvement in public initiatives of strategic relevance",
+          "Economics background with a hands-on perspective on the real needs of SMEs"
+        ]
+      },
+      "iulia": {
+        "name": "Iulia Vlad",
+        "role": "Operations Director - Capital Hub",
+        "bio": "Iulia has over 14 years of experience within the Parliament of Romania, where she managed administrative, operational, and coordination activities in highly complex structures. At Capital Hub, she ensures the operational running of the platform and coordinates the entire administrative flow of collaborations and contracts.",
+        "strengthsLabel": "Why she's the right fit:",
+        "strengths": [
+          "Extensive experience in public administration and legislative processes",
+          "Management of operational projects and complex activities",
+          "Collaboration with NGOs and public institutions",
+          "Attention to detail and discipline in handling documents and processes"
+        ]
+      },
+      "dan": {
+        "name": "Dan C.",
+        "role": "Development Coordinator - Capital Hub",
+        "bio": "Dan has over two decades of entrepreneurial experience, during which he has developed and coordinated projects across diverse fields — spanning operational, commercial, and strategic components. At Capital Hub, he actively contributes to expanding the portfolio and developing client relationships.",
+        "strengthsLabel": "Why he's the right fit:",
+        "strengths": [
+          "Over two decades of entrepreneurship and diverse projects",
+          "Ability to build and maintain trusted relationships",
+          "Results orientation and a sharp eye for opportunity",
+          "Adaptability and a strong grasp of business mechanics"
+        ]
+      }
+    }
+  },
   "compatibility": {
     "badge": "COMPATIBILITY",
     "title": "We don't work with just any company.",
@@ -250,6 +299,8 @@
     "financingTypesDescription": "Bank loans, factoring, alternative financing, leasing, and non-repayable grants. We choose the right option for your company.",
     "aboutTitle": "About Us - Capital Hub Finance",
     "aboutDescription": "Capital Hub Finance - hands-on experience in financial analysis, structuring, and negotiation with financial institutions.",
+    "teamTitle": "Team - Capital Hub Finance",
+    "teamDescription": "Meet the Capital Hub Finance leadership team — experts with extensive experience in financing, banking, consultancy, and management.",
     "compatibilityTitle": "Compatibility - Capital Hub Finance",
     "compatibilityDescription": "Check if your company is a good fit for Capital Hub services. Fill in the form and find out within 24–48 hours.",
     "resourcesTitle": "Resources - Capital Hub Finance",
