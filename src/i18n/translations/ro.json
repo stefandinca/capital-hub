@@ -1,0 +1,260 @@
+{
+  "nav": {
+    "home": "Acasa",
+    "services": "Servicii",
+    "howWeWork": "Cum Lucram",
+    "financingTypes": "Tipuri de Finantare",
+    "about": "Despre Noi",
+    "compatibility": "Compatibilitate",
+    "resources": "Resurse",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Nu orice finantare ajuta",
+    "title2": "o companie sa creasca",
+    "subtitle": "Noi te ajutam sa o alegi pe cea corecta",
+    "description": "Nu intermediem dosare. Construim companii finantabile.",
+    "cta1": "Vezi daca esti compatibil cu noi",
+    "cta2": "Intelege cum lucram"
+  },
+  "intro": {
+    "badge": "ABORDAREA NOASTRA",
+    "title": "Finantarea nu este o problema de acces,",
+    "titleHighlight": "ci de structura",
+    "p1": "Companiile care obtin finantare in conditii bune nu sunt cele care cauta mai mult, ci cele care sunt pregatite corect.",
+    "p2": "Capital Hub porneste de la companie si de la modul in care functioneaza financiar, nu de la produsul de finantare."
+  },
+  "process": {
+    "badge": "CUM LUCRAM",
+    "title": "Procesul prin care o companie devine",
+    "titleHighlight": "finantabila",
+    "subtitle": "Lucram etapizat, astfel incat fiecare decizie financiara sa fie sustinuta de structura, nu de context.",
+    "step1": {
+      "title": "Diagnostic financiar",
+      "description": "Analizam compania si identificam blocajele reale care afecteaza stabilitatea si finantabilitatea.",
+      "cta": "Vezi serviciul Capital Hub Diagnostic Financiar"
+    },
+    "step2": {
+      "title": "Structurare si optimizare financiara",
+      "description": "Corectam structura financiara si aliniem compania cu cerintele finantatorilor.",
+      "cta": "Vezi serviciul Capital Hub Structurare Financiara"
+    },
+    "step3": {
+      "title": "Acces la finantare",
+      "description": "Selectam si negociem solutiile potrivite, in functie de situatia reala a companiei.",
+      "cta": "Vezi serviciul Capital Hub Acces la Finantare"
+    },
+    "step4": {
+      "title": "Monitorizare si parteneriat financiar",
+      "description": "Asiguram continuitate, stabilitate si suport decizional pe termen lung.",
+      "cta": "Vezi serviciul Capital Hub Parteneriat Financiar"
+    },
+    "special": {
+      "title": "Pentru situatii complexe",
+      "description": "Intervenim prin solutii de optimizare financiara avansata.",
+      "cta": "Vezi serviciul Capital Hub Optimizare Financiara"
+    }
+  },
+  "differentiation": {
+    "badge": "DE CE NOI",
+    "title": "Nu intermediem haos.",
+    "titleHighlight": "Il structuram inainte.",
+    "p1": "Nu pornim de la finantare si nu oferim solutii standard.",
+    "p2": "Construim mai intai structura care face finantarea posibila si sustenabila."
+  },
+  "finalCta": {
+    "title": "Ai o companie activa si vrei sa intelegi daca poate fi finantata in mod corect?",
+    "cta": "Vezi daca esti compatibil cu noi"
+  },
+  "services": {
+    "badge": "SERVICII",
+    "title": "Toate serviciile sunt parte din acelasi",
+    "titleHighlight": "sistem",
+    "subtitle": "Procesul este simplu si logic: Diagnostic → Structurare → Finantare → Parteneriat. Fiecare etapa construieste urmatoarea.",
+    "diagnostic": {
+      "label": "Pachet de inceput",
+      "title": "Capital Hub Diagnostic Financiar",
+      "subtitle": "Primul pas pentru orice decizie financiara corecta",
+      "description": "Ofera claritate asupra modului in care functioneaza compania si identifica exact ce impiedica accesul la finantare in conditii bune.",
+      "includes": ["Analiza financiara aplicata (lichiditate, grad de indatorare, rotatii)", "Identificare blocaje de cash-flow", "Evaluare interna a finantabilitatii", "3-5 actiuni concrete, prioritizate"],
+      "deliverable": "Raport financiar structurat (6-10 pagini), clar si aplicabil"
+    },
+    "structuring": {
+      "label": "Pachet de structurare",
+      "title": "Capital Hub Structurare Financiara",
+      "subtitle": "Etapa in care compania devine finantabila",
+      "description": "Transformam modul in care functioneaza compania din punct de vedere financiar, astfel incat sa poata sustine o finantare corecta.",
+      "includes": ["Optimizare cash-flow", "Aliniere incasari vs. plati", "Corectii bilant (inclusiv 418, stocuri, datorii)", "Simulari de scenarii"],
+      "differentiator": "Traducem compania in limbaj bancar"
+    },
+    "financing": {
+      "label": "Pachet de finantare",
+      "title": "Capital Hub Acces la Finantare",
+      "subtitle": "Acces la finantare, in conditii corecte",
+      "description": "Se activeaza dupa structurare sau pentru companii deja pregatite. Nu trimitem dosare la intamplare. Alegem solutia potrivita.",
+      "includes": ["Structurare dosar", "Selectie finantatori", "Negociere conditii", "Prezentare catre banca / IFN"]
+    },
+    "optimization": {
+      "label": "Pachet avansat",
+      "title": "Capital Hub Optimizare Financiara",
+      "subtitle": "Interventii avansate pentru situatii complexe",
+      "description": "Pentru companii care necesita ajustari profunde sau se afla sub presiune financiara.",
+      "includes": ["Restructurare datorii (inclusiv ANAF)", "Reconfigurare structura financiara", "Optimizare cost capital", "Strategii de crestere controlata"]
+    },
+    "partnership": {
+      "label": "Pachet de parteneriat",
+      "title": "Capital Hub Parteneriat Financiar",
+      "subtitle": "Stabilitate si control pe termen lung",
+      "description": "Asiguram continuitate si suport decizional, astfel incat compania sa ramana finantabila.",
+      "includes": ["Monitorizare lunara", "Ajustari financiare", "Suport decizional", "Acces prioritar la finantari"]
+    },
+    "cta1": "Vezi daca esti compatibil cu noi",
+    "cta2": "Solicita oferta de pret",
+    "footerNote": "Serviciile noastre nu functioneaza separat. Fac parte dintr-un proces prin care companiile devin mai stabile, mai predictibile si mai usor de finantat."
+  },
+  "financingTypes": {
+    "badge": "TIPURI DE FINANTARE",
+    "title": "Nu toate tipurile de finantare sunt potrivite pentru compania ta.",
+    "titleHighlight": "Noi te ajutam sa alegi varianta corecta.",
+    "subtitle": "Nu iti prezentam optiuni. Le filtram si le structuram in functie de situatia ta reala.",
+    "principle": "Tipul de finantare este rezultatul structurii companiei, nu punctul de plecare.",
+    "bankLoans": {
+      "title": "Credite bancare",
+      "description": "Pentru companii stabile, cu indicatori financiari corecti, care au nevoie de capital de lucru, investitii sau linii de credit."
+    },
+    "factoring": {
+      "title": "Factoring",
+      "description": "Pentru companii cu incasari intarziate si presiune pe cash-flow. Potrivit in special in relatiile B2B."
+    },
+    "alternative": {
+      "title": "Finantari alternative (IFN / fonduri)",
+      "description": "Pentru situatii in care banca nu este o optiune sau pentru nevoi care cer flexibilitate si structurare personalizata."
+    },
+    "leasing": {
+      "title": "Leasing / Sale & Leaseback",
+      "description": "Pentru optimizarea capitalului blocat in active si obtinerea de lichiditate fara credit clasic."
+    },
+    "grants": {
+      "title": "Fonduri nerambursabile",
+      "description": "Pentru proiecte eligibile, investitii planificate, digitalizare si dezvoltare cu componenta de cofinantare."
+    },
+    "cta": "Solicita analiza pentru eligibilitate",
+    "unsure": "Daca nu esti sigur ce ti se potriveste:",
+    "unsureCta": "Vezi daca esti compatibil cu noi"
+  },
+  "about": {
+    "badge": "DESPRE NOI",
+    "title": "Construit pentru companii care cauta",
+    "titleHighlight": "claritate in decizie",
+    "p1": "Capital Hub a fost construit pentru companii care nu cauta doar acces la finantare, ci claritate in decizie si un proces controlat, fara incercari costisitoare pe cont propriu.",
+    "p2": "La baza acestui proces sta experienta directa in analiza financiara, structurare si negociere cu institutii financiare. Am lucrat cu companii aflate in diferite etape de dezvoltare si intelegem modul in care acestea sunt evaluate in realitate de catre finantatori, nu doar din perspectiva teoretica.",
+    "p3": "Aceasta experienta ne permite sa intervenim acolo unde conteaza si sa construim solutii care functioneaza in practica, nu doar pe hartie.",
+    "teamCta": "Cunoaste echipa Capital Hub"
+  },
+  "compatibility": {
+    "badge": "COMPATIBILITATE",
+    "title": "Nu lucram cu orice companie.",
+    "titleHighlight": "Lucram doar cu cele care pot fi structurate corect.",
+    "subtitle": "Completeaza formularul de mai jos, iar noi iti spunem daca te putem ajuta — sau nu.",
+    "workWith": "Lucram cu tine daca:",
+    "workWithItems": [
+      "Ai o companie activa de minimum 6-12 luni",
+      "Ai cifra de afaceri si rulaj real",
+      "Ai probleme de cash-flow, nu lipsa totala de activitate",
+      "Esti dispus sa ajustezi modul in care functioneaza compania"
+    ],
+    "dontWorkWith": "Nu suntem potriviti daca:",
+    "dontWorkWithItems": [
+      "Ai nevoie urgenta de bani, indiferent de conditii",
+      "Compania este in blocaj sever sau in executare",
+      "Nu exista transparenta financiara",
+      "Cauti doar o relatie la banca"
+    ],
+    "form": {
+      "companyName": "Nume companie",
+      "cui": "CUI",
+      "domain": "Domeniu de activitate",
+      "revenue": "Cifra de afaceri anuala",
+      "mainProblem": "Care este principala problema?",
+      "triedFinancing": "Ai incercat sa obtii finantare in ultimele 6 luni?",
+      "approved": "Da - aprobat",
+      "rejected": "Da - respins",
+      "no": "Nu",
+      "urgency": "Nivel de urgenta",
+      "immediate": "Imediat (0-30 zile)",
+      "months": "In urmatoarele 2-3 luni",
+      "exploring": "Doar explorare",
+      "willingToAdjust": "Esti dispus sa faci ajustari financiare in companie?",
+      "yes": "Da",
+      "depends": "Depinde",
+      "fullName": "Nume si prenume",
+      "phone": "Telefon",
+      "email": "Email",
+      "submit": "Trimite formularul",
+      "consent": "Sunt de acord cu prelucrarea datelor conform Politicii de confidentialitate."
+    },
+    "afterTitle": "Ce se intampla dupa",
+    "afterText": "Analizam informatiile transmise si revenim in maximum 24-48 de ore.",
+    "ifCompatible": "Daca exista compatibilitate:",
+    "compatibleItems": ["Programam o discutie", "Iti explicam exact cum putem ajuta"],
+    "ifNot": "Daca nu exista compatibilitate:",
+    "notItems": ["Iti spunem direct", "Fara promisiuni inutile"]
+  },
+  "resources": {
+    "badge": "RESURSE",
+    "title": "Continut util pentru antreprenori care cauta",
+    "titleHighlight": "claritate financiara",
+    "comingSoon": "Aceasta sectiune este in lucru.",
+    "comingSoonText": "Pregatim articole, ghiduri si studii de caz despre cash-flow, finantabilitate, structurare financiara si relatia cu banca."
+  },
+  "contact": {
+    "badge": "CONTACT",
+    "title": "Hai sa discutam despre",
+    "titleHighlight": "planurile tale",
+    "subtitle": "Completeaza formularul sau contacteaza-ne direct. Echipa noastra iti raspunde in maximum 24 de ore lucratoare.",
+    "phone": "Telefon",
+    "email": "Email",
+    "whatsapp": "Scrie-ne pe WhatsApp",
+    "form": {
+      "name": "Nume complet",
+      "namePlaceholder": "Numele tau",
+      "email": "Email",
+      "emailPlaceholder": "email@exemplu.ro",
+      "phone": "Telefon",
+      "phonePlaceholder": "+40 7XX XXX XXX",
+      "message": "Mesaj",
+      "messagePlaceholder": "Descrie pe scurt ce tip de finantare cauti...",
+      "submit": "Trimite mesajul"
+    },
+    "schedule": "Programeaza o discutie"
+  },
+  "footer": {
+    "description": "Capital Hub Finance ajuta companiile sa ia decizii corecte de finantare, prin analiza, structura si acces la solutii relevante din piata.",
+    "navigation": "Navigare",
+    "contactTitle": "Contact",
+    "socialTitle": "Social Media",
+    "copyright": "Capital Hub Finance. Toate drepturile rezervate.",
+    "privacy": "Politica de Confidentialitate",
+    "terms": "Termeni si Conditii",
+    "cookies": "Cookie-uri",
+    "closing": "Decizii financiare corecte pentru crestere sustenabila."
+  },
+  "meta": {
+    "homeTitle": "Capital Hub Finance - Solutii de Finantare",
+    "homeDescription": "Capital Hub Finance construieste companii finantabile. Diagnostic financiar, structurare, acces la finantare si parteneriat pe termen lung.",
+    "servicesTitle": "Servicii - Capital Hub Finance",
+    "servicesDescription": "Servicii de consultanta financiara: diagnostic financiar, structurare, acces la finantare, optimizare si parteneriat financiar.",
+    "howWeWorkTitle": "Cum Lucram - Capital Hub Finance",
+    "howWeWorkDescription": "Procesul prin care o companie devine finantabila: diagnostic, structurare, acces la finantare si monitorizare pe termen lung.",
+    "financingTypesTitle": "Tipuri de Finantare - Capital Hub Finance",
+    "financingTypesDescription": "Credite bancare, factoring, finantari alternative, leasing si fonduri nerambursabile. Alegem varianta corecta pentru compania ta.",
+    "aboutTitle": "Despre Noi - Capital Hub Finance",
+    "aboutDescription": "Capital Hub Finance - experienta directa in analiza financiara, structurare si negociere cu institutii financiare.",
+    "compatibilityTitle": "Compatibilitate - Capital Hub Finance",
+    "compatibilityDescription": "Verifica daca compania ta se potriveste cu serviciile Capital Hub. Completeaza formularul si afla in 24-48 de ore.",
+    "resourcesTitle": "Resurse - Capital Hub Finance",
+    "resourcesDescription": "Articole, ghiduri si resurse despre finantare, cash-flow si structurare financiara pentru companii.",
+    "contactTitle": "Contact - Capital Hub Finance",
+    "contactDescription": "Contacteaza Capital Hub Finance. Telefon, email, WhatsApp. Echipa noastra iti raspunde in maximum 24 de ore."
+  }
+}

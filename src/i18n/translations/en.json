@@ -1,0 +1,260 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "howWeWork": "How We Work",
+    "financingTypes": "Financing Types",
+    "about": "About Us",
+    "compatibility": "Compatibility",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Not every financing solution helps",
+    "title2": "a company grow",
+    "subtitle": "We help you choose the right one",
+    "description": "We don't broker applications. We build finance-ready companies.",
+    "cta1": "See if you're a good fit for us",
+    "cta2": "Understand how we work"
+  },
+  "intro": {
+    "badge": "OUR APPROACH",
+    "title": "Financing is not an access problem,",
+    "titleHighlight": "it's a structural one",
+    "p1": "Companies that secure financing on favorable terms aren't the ones that search the most — they're the ones that are properly prepared.",
+    "p2": "Capital Hub starts from the company and how it functions financially, not from the financing product."
+  },
+  "process": {
+    "badge": "HOW WE WORK",
+    "title": "The process through which a company becomes",
+    "titleHighlight": "finance-ready",
+    "subtitle": "We work in stages, so that every financial decision is supported by structure, not circumstance.",
+    "step1": {
+      "title": "Financial diagnostic",
+      "description": "We analyze the company and identify the real bottlenecks affecting its stability and bankability.",
+      "cta": "See the Capital Hub Financial Diagnostic service"
+    },
+    "step2": {
+      "title": "Financial structuring and optimization",
+      "description": "We correct the financial structure and align the company with lenders' requirements.",
+      "cta": "See the Capital Hub Financial Structuring service"
+    },
+    "step3": {
+      "title": "Financing access",
+      "description": "We select and negotiate the right solutions based on the company's actual situation.",
+      "cta": "See the Capital Hub Financing Access service"
+    },
+    "step4": {
+      "title": "Monitoring and financial partnership",
+      "description": "We ensure continuity, stability, and long-term decision support.",
+      "cta": "See the Capital Hub Financial Partnership service"
+    },
+    "special": {
+      "title": "For complex situations",
+      "description": "We intervene with advanced financial optimization solutions.",
+      "cta": "See the Capital Hub Financial Optimization service"
+    }
+  },
+  "differentiation": {
+    "badge": "WHY US",
+    "title": "We don't broker chaos.",
+    "titleHighlight": "We structure it first.",
+    "p1": "We don't start from financing and we don't offer standard solutions.",
+    "p2": "We first build the structure that makes financing possible and sustainable."
+  },
+  "finalCta": {
+    "title": "Do you have an active company and want to understand if it can be financed properly?",
+    "cta": "See if you're a good fit for us"
+  },
+  "services": {
+    "badge": "SERVICES",
+    "title": "All services are part of the same",
+    "titleHighlight": "system",
+    "subtitle": "The process is simple and logical: Diagnostic → Structuring → Financing → Partnership. Each stage builds the next.",
+    "diagnostic": {
+      "label": "Starter package",
+      "title": "Capital Hub Financial Diagnostic",
+      "subtitle": "The first step toward any sound financial decision",
+      "description": "Provides clarity on how the company operates and identifies exactly what prevents access to financing on favorable terms.",
+      "includes": ["Applied financial analysis (liquidity, debt ratio, turnover ratios)", "Cash-flow bottleneck identification", "Internal bankability assessment", "3–5 concrete, prioritized action items"],
+      "deliverable": "Structured financial report (6–10 pages), clear and actionable"
+    },
+    "structuring": {
+      "label": "Structuring package",
+      "title": "Capital Hub Financial Structuring",
+      "subtitle": "The stage where the company becomes finance-ready",
+      "description": "We transform how the company operates from a financial standpoint, so it can sustain proper financing.",
+      "includes": ["Cash-flow optimization", "Receivables vs. payables alignment", "Balance sheet corrections (including accrued income, inventory, liabilities)", "Scenario simulations"],
+      "differentiator": "We translate the company into banking language"
+    },
+    "financing": {
+      "label": "Financing package",
+      "title": "Capital Hub Financing Access",
+      "subtitle": "Access to financing, on the right terms",
+      "description": "Activated after structuring or for companies already prepared. We don't submit applications at random. We choose the right solution.",
+      "includes": ["Application structuring", "Lender selection", "Terms negotiation", "Presentation to bank / NBFI"]
+    },
+    "optimization": {
+      "label": "Advanced package",
+      "title": "Capital Hub Financial Optimization",
+      "subtitle": "Advanced interventions for complex situations",
+      "description": "For companies that require deep adjustments or are under financial pressure.",
+      "includes": ["Debt restructuring (including ANAF)", "Financial structure reconfiguration", "Cost of capital optimization", "Controlled growth strategies"]
+    },
+    "partnership": {
+      "label": "Partnership package",
+      "title": "Capital Hub Financial Partnership",
+      "subtitle": "Long-term stability and control",
+      "description": "We ensure continuity and decision support, so the company remains finance-ready.",
+      "includes": ["Monthly monitoring", "Financial adjustments", "Decision support", "Priority access to financing"]
+    },
+    "cta1": "See if you're a good fit for us",
+    "cta2": "Request a price quote",
+    "footerNote": "Our services don't work in isolation. They are part of a process through which companies become more stable, more predictable, and easier to finance."
+  },
+  "financingTypes": {
+    "badge": "FINANCING TYPES",
+    "title": "Not all financing types are right for your company.",
+    "titleHighlight": "We help you choose the correct one.",
+    "subtitle": "We don't just present options. We filter and structure them based on your actual situation.",
+    "principle": "The type of financing is the result of the company's structure, not the starting point.",
+    "bankLoans": {
+      "title": "Bank loans",
+      "description": "For stable companies with sound financial indicators that need working capital, investments, or credit lines."
+    },
+    "factoring": {
+      "title": "Factoring",
+      "description": "For companies with delayed receivables and cash-flow pressure. Particularly suited for B2B relationships."
+    },
+    "alternative": {
+      "title": "Alternative financing (NBFI / funds)",
+      "description": "For situations where a bank is not an option, or for needs that require flexibility and customized structuring."
+    },
+    "leasing": {
+      "title": "Leasing / Sale & Leaseback",
+      "description": "For optimizing capital tied up in assets and obtaining liquidity without traditional credit."
+    },
+    "grants": {
+      "title": "Non-repayable grants",
+      "description": "For eligible projects, planned investments, digitalization, and development with a co-financing component."
+    },
+    "cta": "Request an eligibility analysis",
+    "unsure": "If you're not sure what suits you:",
+    "unsureCta": "See if you're a good fit for us"
+  },
+  "about": {
+    "badge": "ABOUT US",
+    "title": "Built for companies seeking",
+    "titleHighlight": "clarity in decision-making",
+    "p1": "Capital Hub was built for companies that don't just seek access to financing, but clarity in decision-making and a controlled process — without costly trial and error on their own.",
+    "p2": "At the core of this process lies hands-on experience in financial analysis, structuring, and negotiation with financial institutions. We have worked with companies at various stages of development and understand how they are actually evaluated by lenders — not just from a theoretical perspective.",
+    "p3": "This experience allows us to intervene where it matters and build solutions that work in practice, not just on paper.",
+    "teamCta": "Meet the Capital Hub team"
+  },
+  "compatibility": {
+    "badge": "COMPATIBILITY",
+    "title": "We don't work with just any company.",
+    "titleHighlight": "We only work with those that can be properly structured.",
+    "subtitle": "Fill in the form below and we'll tell you whether we can help — or not.",
+    "workWith": "We work with you if:",
+    "workWithItems": [
+      "You have an active company for at least 6–12 months",
+      "You have real revenue and turnover",
+      "You have cash-flow issues, not a complete lack of activity",
+      "You are willing to adjust how your company operates"
+    ],
+    "dontWorkWith": "We are not a good fit if:",
+    "dontWorkWithItems": [
+      "You need money urgently, regardless of terms",
+      "The company is in severe distress or under enforcement",
+      "There is no financial transparency",
+      "You are only looking for a banking connection"
+    ],
+    "form": {
+      "companyName": "Company name",
+      "cui": "CUI",
+      "domain": "Industry",
+      "revenue": "Annual revenue",
+      "mainProblem": "What is the main problem?",
+      "triedFinancing": "Have you tried to obtain financing in the last 6 months?",
+      "approved": "Yes - approved",
+      "rejected": "Yes - rejected",
+      "no": "No",
+      "urgency": "Urgency level",
+      "immediate": "Immediate (0–30 days)",
+      "months": "Within the next 2–3 months",
+      "exploring": "Just exploring",
+      "willingToAdjust": "Are you willing to make financial adjustments in your company?",
+      "yes": "Yes",
+      "depends": "It depends",
+      "fullName": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "submit": "Submit the form",
+      "consent": "I agree to the processing of my data in accordance with the Privacy Policy."
+    },
+    "afterTitle": "What happens next",
+    "afterText": "We review the information submitted and get back to you within 24–48 hours.",
+    "ifCompatible": "If there is compatibility:",
+    "compatibleItems": ["We schedule a discussion", "We explain exactly how we can help"],
+    "ifNot": "If there is no compatibility:",
+    "notItems": ["We tell you directly", "No empty promises"]
+  },
+  "resources": {
+    "badge": "RESOURCES",
+    "title": "Useful content for entrepreneurs seeking",
+    "titleHighlight": "financial clarity",
+    "comingSoon": "This section is under development.",
+    "comingSoonText": "We are preparing articles, guides, and case studies on cash-flow, bankability, financial structuring, and the banking relationship."
+  },
+  "contact": {
+    "badge": "CONTACT",
+    "title": "Let's talk about",
+    "titleHighlight": "your plans",
+    "subtitle": "Fill in the form or contact us directly. Our team will respond within 24 business hours.",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "Message us on WhatsApp",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+40 7XX XXX XXX",
+      "message": "Message",
+      "messagePlaceholder": "Briefly describe what type of financing you are looking for...",
+      "submit": "Send message"
+    },
+    "schedule": "Schedule a discussion"
+  },
+  "footer": {
+    "description": "Capital Hub Finance helps companies make sound financing decisions through analysis, structure, and access to relevant market solutions.",
+    "navigation": "Navigation",
+    "contactTitle": "Contact",
+    "socialTitle": "Social Media",
+    "copyright": "Capital Hub Finance. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "cookies": "Cookies",
+    "closing": "Sound financial decisions for sustainable growth."
+  },
+  "meta": {
+    "homeTitle": "Capital Hub Finance - Financing Solutions",
+    "homeDescription": "Capital Hub Finance builds finance-ready companies. Financial diagnostic, structuring, financing access, and long-term partnership.",
+    "servicesTitle": "Services - Capital Hub Finance",
+    "servicesDescription": "Financial consultancy services: financial diagnostic, structuring, financing access, optimization, and financial partnership.",
+    "howWeWorkTitle": "How We Work - Capital Hub Finance",
+    "howWeWorkDescription": "The process through which a company becomes finance-ready: diagnostic, structuring, financing access, and long-term monitoring.",
+    "financingTypesTitle": "Financing Types - Capital Hub Finance",
+    "financingTypesDescription": "Bank loans, factoring, alternative financing, leasing, and non-repayable grants. We choose the right option for your company.",
+    "aboutTitle": "About Us - Capital Hub Finance",
+    "aboutDescription": "Capital Hub Finance - hands-on experience in financial analysis, structuring, and negotiation with financial institutions.",
+    "compatibilityTitle": "Compatibility - Capital Hub Finance",
+    "compatibilityDescription": "Check if your company is a good fit for Capital Hub services. Fill in the form and find out within 24–48 hours.",
+    "resourcesTitle": "Resources - Capital Hub Finance",
+    "resourcesDescription": "Articles, guides, and resources on financing, cash-flow, and financial structuring for companies.",
+    "contactTitle": "Contact - Capital Hub Finance",
+    "contactDescription": "Contact Capital Hub Finance. Phone, email, WhatsApp. Our team responds within 24 hours."
+  }
+}
