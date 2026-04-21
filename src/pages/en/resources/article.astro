@@ -1,0 +1,16 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import ArticleView from '../../../components/resources/ArticleView';
+
+const locale = 'en';
+---
+
+<PageLayout locale={locale} pageKey="resources" title="Article - Capital Hub Finance" description="Resources and articles about financing, cash flow and financial structuring.">
+  <!-- Header background -->
+  <div class="bg-gradient-to-b from-royal-blue to-royal-blue-2 h-24 lg:h-32"></div>
+  <div class="pt-10 pb-16 lg:pb-24 px-6">
+    <div class="max-w-3xl mx-auto">
+      <ArticleView client:load locale={locale} backUrl="/dev/en/resources" />
+    </div>
+  </div>
+</PageLayout>
