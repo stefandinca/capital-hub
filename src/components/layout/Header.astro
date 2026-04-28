@@ -151,17 +151,17 @@ const navItems = [
     const path = window.location.pathname;
     const search = window.location.search;
     const articlePaths: Record<string, Record<string, string>> = {
-      '/dev/ro/resurse/articol': { ro: '/dev/ro/resurse/articol', en: '/dev/en/resources/article' },
-      '/dev/en/resources/article': { ro: '/dev/ro/resurse/articol', en: '/dev/en/resources/article' },
+      '/ro/resurse/articol': { ro: '/ro/resurse/articol', en: '/en/resources/article' },
+      '/en/resources/article': { ro: '/ro/resurse/articol', en: '/en/resources/article' },
     };
     const normalizedPath = path.replace(/\/+$/, '');
     const articleMap = articlePaths[normalizedPath];
     if (articleMap && search) {
-      document.querySelectorAll('a[href*="/dev/ro/resurse"], a[href*="/dev/en/resources"]').forEach((link) => {
+      document.querySelectorAll('a[href*="/ro/resurse"], a[href*="/en/resources"]').forEach((link) => {
         const href = link.getAttribute('href') || '';
-        if (href.includes('/dev/ro/resurse') && !href.includes('articol')) {
+        if (href.includes('/ro/resurse') && !href.includes('articol')) {
           link.setAttribute('href', articleMap.ro + search);
-        } else if (href.includes('/dev/en/resources') && !href.includes('article')) {
+        } else if (href.includes('/en/resources') && !href.includes('article')) {
           link.setAttribute('href', articleMap.en + search);
         }
       });

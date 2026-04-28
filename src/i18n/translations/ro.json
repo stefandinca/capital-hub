@@ -77,7 +77,12 @@
       "title": "Capital Hub Diagnostic Financiar",
       "subtitle": "Primul pas pentru orice decizie financiara corecta",
       "description": "Ofera claritate asupra modului in care functioneaza compania si identifica exact ce impiedica accesul la finantare in conditii bune.",
-      "includes": ["Analiza financiara aplicata (lichiditate, grad de indatorare, rotatii)", "Identificare blocaje de cash-flow", "Evaluare interna a finantabilitatii", "3-5 actiuni concrete, prioritizate"],
+      "includes": [
+        "Analiza financiara aplicata (lichiditate, grad de indatorare, rotatii)",
+        "Identificare blocaje de cash-flow",
+        "Evaluare interna a finantabilitatii",
+        "3-5 actiuni concrete, prioritizate"
+      ],
       "deliverable": "Raport financiar structurat (6-10 pagini), clar si aplicabil"
     },
     "structuring": {
@@ -85,7 +90,12 @@
       "title": "Capital Hub Structurare Financiara",
       "subtitle": "Etapa in care compania devine finantabila",
       "description": "Transformam modul in care functioneaza compania din punct de vedere financiar, astfel incat sa poata sustine o finantare corecta.",
-      "includes": ["Optimizare cash-flow", "Aliniere incasari vs. plati", "Corectii bilant (inclusiv 418, stocuri, datorii)", "Simulari de scenarii"],
+      "includes": [
+        "Optimizare cash-flow",
+        "Aliniere incasari vs. plati",
+        "Corectii bilant (inclusiv 418, stocuri, datorii)",
+        "Simulari de scenarii"
+      ],
       "differentiator": "Traducem compania in limbaj bancar"
     },
     "financing": {
@@ -93,21 +103,36 @@
       "title": "Capital Hub Acces la Finantare",
       "subtitle": "Acces la finantare, in conditii corecte",
       "description": "Se activeaza dupa structurare sau pentru companii deja pregatite. Nu trimitem dosare la intamplare. Alegem solutia potrivita.",
-      "includes": ["Structurare dosar", "Selectie finantatori", "Negociere conditii", "Prezentare catre banca / IFN"]
+      "includes": [
+        "Structurare dosar",
+        "Selectie finantatori",
+        "Negociere conditii",
+        "Prezentare catre banca / IFN"
+      ]
     },
     "optimization": {
       "label": "Pachet avansat",
       "title": "Capital Hub Optimizare Financiara",
       "subtitle": "Interventii avansate pentru situatii complexe",
       "description": "Pentru companii care necesita ajustari profunde sau se afla sub presiune financiara.",
-      "includes": ["Restructurare datorii (inclusiv ANAF)", "Reconfigurare structura financiara", "Optimizare cost capital", "Strategii de crestere controlata"]
+      "includes": [
+        "Restructurare datorii (inclusiv ANAF)",
+        "Reconfigurare structura financiara",
+        "Optimizare cost capital",
+        "Strategii de crestere controlata"
+      ]
     },
     "partnership": {
       "label": "Pachet de parteneriat",
       "title": "Capital Hub Parteneriat Financiar",
       "subtitle": "Stabilitate si control pe termen lung",
       "description": "Asiguram continuitate si suport decizional, astfel incat compania sa ramana finantabila.",
-      "includes": ["Monitorizare lunara", "Ajustari financiare", "Suport decizional", "Acces prioritar la finantari"]
+      "includes": [
+        "Monitorizare lunara",
+        "Ajustari financiare",
+        "Suport decizional",
+        "Acces prioritar la finantari"
+      ]
     },
     "cta1": "Vezi daca esti compatibil cu noi",
     "cta2": "Solicita oferta de pret",
@@ -210,6 +235,18 @@
             "Abilitati solide in structurarea, analiza si transmiterea portofoliilor financiare",
             "Formarea economica si perspectiva strategica asupra produselor financiare"
           ]
+        },
+        "stefan": {
+          "name": "Stefan D.",
+          "role": "Coordonare & Consultanta IT - Capital Hub",
+          "bio": "Stefan aduce o expertiza solida de peste 20 de ani in dezvoltare software, marketing si comunicare, fiind specialistul care face legatura intre viziunea de business si executia tehnica de precizie. In cadrul Capital Hub, coordoneaza componenta de tehnologie si consultanta IT, asigurandu-se ca arhitectura digitala si procesele interne sunt perfect aliniate cu obiectivele echipei si nevoile clientilor.",
+          "strengthsLabel": "Il recomanda:",
+          "strengths": [
+            "Experienta vasta in coordonarea migratiilor tehnologice complexe si gestionarea livrabilelor",
+            "Expertiza in arhitectura software, aplicatii web si infrastructura cloud",
+            "Abilitati solide in identificarea solutiilor pentru digitalizare si tehnologii emergente",
+            "Orientarea catre solutii scalabile, sigure si sustenabile pe termen lung"
+          ]
         }
       }
     },
@@ -248,6 +285,17 @@
             "Peste 15 ani de experienta in banking si consultanta financiara",
             "Expertiza in structurarea si negocierea creditelor pentru IMM-uri",
             "Profesionalismul, rigoarea si orientarea constanta spre rezultate"
+          ]
+        },
+        "livia": {
+          "name": "Livia D.",
+          "role": "Consultant Senior Financiar",
+          "bio": "Livia are peste 20 de ani de experienta in contabilitate si management financiar, acumulata in companii internationale si in roluri de coordonare financiara. Timp de aproape 9 ani a ocupat pozitia de Chief Accountant in cadrul BNP Paribas Personal Finance, unde a coordonat activitatea de contabilitate, raportare si conformare fiscala.",
+          "strengthsLabel": "O recomanda:",
+          "strengths": [
+            "Peste 20 de ani de experienta in contabilitate si management financiar",
+            "Expertiza in raportare financiara, conformare fiscala si optimizarea proceselor",
+            "Experienta in implementarea sistemelor ERP precum WizPro, Microsoft Dynamics NAV si Microsoft Dynamics 365 Business Central"
           ]
         }
       }
@@ -298,9 +346,15 @@
     "afterTitle": "Ce se intampla dupa",
     "afterText": "Analizam informatiile transmise si revenim in maximum 24-48 de ore.",
     "ifCompatible": "Daca exista compatibilitate:",
-    "compatibleItems": ["Programam o discutie", "Iti explicam exact cum putem ajuta"],
+    "compatibleItems": [
+      "Programam o discutie",
+      "Iti explicam exact cum putem ajuta"
+    ],
     "ifNot": "Daca nu exista compatibilitate:",
-    "notItems": ["Iti spunem direct", "Fara promisiuni inutile"]
+    "notItems": [
+      "Iti spunem direct",
+      "Fara promisiuni inutile"
+    ]
   },
   "resources": {
     "badge": "RESURSE",

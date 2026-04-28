@@ -77,7 +77,12 @@
       "title": "Capital Hub Financial Diagnostic",
       "subtitle": "The first step toward any sound financial decision",
       "description": "Provides clarity on how the company operates and identifies exactly what prevents access to financing on favorable terms.",
-      "includes": ["Applied financial analysis (liquidity, debt ratio, turnover ratios)", "Cash-flow bottleneck identification", "Internal bankability assessment", "3–5 concrete, prioritized action items"],
+      "includes": [
+        "Applied financial analysis (liquidity, debt ratio, turnover ratios)",
+        "Cash-flow bottleneck identification",
+        "Internal bankability assessment",
+        "3–5 concrete, prioritized action items"
+      ],
       "deliverable": "Structured financial report (6–10 pages), clear and actionable"
     },
     "structuring": {
@@ -85,7 +90,12 @@
       "title": "Capital Hub Financial Structuring",
       "subtitle": "The stage where the company becomes finance-ready",
       "description": "We transform how the company operates from a financial standpoint, so it can sustain proper financing.",
-      "includes": ["Cash-flow optimization", "Receivables vs. payables alignment", "Balance sheet corrections (including accrued income, inventory, liabilities)", "Scenario simulations"],
+      "includes": [
+        "Cash-flow optimization",
+        "Receivables vs. payables alignment",
+        "Balance sheet corrections (including accrued income, inventory, liabilities)",
+        "Scenario simulations"
+      ],
       "differentiator": "We translate the company into banking language"
     },
     "financing": {
@@ -93,21 +103,36 @@
       "title": "Capital Hub Financing Access",
       "subtitle": "Access to financing, on the right terms",
       "description": "Activated after structuring or for companies already prepared. We don't submit applications at random. We choose the right solution.",
-      "includes": ["Application structuring", "Lender selection", "Terms negotiation", "Presentation to bank / NBFI"]
+      "includes": [
+        "Application structuring",
+        "Lender selection",
+        "Terms negotiation",
+        "Presentation to bank / NBFI"
+      ]
     },
     "optimization": {
       "label": "Advanced package",
       "title": "Capital Hub Financial Optimization",
       "subtitle": "Advanced interventions for complex situations",
       "description": "For companies that require deep adjustments or are under financial pressure.",
-      "includes": ["Debt restructuring (including ANAF)", "Financial structure reconfiguration", "Cost of capital optimization", "Controlled growth strategies"]
+      "includes": [
+        "Debt restructuring (including ANAF)",
+        "Financial structure reconfiguration",
+        "Cost of capital optimization",
+        "Controlled growth strategies"
+      ]
     },
     "partnership": {
       "label": "Partnership package",
       "title": "Capital Hub Financial Partnership",
       "subtitle": "Long-term stability and control",
       "description": "We ensure continuity and decision support, so the company remains finance-ready.",
-      "includes": ["Monthly monitoring", "Financial adjustments", "Decision support", "Priority access to financing"]
+      "includes": [
+        "Monthly monitoring",
+        "Financial adjustments",
+        "Decision support",
+        "Priority access to financing"
+      ]
     },
     "cta1": "See if you're a good fit for us",
     "cta2": "Request a price quote",
@@ -210,6 +235,18 @@
             "Strong skills in structuring, analyzing, and submitting financial portfolios",
             "Economics background and a strategic perspective on financial products"
           ]
+        },
+        "stefan": {
+          "name": "Stefan D.",
+          "role": "IT Lead - Capital Hub",
+          "bio": "Stefan brings over 20 years of deep expertise in software development, marketing, and communications, serving as the specialist who bridges business vision with precise technical execution. At Capital Hub, he leads the technology and IT advisory function, ensuring the digital architecture and internal processes stay tightly aligned with the team's objectives and client needs.",
+          "strengthsLabel": "Why he's the right fit:",
+          "strengths": [
+            "Extensive experience coordinating complex technology migrations and managing deliverables",
+            "Expertise in software architecture, web applications, and cloud infrastructure",
+            "Strong skills in identifying solutions for digitalization and emerging technologies",
+            "Focus on scalable, secure, and long-term sustainable solutions"
+          ]
         }
       }
     },
@@ -248,6 +285,17 @@
             "Over 15 years of experience in banking and financial consultancy",
             "Expertise in structuring and negotiating SME loans",
             "Professionalism, rigor, and a consistent focus on results"
+          ]
+        },
+        "livia": {
+          "name": "Livia D.",
+          "role": "Senior Financial Consultant",
+          "bio": "Livia has over 20 years of experience in accounting and financial management, gained in international companies and in financial coordination roles. For nearly 9 years she held the position of Chief Accountant at BNP Paribas Personal Finance, where she coordinated accounting, reporting, and tax compliance activities.",
+          "strengthsLabel": "Why she's the right fit:",
+          "strengths": [
+            "Over 20 years of experience in accounting and financial management",
+            "Expertise in financial reporting, tax compliance, and process optimization",
+            "Experience implementing ERP systems such as WizPro, Microsoft Dynamics NAV, and Microsoft Dynamics 365 Business Central"
           ]
         }
       }
@@ -298,9 +346,15 @@
     "afterTitle": "What happens next",
     "afterText": "We review the information submitted and get back to you within 24–48 hours.",
     "ifCompatible": "If there is compatibility:",
-    "compatibleItems": ["We schedule a discussion", "We explain exactly how we can help"],
+    "compatibleItems": [
+      "We schedule a discussion",
+      "We explain exactly how we can help"
+    ],
     "ifNot": "If there is no compatibility:",
-    "notItems": ["We tell you directly", "No empty promises"]
+    "notItems": [
+      "We tell you directly",
+      "No empty promises"
+    ]
   },
   "resources": {
     "badge": "RESOURCES",

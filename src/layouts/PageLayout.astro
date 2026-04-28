@@ -17,7 +17,7 @@ const { locale, pageKey, title, description } = Astro.props;
 
 const pageTitle = title || t(locale, `meta.${pageKey}Title`);
 const pageDescription = description || t(locale, `meta.${pageKey}Description`);
-const canonicalUrl = `https://capitalhub.finance${getLocalePath(locale, pageKey)}`;
+const canonicalUrl = `https://www.capitalhub.finance${getLocalePath(locale, pageKey)}`;
 ---
 
 <BaseLayout

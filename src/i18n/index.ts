@@ -29,15 +29,14 @@ export function t(locale: string, key: string): string {
 
 export function getLocalePath(locale: string, pageKey: string): string {
   const slug = routeMap[pageKey]?.[locale as Locale] ?? '';
-  const path = slug ? `/${locale}/${slug}` : `/${locale}`;
-  return `/dev${path}`;
+  return slug ? `/${locale}/${slug}` : `/${locale}`;
 }
 
 export function getAlternates(pageKey: string) {
   return locales.map((loc) => ({
     locale: loc,
     hreflang: loc === 'ro' ? 'ro' : 'en',
-    href: `https://capitalhub.finance${getLocalePath(loc, pageKey)}`,
+    href: `https://www.capitalhub.finance${getLocalePath(loc, pageKey)}`,
   }));
 }
 

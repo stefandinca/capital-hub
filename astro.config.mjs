@@ -4,8 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import preact from '@astrojs/preact';
 
 export default defineConfig({
-  site: 'https://capitalhub.finance',
-  base: '/dev',
+  site: 'https://www.capitalhub.finance',
   integrations: [
     preact(),
     sitemap({

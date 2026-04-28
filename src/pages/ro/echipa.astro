@@ -10,16 +10,18 @@ const locale = 'ro';
 const tm = ro.team;
 
 const leadership = [
-  { photo: '/dev/img/Ciprian.jpeg', banner: 'blue' as const,   data: tm.leadership.members.ciprian },
-  { photo: '/dev/img/Iulia.jpeg',   banner: 'teal' as const,   data: tm.leadership.members.iulia },
-  { photo: '/dev/img/Dan.jpeg',     banner: 'gold' as const,   data: tm.leadership.members.dan },
-  { photo: undefined,               banner: 'blue-2' as const, data: tm.leadership.members.sorin },
+  { photo: '/img/Ciprian.jpeg', banner: 'blue' as const,   data: tm.leadership.members.ciprian },
+  { photo: '/img/Iulia.jpeg',   banner: 'teal' as const,   data: tm.leadership.members.iulia },
+  { photo: '/img/Dan.jpeg',     banner: 'gold' as const,   data: tm.leadership.members.dan },
+  { photo: '/img/Sorin.jpeg',   banner: 'blue-2' as const, data: tm.leadership.members.sorin },
+  { photo: '/img/Stefan.jpeg',  banner: 'teal' as const,   data: tm.leadership.members.stefan },
 ];
 
 const experts = [
-  { photo: undefined, banner: 'teal' as const,   data: tm.experts.members.adina },
-  { photo: undefined, banner: 'gold' as const,   data: tm.experts.members.bogdan },
-  { photo: undefined, banner: 'blue-2' as const, data: tm.experts.members.robert },
+  { photo: '/img/Adina.jpeg',  banner: 'teal' as const,   data: tm.experts.members.adina },
+  { photo: '/img/Bogdan.jpeg', banner: 'gold' as const,   data: tm.experts.members.bogdan },
+  { photo: '/img/Robert.jpeg', banner: 'blue-2' as const, data: tm.experts.members.robert },
+  { photo: '/img/Livia.jpeg',  banner: 'blue' as const,   data: tm.experts.members.livia },
 ];
 ---
 
@@ -58,19 +60,21 @@ const experts = [
         </h2>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div class="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
         {leadership.map((m) => (
-          <TeamMember
-            variant="leadership"
-            banner={m.banner}
-            photo={m.photo}
-            alt={m.data.name}
-            name={m.data.name}
-            role={m.data.role}
-            bio={m.data.bio}
-            strengthsLabel={m.data.strengthsLabel}
-            strengths={m.data.strengths}
-          />
+          <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]">
+            <TeamMember
+              variant="leadership"
+              banner={m.banner}
+              photo={m.photo}
+              alt={m.data.name}
+              name={m.data.name}
+              role={m.data.role}
+              bio={m.data.bio}
+              strengthsLabel={m.data.strengthsLabel}
+              strengths={m.data.strengths}
+            />
+          </div>
         ))}
       </div>
     </div>
@@ -89,19 +93,21 @@ const experts = [
         </h2>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
         {experts.map((m) => (
-          <TeamMember
-            variant="expert"
-            banner={m.banner}
-            photo={m.photo}
-            alt={m.data.name}
-            name={m.data.name}
-            role={m.data.role}
-            bio={m.data.bio}
-            strengthsLabel={m.data.strengthsLabel}
-            strengths={m.data.strengths}
-          />
+          <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]">
+            <TeamMember
+              variant="expert"
+              banner={m.banner}
+              photo={m.photo}
+              alt={m.data.name}
+              name={m.data.name}
+              role={m.data.role}
+              bio={m.data.bio}
+              strengthsLabel={m.data.strengthsLabel}
+              strengths={m.data.strengths}
+            />
+          </div>
         ))}
       </div>
     </div>

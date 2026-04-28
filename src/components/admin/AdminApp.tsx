@@ -65,7 +65,7 @@ function LoginForm() {
     <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue px-4">
       <div class="w-full max-w-md">
         <div class="text-center mb-8">
-          <img src="/dev/img/capital_hub_logo.png" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
+          <img src="/img/capital_hub_logo.png" alt="Logo" class="w-16 h-16 mx-auto mb-4" />
           <h1 class="text-2xl font-bold text-white">Capital Hub Admin</h1>
           <p class="text-white/60 text-sm mt-1">Sign in to manage submissions</p>
         </div>
@@ -457,7 +457,7 @@ function AdminShell({ user }: { user: User }) {
     <div class="min-h-screen bg-gray-50">
       <div class="bg-white border-b border-gray-200 px-6 py-3 flex justify-between items-center sticky top-0 z-40">
         <div class="flex items-center gap-3">
-          <img src="/dev/img/capital_hub_logo.png" alt="Logo" class="w-8 h-8" />
+          <img src="/img/capital_hub_logo.png" alt="Logo" class="w-8 h-8" />
           <span class="font-bold text-royal-blue text-sm">Capital Hub Admin</span>
         </div>
         <div class="flex items-center gap-4">
