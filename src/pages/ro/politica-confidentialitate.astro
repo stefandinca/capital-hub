@@ -1,0 +1,19 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalPage from '../../components/legal/LegalPage.astro';
+import ro from '../../i18n/translations/ro.json';
+
+const locale = 'ro';
+const p = ro.privacy;
+---
+
+<PageLayout locale={locale} pageKey="privacy">
+  <LegalPage
+    badge={p.badge}
+    title={p.title}
+    titleHighlight={p.titleHighlight}
+    subtitle={p.subtitle}
+    lastUpdated={p.lastUpdated}
+    sections={p.sections}
+  />
+</PageLayout>

@@ -101,9 +101,9 @@ const navLinks = [
       <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
         <p>&copy; {new Date().getFullYear()} {t(locale, 'footer.copyright')}</p>
         <div class="flex gap-6">
-          <a href="#" class="hover:text-cta-teal transition duration-300">{t(locale, 'footer.privacy')}</a>
-          <a href="#" class="hover:text-cta-teal transition duration-300">{t(locale, 'footer.terms')}</a>
-          <a href="#" class="hover:text-cta-teal transition duration-300">{t(locale, 'footer.cookies')}</a>
+          <a href={getLocalePath(locale, 'privacy')} class="hover:text-cta-teal transition duration-300">{t(locale, 'footer.privacy')}</a>
+          <a href={getLocalePath(locale, 'terms')} class="hover:text-cta-teal transition duration-300">{t(locale, 'footer.terms')}</a>
+          <a href={getLocalePath(locale, 'cookies')} class="hover:text-cta-teal transition duration-300">{t(locale, 'footer.cookies')}</a>
         </div>
       </div>
     </div>

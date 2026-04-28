@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
 import WhatsAppButton from '../components/layout/WhatsAppButton.astro';
+import CookieBanner from '../components/layout/CookieBanner.astro';
 import SEOHead from '../components/seo/SEOHead.astro';
 import { t, getLocalePath } from '../i18n/index';
 
@@ -39,4 +40,5 @@ const canonicalUrl = `https://www.capitalhub.finance${getLocalePath(locale, page
 
   <Footer locale={locale} />
   <WhatsAppButton />
+  <CookieBanner locale={locale} />
 </BaseLayout>

@@ -77,12 +77,7 @@
       "title": "Capital Hub Diagnostic Financiar",
       "subtitle": "Primul pas pentru orice decizie financiara corecta",
       "description": "Ofera claritate asupra modului in care functioneaza compania si identifica exact ce impiedica accesul la finantare in conditii bune.",
-      "includes": [
-        "Analiza financiara aplicata (lichiditate, grad de indatorare, rotatii)",
-        "Identificare blocaje de cash-flow",
-        "Evaluare interna a finantabilitatii",
-        "3-5 actiuni concrete, prioritizate"
-      ],
+      "includes": ["Analiza financiara aplicata (lichiditate, grad de indatorare, rotatii)", "Identificare blocaje de cash-flow", "Evaluare interna a finantabilitatii", "3-5 actiuni concrete, prioritizate"],
       "deliverable": "Raport financiar structurat (6-10 pagini), clar si aplicabil"
     },
     "structuring": {
@@ -90,12 +85,7 @@
       "title": "Capital Hub Structurare Financiara",
       "subtitle": "Etapa in care compania devine finantabila",
       "description": "Transformam modul in care functioneaza compania din punct de vedere financiar, astfel incat sa poata sustine o finantare corecta.",
-      "includes": [
-        "Optimizare cash-flow",
-        "Aliniere incasari vs. plati",
-        "Corectii bilant (inclusiv 418, stocuri, datorii)",
-        "Simulari de scenarii"
-      ],
+      "includes": ["Optimizare cash-flow", "Aliniere incasari vs. plati", "Corectii bilant (inclusiv 418, stocuri, datorii)", "Simulari de scenarii"],
       "differentiator": "Traducem compania in limbaj bancar"
     },
     "financing": {
@@ -103,36 +93,21 @@
       "title": "Capital Hub Acces la Finantare",
       "subtitle": "Acces la finantare, in conditii corecte",
       "description": "Se activeaza dupa structurare sau pentru companii deja pregatite. Nu trimitem dosare la intamplare. Alegem solutia potrivita.",
-      "includes": [
-        "Structurare dosar",
-        "Selectie finantatori",
-        "Negociere conditii",
-        "Prezentare catre banca / IFN"
-      ]
+      "includes": ["Structurare dosar", "Selectie finantatori", "Negociere conditii", "Prezentare catre banca / IFN"]
     },
     "optimization": {
       "label": "Pachet avansat",
       "title": "Capital Hub Optimizare Financiara",
       "subtitle": "Interventii avansate pentru situatii complexe",
       "description": "Pentru companii care necesita ajustari profunde sau se afla sub presiune financiara.",
-      "includes": [
-        "Restructurare datorii (inclusiv ANAF)",
-        "Reconfigurare structura financiara",
-        "Optimizare cost capital",
-        "Strategii de crestere controlata"
-      ]
+      "includes": ["Restructurare datorii (inclusiv ANAF)", "Reconfigurare structura financiara", "Optimizare cost capital", "Strategii de crestere controlata"]
     },
     "partnership": {
       "label": "Pachet de parteneriat",
       "title": "Capital Hub Parteneriat Financiar",
       "subtitle": "Stabilitate si control pe termen lung",
       "description": "Asiguram continuitate si suport decizional, astfel incat compania sa ramana finantabila.",
-      "includes": [
-        "Monitorizare lunara",
-        "Ajustari financiare",
-        "Suport decizional",
-        "Acces prioritar la finantari"
-      ]
+      "includes": ["Monitorizare lunara", "Ajustari financiare", "Suport decizional", "Acces prioritar la finantari"]
     },
     "cta1": "Vezi daca esti compatibil cu noi",
     "cta2": "Solicita oferta de pret",
@@ -346,15 +321,9 @@
     "afterTitle": "Ce se intampla dupa",
     "afterText": "Analizam informatiile transmise si revenim in maximum 24-48 de ore.",
     "ifCompatible": "Daca exista compatibilitate:",
-    "compatibleItems": [
-      "Programam o discutie",
-      "Iti explicam exact cum putem ajuta"
-    ],
+    "compatibleItems": ["Programam o discutie", "Iti explicam exact cum putem ajuta"],
     "ifNot": "Daca nu exista compatibilitate:",
-    "notItems": [
-      "Iti spunem direct",
-      "Fara promisiuni inutile"
-    ]
+    "notItems": ["Iti spunem direct", "Fara promisiuni inutile"]
   },
   "resources": {
     "badge": "RESURSE",
@@ -395,6 +364,191 @@
     "cookies": "Cookie-uri",
     "closing": "Decizii financiare corecte pentru crestere sustenabila."
   },
+  "cookieBanner": {
+    "text": "Folosim cookie-uri esentiale pentru ca site-ul sa functioneze corect. Nu folosim cookie-uri de marketing sau analiza pe paginile publice.",
+    "accept": "Accept",
+    "reject": "Refuz",
+    "learnMore": "Afla mai multe"
+  },
+  "privacy": {
+    "badge": "POLITICA DE CONFIDENTIALITATE",
+    "title": "Politica de",
+    "titleHighlight": "Confidentialitate",
+    "subtitle": "Cum colectam, folosim si protejam datele tale.",
+    "lastUpdated": "Ultima actualizare: 28 aprilie 2026",
+    "sections": [
+      {
+        "title": "1. Operatorul de date",
+        "paragraphs": [
+          "Capital Hub Finance, in calitate de operator, prelucreaza datele cu caracter personal colectate prin acest site in conformitate cu Regulamentul UE 2016/679 (GDPR) si legislatia romana aplicabila.",
+          "Pentru orice intrebari privind prelucrarea datelor tale ne poti contacta la contact@capitalhub.ro."
+        ]
+      },
+      {
+        "title": "2. Datele pe care le colectam",
+        "paragraphs": [
+          "Colectam datele pe care le furnizezi voluntar prin formularele site-ului: nume, email, telefon, denumirea companiei, CUI, domeniu de activitate, cifra de afaceri si descrierea situatiei tale financiare.",
+          "Pentru zona de administrare colectam adresa de email si o parola pentru autentificare. Nu folosim cookie-uri de tracking sau analytics pe paginile publice."
+        ]
+      },
+      {
+        "title": "3. Scopul prelucrarii",
+        "paragraphs": [
+          "Folosim datele pentru a raspunde solicitarilor tale, a evalua compatibilitatea cu serviciile noastre, a furniza consultanta financiara contractata si a comunica pe parcursul colaborarii.",
+          "Nu trimitem comunicari de marketing si nu vindem datele catre terti."
+        ]
+      },
+      {
+        "title": "4. Temei legal",
+        "paragraphs": [
+          "Prelucrarea se face pe baza consimtamantului tau (la trimiterea formularelor), a executarii unui contract atunci cand devii client si a interesului nostru legitim de a opera site-ul si a raspunde solicitarilor."
+        ]
+      },
+      {
+        "title": "5. Furnizori si parteneri",
+        "paragraphs": [
+          "Datele sunt stocate in Google Cloud Platform (Firebase Firestore si Firebase Authentication), un furnizor cu masuri de securitate corespunzatoare GDPR.",
+          "Accesul la date este limitat la membrii echipei Capital Hub care au nevoie sa le proceseze pentru oferirea serviciilor."
+        ]
+      },
+      {
+        "title": "6. Perioada de retentie",
+        "paragraphs": [
+          "Pastram solicitarile neactive timp de 24 de luni, dupa care le anonimizam sau stergem. Pentru clientii activi pastram datele pe durata colaborarii plus perioadele de retentie cerute de legislatia financiara si fiscala."
+        ]
+      },
+      {
+        "title": "7. Drepturile tale",
+        "paragraphs": [
+          "Ai dreptul de acces, rectificare, stergere, portabilitate, restrictionare si opozitie cu privire la datele tale, precum si dreptul de a-ti retrage consimtamantul in orice moment.",
+          "Pentru exercitarea acestor drepturi sau pentru o plangere, ne poti scrie la contact@capitalhub.ro sau te poti adresa Autoritatii Nationale de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP)."
+        ]
+      },
+      {
+        "title": "8. Modificari ale politicii",
+        "paragraphs": [
+          "Putem actualiza aceasta politica periodic. Modificarile vor fi publicate pe aceasta pagina, cu data ultimei actualizari indicata mai sus."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "badge": "TERMENI SI CONDITII",
+    "title": "Termeni si",
+    "titleHighlight": "Conditii",
+    "subtitle": "Conditiile de utilizare a site-ului si serviciilor Capital Hub Finance.",
+    "lastUpdated": "Ultima actualizare: 28 aprilie 2026",
+    "sections": [
+      {
+        "title": "1. Acceptarea termenilor",
+        "paragraphs": [
+          "Prin accesarea si utilizarea site-ului www.capitalhub.finance, declari ca ai citit, ai inteles si esti de acord sa respecti acesti termeni si conditii.",
+          "Daca nu esti de acord cu vreuna dintre prevederi, te rugam sa nu folosesti site-ul."
+        ]
+      },
+      {
+        "title": "2. Continutul si scopul site-ului",
+        "paragraphs": [
+          "Site-ul prezinta informatii despre serviciile de consultanta financiara oferite de Capital Hub Finance: diagnostic financiar, structurare, acces la finantare, optimizare si parteneriat financiar.",
+          "Continutul are caracter informativ si nu constituie consultanta financiara, juridica sau fiscala personalizata. Pentru recomandari aplicabile situatiei tale specifice, te rugam sa ne contactezi."
+        ]
+      },
+      {
+        "title": "3. Utilizarea permisa",
+        "paragraphs": [
+          "Poti accesa si folosi continutul site-ului pentru uz personal si profesional, in limitele legale.",
+          "Nu sunt permise: copierea sistematica a continutului, publicarea pe alte site-uri fara acord scris, utilizarea automatizata (scraping, scanare), distribuirea modificata sau folosirea continutului in scopuri ilegale."
+        ]
+      },
+      {
+        "title": "4. Drepturi de autor",
+        "paragraphs": [
+          "Toate textele, imaginile, grafica si structura site-ului sunt proprietatea Capital Hub Finance sau a partenerilor sai si sunt protejate de legislatia privind drepturile de autor.",
+          "Marcile, logo-urile si denumirile mentionate apartin proprietarilor lor."
+        ]
+      },
+      {
+        "title": "5. Avertismente",
+        "paragraphs": [
+          "Informatiile prezentate pot suferi modificari fara notificare prealabila. Capital Hub Finance face eforturi rezonabile pentru a mentine continutul actualizat, dar nu garanteaza ca site-ul va functiona neintrerupt sau fara erori.",
+          "Continutul site-ului nu inlocuieste evaluarea profesionala personalizata pentru situatia ta financiara concreta."
+        ]
+      },
+      {
+        "title": "6. Limitarea raspunderii",
+        "paragraphs": [
+          "Capital Hub Finance nu raspunde pentru daune indirecte, pierderi de profit sau prejudicii rezultate din utilizarea sau imposibilitatea de utilizare a site-ului ori din actiuni intreprinse pe baza informatiilor publicate aici, in afara cadrului unei colaborari contractuale."
+        ]
+      },
+      {
+        "title": "7. Linkuri externe",
+        "paragraphs": [
+          "Site-ul poate contine linkuri catre site-uri terte. Capital Hub Finance nu controleaza si nu raspunde pentru continutul, politicile sau practicile acestora."
+        ]
+      },
+      {
+        "title": "8. Modificari ale termenilor",
+        "paragraphs": [
+          "Ne rezervam dreptul de a modifica acesti termeni in orice moment. Modificarile devin efective la publicarea pe aceasta pagina, cu data ultimei actualizari indicata mai sus."
+        ]
+      },
+      {
+        "title": "9. Lege aplicabila si contact",
+        "paragraphs": [
+          "Acesti termeni sunt guvernati de legea romana. Eventualele litigii vor fi solutionate de instantele competente din Romania.",
+          "Pentru intrebari privind acesti termeni ne poti contacta la contact@capitalhub.ro."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "badge": "COOKIE-URI",
+    "title": "Politica de",
+    "titleHighlight": "Cookie-uri",
+    "subtitle": "Ce sunt cookie-urile si cum le folosim pe acest site.",
+    "lastUpdated": "Ultima actualizare: 28 aprilie 2026",
+    "sections": [
+      {
+        "title": "1. Ce sunt cookie-urile",
+        "paragraphs": [
+          "Cookie-urile sunt fisiere mici de text stocate in browser cand vizitezi un site. Ele permit site-ului sa-si aminteasca informatii despre vizita ta, cum ar fi limba preferata sau autentificarea."
+        ]
+      },
+      {
+        "title": "2. Cum folosim cookie-urile",
+        "paragraphs": [
+          "Folosim un numar minim de cookie-uri, doar pentru functionarea de baza a site-ului. Nu folosim cookie-uri de marketing, analitice sau de profilare pe paginile publice.",
+          "Cookie-urile pe care le folosim sunt esentiale si nu pot fi dezactivate fara a afecta functionalitatea de baza."
+        ]
+      },
+      {
+        "title": "3. Tipuri de cookie-uri folosite",
+        "paragraphs": [
+          "Cookie de preferinte (capitalhub_cookie_consent): retine alegerea ta in legatura cu banner-ul de cookie-uri. Stocat in localStorage, valabil pana la stergerea manuala.",
+          "Cookie-uri de autentificare Firebase: utilizate exclusiv in zona de administrare (/admin/), pentru a mentine sesiunea autorizata. Acestea nu sunt setate pe paginile publice."
+        ]
+      },
+      {
+        "title": "4. Furnizori terti",
+        "paragraphs": [
+          "Pentru autentificarea zonei de administrare folosim Firebase Authentication, un serviciu Google Cloud cu masuri de securitate corespunzatoare. Nicio data personala a vizitatorilor publici nu este transmisa catre Firebase prin simpla navigare pe site."
+        ]
+      },
+      {
+        "title": "5. Cum gestionezi cookie-urile",
+        "paragraphs": [
+          "Iti poti schimba alegerea privind banner-ul de cookie-uri prin stergerea localStorage-ului din setarile browserului.",
+          "Majoritatea browserelor permit dezactivarea sau stergerea cookie-urilor din setari (Chrome: Settings > Privacy and security > Cookies; Firefox: Settings > Privacy & Security; Safari: Preferences > Privacy)."
+        ]
+      },
+      {
+        "title": "6. Modificari ale politicii",
+        "paragraphs": [
+          "Putem actualiza aceasta politica de cookie-uri. Versiunea curenta este indicata prin data ultimei actualizari de mai sus."
+        ]
+      }
+    ]
+  },
   "meta": {
     "homeTitle": "Capital Hub Finance - Solutii de Finantare",
     "homeDescription": "Capital Hub Finance construieste companii finantabile. Diagnostic financiar, structurare, acces la finantare si parteneriat pe termen lung.",
@@ -413,6 +567,12 @@
     "resourcesTitle": "Resurse - Capital Hub Finance",
     "resourcesDescription": "Articole, ghiduri si resurse despre finantare, cash-flow si structurare financiara pentru companii.",
     "contactTitle": "Contact - Capital Hub Finance",
-    "contactDescription": "Contacteaza Capital Hub Finance. Telefon, email, WhatsApp. Echipa noastra iti raspunde in maximum 24 de ore."
+    "contactDescription": "Contacteaza Capital Hub Finance. Telefon, email, WhatsApp. Echipa noastra iti raspunde in maximum 24 de ore.",
+    "privacyTitle": "Politica de Confidentialitate - Capital Hub Finance",
+    "privacyDescription": "Cum colecteaza, foloseste si protejeaza Capital Hub Finance datele cu caracter personal, in conformitate cu GDPR.",
+    "termsTitle": "Termeni si Conditii - Capital Hub Finance",
+    "termsDescription": "Termenii si conditiile de utilizare a site-ului si serviciilor Capital Hub Finance.",
+    "cookiesTitle": "Politica de Cookie-uri - Capital Hub Finance",
+    "cookiesDescription": "Ce cookie-uri foloseste site-ul Capital Hub Finance si cum le poti gestiona."
   }
 }

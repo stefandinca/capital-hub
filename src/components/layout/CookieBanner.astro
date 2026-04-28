@@ -1,0 +1,59 @@
+---
+import { t, getLocalePath } from '../../i18n/index';
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const cookiesUrl = getLocalePath(locale, 'cookies');
+---
+
+<div
+  id="cookie-banner"
+  class="fixed bottom-0 inset-x-0 z-40 hidden translate-y-2 transition-transform duration-300 ease-out"
+  role="dialog"
+  aria-label="Cookie consent"
+>
+  <div class="mx-auto max-w-5xl m-4 lg:m-6 bg-royal-blue-2 text-white rounded-2xl shadow-2xl border border-white/10 p-5 lg:p-6 flex flex-col lg:flex-row items-start lg:items-center gap-4">
+    <p class="text-sm leading-relaxed flex-1">
+      {t(locale, 'cookieBanner.text')}
+      <a href={cookiesUrl} class="underline text-warm-gold hover:text-cta-teal transition ml-1 whitespace-nowrap">
+        {t(locale, 'cookieBanner.learnMore')}
+      </a>
+    </p>
+    <div class="flex gap-2 flex-shrink-0 w-full lg:w-auto">
+      <button
+        type="button"
+        id="cookie-reject"
+        class="flex-1 lg:flex-none px-5 py-2 rounded-full text-xs font-bold bg-white/10 text-white hover:bg-white/20 transition border border-white/20"
+      >
+        {t(locale, 'cookieBanner.reject')}
+      </button>
+      <button
+        type="button"
+        id="cookie-accept"
+        class="flex-1 lg:flex-none px-5 py-2 rounded-full text-xs font-bold bg-cta-teal hover:bg-warm-gold text-white transition shadow-lg"
+      >
+        {t(locale, 'cookieBanner.accept')}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const KEY = 'capitalhub_cookie_consent';
+  const banner = document.getElementById('cookie-banner');
+  if (banner && !localStorage.getItem(KEY)) {
+    banner.classList.remove('hidden');
+    requestAnimationFrame(() => banner.classList.remove('translate-y-2'));
+  }
+  const dismiss = (value: 'accepted' | 'rejected') => {
+    if (!banner) return;
+    localStorage.setItem(KEY, value);
+    banner.classList.add('translate-y-2');
+    setTimeout(() => banner.classList.add('hidden'), 250);
+  };
+  document.getElementById('cookie-accept')?.addEventListener('click', () => dismiss('accepted'));
+  document.getElementById('cookie-reject')?.addEventListener('click', () => dismiss('rejected'));
+</script>

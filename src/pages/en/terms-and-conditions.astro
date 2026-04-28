@@ -1,0 +1,19 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalPage from '../../components/legal/LegalPage.astro';
+import en from '../../i18n/translations/en.json';
+
+const locale = 'en';
+const p = en.terms;
+---
+
+<PageLayout locale={locale} pageKey="terms">
+  <LegalPage
+    badge={p.badge}
+    title={p.title}
+    titleHighlight={p.titleHighlight}
+    subtitle={p.subtitle}
+    lastUpdated={p.lastUpdated}
+    sections={p.sections}
+  />
+</PageLayout>

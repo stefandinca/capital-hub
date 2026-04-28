@@ -1,0 +1,54 @@
+---
+import SectionBadge from '../shared/SectionBadge.astro';
+
+interface Section {
+  title: string;
+  paragraphs: string[];
+}
+
+interface Props {
+  badge: string;
+  title: string;
+  titleHighlight: string;
+  subtitle: string;
+  lastUpdated: string;
+  sections: Section[];
+}
+
+const { badge, title, titleHighlight, subtitle, lastUpdated, sections } = Astro.props;
+---
+
+<!-- Hero -->
+<section class="relative overflow-hidden bg-gradient-to-br from-royal-blue via-royal-blue-2 to-royal-blue pt-32 pb-20 px-6">
+  <div class="absolute top-20 right-20 w-72 h-72 bg-warm-gold/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 left-10 w-96 h-96 bg-cta-teal/8 rounded-full blur-3xl"></div>
+
+  <div class="relative z-10 max-w-4xl mx-auto text-center">
+    <SectionBadge text={badge} variant="dark" />
+
+    <h1 class="text-3xl lg:text-5xl text-white font-bold leading-tight mt-4">
+      {title} <span class="text-warm-gold">{titleHighlight}</span>
+    </h1>
+    <p class="text-white/80 text-lg leading-relaxed mt-6 max-w-2xl mx-auto">
+      {subtitle}
+    </p>
+    <p class="text-white/50 text-xs mt-6 uppercase tracking-wider">{lastUpdated}</p>
+  </div>
+</section>
+
+<!-- Body -->
+<section class="py-16 lg:py-24 px-6 bg-white relative overflow-hidden">
+  <div class="absolute top-10 right-10 w-80 h-80 bg-warm-gold/5 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 left-10 w-72 h-72 bg-cta-teal/5 rounded-full blur-3xl"></div>
+
+  <div class="max-w-3xl mx-auto relative z-10 space-y-10">
+    {sections.map((s) => (
+      <article>
+        <h2 class="text-xl lg:text-2xl text-royal-blue font-bold mb-4">{s.title}</h2>
+        {s.paragraphs.map((p) => (
+          <p class="text-gray-700 leading-relaxed mb-4 last:mb-0">{p}</p>
+        ))}
+      </article>
+    ))}
+  </div>
+</section>

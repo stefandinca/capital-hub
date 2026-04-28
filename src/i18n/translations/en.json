@@ -77,12 +77,7 @@
       "title": "Capital Hub Financial Diagnostic",
       "subtitle": "The first step toward any sound financial decision",
       "description": "Provides clarity on how the company operates and identifies exactly what prevents access to financing on favorable terms.",
-      "includes": [
-        "Applied financial analysis (liquidity, debt ratio, turnover ratios)",
-        "Cash-flow bottleneck identification",
-        "Internal bankability assessment",
-        "3–5 concrete, prioritized action items"
-      ],
+      "includes": ["Applied financial analysis (liquidity, debt ratio, turnover ratios)", "Cash-flow bottleneck identification", "Internal bankability assessment", "3–5 concrete, prioritized action items"],
       "deliverable": "Structured financial report (6–10 pages), clear and actionable"
     },
     "structuring": {
@@ -90,12 +85,7 @@
       "title": "Capital Hub Financial Structuring",
       "subtitle": "The stage where the company becomes finance-ready",
       "description": "We transform how the company operates from a financial standpoint, so it can sustain proper financing.",
-      "includes": [
-        "Cash-flow optimization",
-        "Receivables vs. payables alignment",
-        "Balance sheet corrections (including accrued income, inventory, liabilities)",
-        "Scenario simulations"
-      ],
+      "includes": ["Cash-flow optimization", "Receivables vs. payables alignment", "Balance sheet corrections (including accrued income, inventory, liabilities)", "Scenario simulations"],
       "differentiator": "We translate the company into banking language"
     },
     "financing": {
@@ -103,36 +93,21 @@
       "title": "Capital Hub Financing Access",
       "subtitle": "Access to financing, on the right terms",
       "description": "Activated after structuring or for companies already prepared. We don't submit applications at random. We choose the right solution.",
-      "includes": [
-        "Application structuring",
-        "Lender selection",
-        "Terms negotiation",
-        "Presentation to bank / NBFI"
-      ]
+      "includes": ["Application structuring", "Lender selection", "Terms negotiation", "Presentation to bank / NBFI"]
     },
     "optimization": {
       "label": "Advanced package",
       "title": "Capital Hub Financial Optimization",
       "subtitle": "Advanced interventions for complex situations",
       "description": "For companies that require deep adjustments or are under financial pressure.",
-      "includes": [
-        "Debt restructuring (including ANAF)",
-        "Financial structure reconfiguration",
-        "Cost of capital optimization",
-        "Controlled growth strategies"
-      ]
+      "includes": ["Debt restructuring (including ANAF)", "Financial structure reconfiguration", "Cost of capital optimization", "Controlled growth strategies"]
     },
     "partnership": {
       "label": "Partnership package",
       "title": "Capital Hub Financial Partnership",
       "subtitle": "Long-term stability and control",
       "description": "We ensure continuity and decision support, so the company remains finance-ready.",
-      "includes": [
-        "Monthly monitoring",
-        "Financial adjustments",
-        "Decision support",
-        "Priority access to financing"
-      ]
+      "includes": ["Monthly monitoring", "Financial adjustments", "Decision support", "Priority access to financing"]
     },
     "cta1": "See if you're a good fit for us",
     "cta2": "Request a price quote",
@@ -346,15 +321,9 @@
     "afterTitle": "What happens next",
     "afterText": "We review the information submitted and get back to you within 24–48 hours.",
     "ifCompatible": "If there is compatibility:",
-    "compatibleItems": [
-      "We schedule a discussion",
-      "We explain exactly how we can help"
-    ],
+    "compatibleItems": ["We schedule a discussion", "We explain exactly how we can help"],
     "ifNot": "If there is no compatibility:",
-    "notItems": [
-      "We tell you directly",
-      "No empty promises"
-    ]
+    "notItems": ["We tell you directly", "No empty promises"]
   },
   "resources": {
     "badge": "RESOURCES",
@@ -395,6 +364,191 @@
     "cookies": "Cookies",
     "closing": "Sound financial decisions for sustainable growth."
   },
+  "cookieBanner": {
+    "text": "We use essential cookies for the site to work properly. We do not use marketing or analytics cookies on public pages.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "learnMore": "Learn more"
+  },
+  "privacy": {
+    "badge": "PRIVACY POLICY",
+    "title": "Privacy",
+    "titleHighlight": "Policy",
+    "subtitle": "How we collect, use, and protect your data.",
+    "lastUpdated": "Last updated: April 28, 2026",
+    "sections": [
+      {
+        "title": "1. Data controller",
+        "paragraphs": [
+          "Capital Hub Finance, as data controller, processes the personal data collected through this site in accordance with EU Regulation 2016/679 (GDPR) and applicable Romanian legislation.",
+          "For any questions about how we process your data, you can reach us at contact@capitalhub.ro."
+        ]
+      },
+      {
+        "title": "2. Data we collect",
+        "paragraphs": [
+          "We collect the data you voluntarily provide through the site's forms: name, email, phone, company name, registration ID (CUI), industry, revenue, and a description of your financial situation.",
+          "For the admin area we collect an email address and a password for authentication. We do not use tracking or analytics cookies on public pages."
+        ]
+      },
+      {
+        "title": "3. Purpose of processing",
+        "paragraphs": [
+          "We use the data to respond to your inquiries, assess fit with our services, deliver agreed financial consultancy, and communicate during the engagement.",
+          "We do not send marketing communications and we do not sell your data to third parties."
+        ]
+      },
+      {
+        "title": "4. Legal basis",
+        "paragraphs": [
+          "Processing is based on your consent (when you submit forms), the performance of a contract once you become a client, and our legitimate interest in operating the site and responding to inquiries."
+        ]
+      },
+      {
+        "title": "5. Providers and partners",
+        "paragraphs": [
+          "Data is stored on Google Cloud Platform (Firebase Firestore and Firebase Authentication), a provider with security measures aligned with GDPR.",
+          "Access to data is restricted to Capital Hub team members who need it to deliver the services."
+        ]
+      },
+      {
+        "title": "6. Retention period",
+        "paragraphs": [
+          "We keep inactive inquiries for 24 months, after which we anonymize or delete them. For active clients we retain data for the duration of the engagement plus the retention periods required by financial and tax legislation."
+        ]
+      },
+      {
+        "title": "7. Your rights",
+        "paragraphs": [
+          "You have the right of access, rectification, erasure, portability, restriction, and objection regarding your data, as well as the right to withdraw consent at any time.",
+          "To exercise these rights or to file a complaint, write to us at contact@capitalhub.ro or contact the Romanian National Authority for the Supervision of Personal Data Processing (ANSPDCP)."
+        ]
+      },
+      {
+        "title": "8. Changes to this policy",
+        "paragraphs": [
+          "We may update this policy from time to time. Changes will be published on this page, with the date of the last update shown above."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "badge": "TERMS AND CONDITIONS",
+    "title": "Terms and",
+    "titleHighlight": "Conditions",
+    "subtitle": "The terms governing use of the Capital Hub Finance website and services.",
+    "lastUpdated": "Last updated: April 28, 2026",
+    "sections": [
+      {
+        "title": "1. Acceptance of terms",
+        "paragraphs": [
+          "By accessing and using the website www.capitalhub.finance, you confirm that you have read, understood, and agree to comply with these terms and conditions.",
+          "If you do not agree with any of the provisions, please do not use the site."
+        ]
+      },
+      {
+        "title": "2. Site content and purpose",
+        "paragraphs": [
+          "The site presents information about the financial consultancy services offered by Capital Hub Finance: financial diagnostic, structuring, financing access, optimization, and financial partnership.",
+          "The content is informational and does not constitute personalized financial, legal, or tax advice. For recommendations specific to your situation, please contact us."
+        ]
+      },
+      {
+        "title": "3. Permitted use",
+        "paragraphs": [
+          "You may access and use the site's content for personal and professional purposes within legal limits.",
+          "The following are not permitted: systematic copying of content, republishing on other sites without written agreement, automated use (scraping, scanning), modified distribution, or use for unlawful purposes."
+        ]
+      },
+      {
+        "title": "4. Intellectual property",
+        "paragraphs": [
+          "All text, images, graphics, and the structure of the site are owned by Capital Hub Finance or its partners and are protected by copyright legislation.",
+          "Trademarks, logos, and names mentioned belong to their respective owners."
+        ]
+      },
+      {
+        "title": "5. Disclaimers",
+        "paragraphs": [
+          "The information presented may change without prior notice. Capital Hub Finance makes reasonable efforts to keep the content up to date but does not guarantee that the site will operate uninterrupted or error-free.",
+          "Site content does not replace personalized professional assessment for your specific financial situation."
+        ]
+      },
+      {
+        "title": "6. Limitation of liability",
+        "paragraphs": [
+          "Capital Hub Finance is not liable for indirect damages, loss of profit, or harm resulting from the use or inability to use the site, or from actions taken based on the information published here, outside the scope of a contractual engagement."
+        ]
+      },
+      {
+        "title": "7. External links",
+        "paragraphs": [
+          "The site may contain links to third-party websites. Capital Hub Finance does not control and is not responsible for the content, policies, or practices of those sites."
+        ]
+      },
+      {
+        "title": "8. Changes to the terms",
+        "paragraphs": [
+          "We reserve the right to modify these terms at any time. Changes take effect on publication on this page, with the date of the last update shown above."
+        ]
+      },
+      {
+        "title": "9. Governing law and contact",
+        "paragraphs": [
+          "These terms are governed by Romanian law. Any disputes will be settled by the competent courts in Romania.",
+          "For questions about these terms you can contact us at contact@capitalhub.ro."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "badge": "COOKIES",
+    "title": "Cookie",
+    "titleHighlight": "Policy",
+    "subtitle": "What cookies are and how we use them on this site.",
+    "lastUpdated": "Last updated: April 28, 2026",
+    "sections": [
+      {
+        "title": "1. What cookies are",
+        "paragraphs": [
+          "Cookies are small text files stored in your browser when you visit a site. They allow the site to remember information about your visit, such as preferred language or authentication state."
+        ]
+      },
+      {
+        "title": "2. How we use cookies",
+        "paragraphs": [
+          "We use a minimal number of cookies, only for the basic functioning of the site. We do not use marketing, analytics, or profiling cookies on public pages.",
+          "The cookies we use are essential and cannot be disabled without affecting basic functionality."
+        ]
+      },
+      {
+        "title": "3. Types of cookies used",
+        "paragraphs": [
+          "Preference cookie (capitalhub_cookie_consent): stores your choice regarding the cookie banner. Saved in localStorage, valid until manually cleared.",
+          "Firebase authentication cookies: used exclusively in the admin area (/admin/) to maintain the authorized session. They are not set on public pages."
+        ]
+      },
+      {
+        "title": "4. Third-party providers",
+        "paragraphs": [
+          "For admin area authentication we use Firebase Authentication, a Google Cloud service with appropriate security measures. No personal data of public visitors is transmitted to Firebase by simply browsing the site."
+        ]
+      },
+      {
+        "title": "5. Managing cookies",
+        "paragraphs": [
+          "You can change your cookie banner choice by clearing localStorage from your browser settings.",
+          "Most browsers allow you to disable or clear cookies from settings (Chrome: Settings > Privacy and security > Cookies; Firefox: Settings > Privacy & Security; Safari: Preferences > Privacy)."
+        ]
+      },
+      {
+        "title": "6. Changes to this policy",
+        "paragraphs": [
+          "We may update this cookie policy. The current version is indicated by the last-updated date above."
+        ]
+      }
+    ]
+  },
   "meta": {
     "homeTitle": "Capital Hub Finance - Financing Solutions",
     "homeDescription": "Capital Hub Finance builds finance-ready companies. Financial diagnostic, structuring, financing access, and long-term partnership.",
@@ -413,6 +567,12 @@
     "resourcesTitle": "Resources - Capital Hub Finance",
     "resourcesDescription": "Articles, guides, and resources on financing, cash-flow, and financial structuring for companies.",
     "contactTitle": "Contact - Capital Hub Finance",
-    "contactDescription": "Contact Capital Hub Finance. Phone, email, WhatsApp. Our team responds within 24 hours."
+    "contactDescription": "Contact Capital Hub Finance. Phone, email, WhatsApp. Our team responds within 24 hours.",
+    "privacyTitle": "Privacy Policy - Capital Hub Finance",
+    "privacyDescription": "How Capital Hub Finance collects, uses, and protects personal data, in accordance with GDPR.",
+    "termsTitle": "Terms and Conditions - Capital Hub Finance",
+    "termsDescription": "The terms and conditions for using the Capital Hub Finance website and services.",
+    "cookiesTitle": "Cookie Policy - Capital Hub Finance",
+    "cookiesDescription": "What cookies the Capital Hub Finance site uses and how you can manage them."
   }
 }

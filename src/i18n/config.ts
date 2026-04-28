@@ -22,4 +22,7 @@ export const routeMap: Record<string, Record<Locale, string>> = {
   compatibility:  { ro: 'compatibilitate',  en: 'compatibility' },
   resources:      { ro: 'resurse',          en: 'resources' },
   contact:        { ro: 'contact',          en: 'contact' },
+  privacy:        { ro: 'politica-confidentialitate', en: 'privacy-policy' },
+  terms:          { ro: 'termeni-conditii', en: 'terms-and-conditions' },
+  cookies:        { ro: 'cookies',          en: 'cookies' },
 };
